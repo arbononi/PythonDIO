@@ -1,7 +1,8 @@
 import sys
 import msvcrt
 from models.tiposenum import Estados, OCULTAR_CURSOR, MOSTRAR_CURSOR
-from datetime import datetime, date
+from datetime import datetime, date 
+from models.tiposenum import PRETO_NO_BRANCO, RESET
 
 def esperar_tecla():
     print(OCULTAR_CURSOR)
@@ -9,9 +10,14 @@ def esperar_tecla():
     print(MOSTRAR_CURSOR)
     return opcao
 
-def limpar_linha(linha: int, coluna: int, tamanho: int):
+def limpar_linha(linha: int=30, coluna: int=2, tamanho: int=98, background=False):
     posicionarCursor(linha, coluna)
-    print(" " * tamanho)
+    spaces = " " * tamanho
+    if background:
+        spaces = "_" * tamanho
+        print(spaces, end="")
+    else:
+        print(spaces, end="")
     posicionarCursor(linha, coluna)
 
 def posicionarCursor(linha: int, coluna: int):
@@ -21,7 +27,7 @@ def exibirMensagem(linha: int, coluna: int, mensagem: str, saltar_linha: str=" "
     posicionarCursor(linha, coluna)
     print(mensagem, end=saltar_linha)
 
-def limpar_tela(start: int=4, stop: int=28, column: int=2, size: int=97):
+def limpar_tela(start: int=4, stop: int=29, column: int=2, size: int=98):
     for linha in range(start, stop):
         posicionarCursor(linha, column)
         print(" " * size, end="")
@@ -50,9 +56,18 @@ def validar_cpf(num_cpf: int):
 
 def validar_estado(uf: str):
     if uf.upper() not in Estados:
-        return True, "UF inválida!"
-    return True, None
+        return False, None, "UF inválida!"
+    return True, Estados(uf), None
 
+def validar_cep(cep: str):
+    if (len(cep) < 8):
+        return False, None, "CEP incompleto"
+    try:
+        cep_num = int(cep)
+        return True, cep, None
+    except ValueError:
+        return False, None, "CEP não é um número válido!"
+    
 def formatar_cpf(num_cpf: int):
     cpf_formatado = f"{num_cpf:011d}"
     return f"{cpf_formatado[:3]}.{cpf_formatado[3:6]}.{cpf_formatado[6:9]}-{cpf_formatado[9:]}"
@@ -90,7 +105,6 @@ def validar_data(entrada: str, permitir_futuro=False):
     for formato in formatos_aceitos:
         try:
             data = datetime.strptime(entrada, formato).date()
-
             if not permitir_futuro and data > date.today():
                 return False, None, "❌ A data não pode ser no futuro."
             return True, data, None

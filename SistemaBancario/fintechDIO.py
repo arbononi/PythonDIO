@@ -9,6 +9,7 @@ from models import tiposenum
 from utils import user_functions
 from database import tables
 from views.telas_sistema import layout_tela_principal, titulos_telas
+from controllers.correntistas_controller import ConrrentistasController
 
 menu_principal_opcoes = "[1 - CORRENTISTAS]     [2 - CONTAS]     [3 - TRANSAÇÕES]     [4 - EXTRATOS]     [9 - SAIR]".center(98, " ")
 
@@ -20,9 +21,20 @@ opcao = 0
 opcao_limite = 4
 user_functions.desenhar_tela(layout_tela_principal)
 user_functions.posicionarCursor(2, 2)
-print(titulos_telas["menu_principal"].center(75, " "))
+print(titulos_telas["menu_principal"])
 user_functions.posicionarCursor(2, 85)
 print(data_atual_str)
+
+def limpar_tela():
+    for linha in layout_tela_principal:
+         if (linha["lin"] < 4):
+              continue
+         if linha["lin"] > 28:
+              break
+         else:
+              user_functions.posicionarCursor(linha["lin"], linha["col"])
+              print(linha["value"])
+    user_functions.posicionarCursor(2, 2)
 
 while opcao != 9:
     try:
@@ -40,6 +52,11 @@ while opcao != 9:
 
         if opcao == 9:
             break;
+    
+        if opcao == 1:
+             app = ConrrentistasController()
+             app.iniciar()
+             limpar_tela()
 
     except ValueError:
             user_functions.limpar_linha(linha_mensagem, 2, 98)
