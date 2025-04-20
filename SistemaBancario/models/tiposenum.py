@@ -6,7 +6,7 @@ class TipoTransacao(Enum):
 
 class TipoContaCorrente(Enum):
     POUPANCA = 1
-    CONTACORRENTE = 2
+    CONTA_CORRENTE = 2
 
 class StatusCorrentista(Enum):
     ATIVO = 1
@@ -20,16 +20,18 @@ class StatusContaCorrente(Enum):
     INATIVA = 3
     ENCERRADA = 4
 
-class Estados(Enum):
-    "AC" "AL" "AM" "AP" "BA" "CE" "DF" "ES" "GO"
-    "MA" "MG" "MS" "MT" "PA" "PB" "PE" "PI" "PR"
-    "RJ" "RN" "RO" "RR" "RS" "SC" "SE" "SP" "TO"
-
 class TipoOperacao(Enum):
     CONSULTA = 0
     INCLUSAO = 1
     ALTERACAO = 2
     EXCLUSAO = 3
+
+estados = [ 
+    "AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO",
+    "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR",
+    "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO"
+]
+
 
 OCULTAR_CURSOR = '\033[?25l'
 MOSTRAR_CURSOR = '\033[?25h'

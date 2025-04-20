@@ -1,0 +1,9 @@
+num_cpf;nome;endereco;numero;complemento;bairro;cidade;uf;cep;data_nasc;telefone;status
+12345678901;andré rogério bononi;rua carlos gomes;1974;;centro;sertãozinho;sp;14160530;03121969;16-99193-3081;RESTRITO
+12345678902;elenice de oliveira martins bononi;rua carlos gomes;1974;;centro;sertãozinho;sp;14160530;19021969;16-99382-3115;ATIVO
+12345678903;carla martins bononi;rua carlos gomes;1974;;centro;sertãozinho;sp;14160530;30031995;16-99218-5083;ATIVO
+12345678904;andré rogério bononi jr;rua carlos gomes;1974;;centro;sertãozinho;sp;14160530;31082001;16-99163-9256;ATIVO
+12345678905;Iraide Christina da Silva Bononi;rua ginez vivanco solano;567;;Cohab VI;sertãozinho;sp;14177338;20041951;16-99323-6585;ATIVO
+12345678906;Maria de Oliveira Martins;rua Giuseppe Baccega;67;;Cohab III;sertãozinho;sp;14177232;04061944;16-3942-1144;ATIVO
+12345678907;Juvercino Alves Martins;rua Giuseppe Baccega;67;;Cohab III;sertãozinho;sp;14177232;24101944;16-3942-1144;ATIVO
+12345678908;Sérgio Ednei Bononi;rua ginez vivanco solano;567;;Cohab VI;sertãozinho;sp;14177338;03031977;17-99799-9047;INATIVO
