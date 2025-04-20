@@ -1,5 +1,5 @@
 from datetime import date
-from models.tiposenum import PRETO_NO_BRANCO, RESET
+
 
 layout_tela_principal = [
     { "lin":  1, "col": 1, "value" : "╔═══════════════════════════════════════════════════════════════════════════╦══════════════════════╗" },
