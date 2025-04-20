@@ -28,9 +28,6 @@ campos_correntista = {
                  "ativo"    : { "col": 61, },
                  "restrito" : { "col": 73 },
                  "inativo"  : { "col" : 88 } }
-                #  "ativo"    : {"lin": 17, "col": 61, },
-                #  "restrito" : {"lin": 17, "col": 73 },
-                #  "inativo"  : {"lin": 17, "col" : 88 } }
 }
 
 linha_mensagem = 30
