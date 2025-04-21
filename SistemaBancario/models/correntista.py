@@ -44,11 +44,12 @@ class Correntista:
         banco_dados.Lista_Correntistas[self.num_cpf] = self
         banco_dados.salvar_correntistas()
 
+    def excluir_correntista(num_cpf: int):
+        correntista = banco_dados.Lista_Correntistas.pop(num_cpf, None)
+        banco_dados.salvar_correntistas()
+
     def get_correntista_por_cpf(num_cpf: int):
         return banco_dados.Lista_Correntistas.get(num_cpf)
-
-    def excluir_correntista(num_cpf: int):
-        return banco_dados.Lista_Correntistas.pop(num_cpf, None)
 
     def exibir_dados_em_tela(self, config_tela):
         for campo, valor in vars(self).items():

@@ -27,7 +27,10 @@ class SaldoConta:
         banco_dados.salvar_saldo_contas()
         
     def excluir_saldo(num_conta: int):
-        return banco_dados.Lista_SaldoContas.pop(num_conta)
+        saldo = banco_dados.Lista_SaldoContas.pop(num_conta)
+        if saldo:
+            banco_dados.salvar_saldo_contas()
+        return saldo
     
     def exibir_dados_saldo(self, config_tela):
         pass

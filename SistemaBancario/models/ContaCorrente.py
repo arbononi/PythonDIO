@@ -39,9 +39,11 @@ class ContaCorrente:
         return banco_dados.Lista_ContaCorrente.get(num_conta)
         
     def excluir_conta(num_conta: int):
-        saldo = SaldoConta.excluir_saldo(num_conta)        
-        return banco_dados.Lista_ContaCorrente.pop(num_conta, None)
-
+        conta = banco_dados.Lista_ContaCorrente.pop(num_conta, None)
+        if conta:
+            saldo = SaldoConta.excluir_saldo(num_conta)
+        banco_dados.salvar_contas()
+        
     def proximo_num_conta():
         if not banco_dados.Lista_ContaCorrente:
             return 1

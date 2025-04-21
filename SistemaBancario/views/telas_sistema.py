@@ -41,6 +41,8 @@ titulos_telas = {
     "relatorio_correntista" : "RELAÇÃO DOS CORRENTISTAS CADASTRADOS".center(75, " "),
     "cadastro_contacorrente" : "CADASTRO DE CONTA CORRENTE".center(75, " "),
     "relatorio_contacorrente" : "RELAÇÃO DE CONTAS CADASTRADAS".center(75, " "),
+    "lancamento_transacao" : "LANÇAMENTO DE TRANSAÇÕES".center(98, " "),
+    "relatorio_transacao" : "RELAÇÃO DAS TRANSAÇÕES REGISTRADAS".center(75, " ")
 }
 
 layout_correntistas = [
@@ -86,4 +88,27 @@ layout_rel_contas = [
     { "lin":  6, "col" : 1, "value" : "║            ║                ║                ║                                      ║            ║" },
     { "lin": 29, "col" : 1, "value" : "╠════════════╩════════════════╩════════════════╩══════════════════════════════════════╩════════════╣" },
     { "lin": 30, "col" : 1, "value" : "║ (P)RÓXIMA PÁGINA                                                                      (R)ETORNAR ║" }
+]
+
+layout_transacoes = [
+    { "lin":  5, "col" : 1, "value" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
+    { "lin":  7, "col" : 1, "value" : "║  Transação Nº: [          ]                      ┌──────────────────────────┐                    ║" },
+    { "lin":  8, "col" : 1, "value" : "║                                                  │ Data: [               ]  │                    ║" },
+    { "lin":  9, "col" : 1, "value" : "║  Conta Nº ...: [          ]                      ├──────────────────────────┤                    ║" },
+    { "lin": 10, "col" : 1, "value" : "║  [                                         ]     │      Tipo Transação      │                    ║" },
+    { "lin": 11, "col" : 1, "value" : "║                                                  ├──────────────────────────┤                    ║" },
+    { "lin": 12, "col" : 1, "value" : "║  Saldo Atual : [              ]                  │ ( ) Depósito   ( ) Saque │                    ║" },
+    { "lin": 13, "col" : 1, "value" : "║                                                  │                          │                    ║" },
+    { "lin": 14, "col" : 1, "value" : "║  Saldo Final : [              ]                  │ Valor : [              ] │                    ║" },
+    { "lin": 15, "col" : 1, "value" : "║                                                  └──────────────────────────┘                    ║" },
+    { "lin": 30, "col" : 1, "value" : "(N)OVA      (A)LTERAR      (E)XCLUIR      (C)ONSULTAR      (L)ISTAR      (R)ETORNAR".center(98, " ") }
+]
+
+layout_rel_transacoes = [
+    { "lin":  3, "col": 1, "value" : "╠══════════════════╦════════════╦════════════╦═════════════════╦════════════╩═══╦══════════════════╣" },
+    { "lin":  4, "col": 1, "value" : "║ DATA/HORA        ║ CONTA Nº   ║ TIPO MOVTO ║ SALDO  ANTERIOR ║  VALOR  MOVTO  ║   SALDO  ATUAL   ║" },
+    { "lin":  5, "col": 1, "value" : "╠══════════════════╬════════════╬════════════╬═════════════════╬════════════════╬══════════════════╣" },
+    { "lin":  6, "col": 1, "value" : "║                  ║            ║            ║                 ║                ║                  ║" },
+    { "lin": 29, "col": 1, "value" : "╠══════════════════╩════════════╩════════════╩═════════════════╩════════════════╩══════════════════╣" },
+    { "lin": 30, "col": 1, "value" : "║ (P)ROXIMA PÁGINA                                                                      (R)ETORNAR ║" }
 ]
