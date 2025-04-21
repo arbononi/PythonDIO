@@ -1,5 +1,6 @@
-from utils import user_functions
-from views.correntistas_view import iniciar, novo_cadastro, alterar_cadastro, excluir_cadastro, consultar_cadastro, visualizar_relatorio
+from Utils import user_functions
+from Views.Correntista_View import iniciar, novo_cadastro, alterar_cadastro, excluir_cadastro, consultar_cadastro, visualizar_relatorio
+from Models.Correntista import Correntista
 
 opcoes_disponiveis = [ "N", "A", "E", "C", "L", "R" ]
 

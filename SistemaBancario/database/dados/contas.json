@@ -1,0 +1,56 @@
+{
+    "1": {
+        "num_conta": 1,
+        "num_cpf": 12345678901,
+        "data_abertura": "2025-04-20",
+        "limite_especial": 500.0,
+        "tipo_conta": "CONTA_CORRENTE",
+        "status": "ATIVA",
+        "data_encerramento": "0001-01-01"
+    },
+    "2": {
+        "num_conta": 2,
+        "num_cpf": 12345678902,
+        "data_abertura": "2025-04-20",
+        "limite_especial": 1000.0,
+        "tipo_conta": "CONTA_CORRENTE",
+        "status": "ATIVA",
+        "data_encerramento": "0001-01-01"
+    },
+    "3": {
+        "num_conta": 3,
+        "num_cpf": 12345678903,
+        "data_abertura": "2025-04-20",
+        "limite_especial": 1500.0,
+        "tipo_conta": "CONTA_CORRENTE",
+        "status": "ATIVA",
+        "data_encerramento": "0001-01-01"
+    },
+    "4": {
+        "num_conta": 4,
+        "num_cpf": 12345678904,
+        "data_abertura": "2025-04-20",
+        "limite_especial": 1500.0,
+        "tipo_conta": "CONTA_CORRENTE",
+        "status": "ATIVA",
+        "data_encerramento": "0001-01-01"
+    },
+    "5": {
+        "num_conta": 5,
+        "num_cpf": 12345678905,
+        "data_abertura": "2025-04-20",
+        "limite_especial": 0.0,
+        "tipo_conta": "POUPANCA",
+        "status": "ATIVA",
+        "data_encerramento": "0001-01-01"
+    },
+    "6": {
+        "num_conta": 6,
+        "num_cpf": 12345678908,
+        "data_abertura": "2025-04-20",
+        "limite_especial": 0.0,
+        "tipo_conta": "POUPANCA",
+        "status": "PENDENTE",
+        "data_encerramento": "0001-01-01"
+    }
+}

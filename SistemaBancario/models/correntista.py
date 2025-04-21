@@ -1,9 +1,9 @@
 from datetime import date
 from enum import Enum
-from models.tiposenum import StatusCorrentista
-from utils import user_functions
-from utils.user_functions import posicionarCursor
-from database.tables import lista_correntistas
+from Models.TiposEnum import StatusCorrentista
+from Utils import user_functions
+from Utils.user_functions import posicionarCursor
+from Database import banco_dados
 
 class Correntista:
     def __init__(self, num_cpf: int, nome: str, endereco: str, numero: str, complemento: str, bairro: str,
@@ -22,14 +22,33 @@ class Correntista:
         self.status = status
         self.data_cadastro = data_cadastro
 
-    def salvar_correntista(self):
-        lista_correntistas[str(self.num_cpf)] = self
+    def to_dict(self):
+        return {
+            "num_cpf": self.num_cpf,
+            "nome": self.nome,
+            "endereco": self.endereco,
+            "numero": self.numero,
+            "complemento": self.complemento,
+            "bairro": self.bairro,
+            "cidade": self.cidade,
+            "uf": self.uf,
+            "cep": self.cep,
+            "data_nasc": self.data_nasc.isoformat(),
+            "telefone": self.telefone,
+            "status": str(self.status.name),
+            "data_cadastro": self.data_cadastro.isoformat()
+        }   
+    
+
+    def add_correntista(self):
+        banco_dados.Lista_Correntistas[self.num_cpf] = self
+        banco_dados.salvar_correntistas()
 
     def get_correntista_por_cpf(num_cpf: int):
-        return lista_correntistas.get(str(num_cpf))
+        return banco_dados.Lista_Correntistas.get(num_cpf)
 
     def excluir_correntista(num_cpf: int):
-        return lista_correntistas.pop(str(num_cpf), None)
+        return banco_dados.Lista_Correntistas.pop(num_cpf, None)
 
     def exibir_dados_em_tela(self, config_tela):
         for campo, valor in vars(self).items():
@@ -37,14 +56,9 @@ class Correntista:
             if not layout:
                 continue
             if campo == "status":
-                if valor == StatusCorrentista.RESTRITO:
-                    layout1 = layout["restrito"]
-                elif valor == StatusCorrentista.INATIVO:
-                    layout1 = layout["inativo"]
-                else:
-                    layout1 = layout["ativo"]
-                posicionarCursor(layout["lin"], layout1["col"])
-                print("X")
+                name = valor.name.lower()
+                posicionarCursor(layout["lin"], layout[name])
+                print("•")
                 continue
             else:
                 posicionarCursor(layout["lin"], layout["col"]) 
@@ -62,7 +76,6 @@ class Correntista:
             else:
                 print(valor)
 
-    
     def validar_nome(nome: str):
         if nome == "":
             return False, "Nome do Correntista não pode ficar em branco!"

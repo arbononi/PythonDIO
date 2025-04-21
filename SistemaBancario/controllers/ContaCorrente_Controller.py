@@ -1,6 +1,6 @@
-from utils.user_functions import exibirMensagem, limpar_linha, esperar_tecla
-from views.contacorrente_view import iniciar, novo_cadastro, visualizar_cadastro
- #, alterar_cadastro, excluir_cadastro, consultar_cadastro, visualizar_relatorio
+from Utils.user_functions import exibirMensagem, limpar_linha, esperar_tecla
+from Views.ContaCorrente_View import iniciar, novo_cadastro, alterear_cadastro, visualizar_cadastro, visualizar_relatorio
+from Models.ContaCorrente import ContaCorrente
 
 opcoes_disponiveis = [ "N", "A", "E", "C", "L", "R" ]
 
@@ -20,5 +20,9 @@ class ContaCorrentesController:
                 continue
             if opcao == "N":
                 novo_cadastro()
+            elif opcao == "A":
+                alterear_cadastro()
             elif opcao == "C":
                 visualizar_cadastro()
+            elif opcao == "L":
+                visualizar_relatorio()

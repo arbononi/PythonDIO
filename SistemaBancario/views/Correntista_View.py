@@ -1,13 +1,10 @@
-import msvcrt
-from enum import Enum
 from datetime import date
-from views.telas_sistema import titulos_telas, layout_correntistas, layout_rel_correntistas, layout_tela_principal
-from utils import user_functions
-from utils.user_functions import posicionarCursor
-from models.tiposenum import StatusCorrentista
-from models.tiposenum import MOSTRAR_CURSOR, OCULTAR_CURSOR
-from models.correntista import Correntista
-from database.tables import lista_correntistas
+from Database import banco_dados
+from Views.Telas_Sistema import titulos_telas, layout_correntistas, layout_rel_correntistas, layout_tela_principal
+from Utils import user_functions
+from Utils.user_functions import posicionarCursor, limpar_linha, exibirMensagem, esperar_tecla
+from Models.TiposEnum import StatusCorrentista
+from Models.Correntista import Correntista
 
 campos_correntista = {
     "num_cpf": { "lin": 7, "col" : 13, "size" : 14 },
@@ -23,11 +20,7 @@ campos_correntista = {
     "uf" : { "lin": 15, "col" : 78, "size" : 2 },
     "cep" : { "lin": 15, "col": 88, "size" : 10 },
     "telefone" : { "lin": 17, "col": 13, "size" : 13 },
-    "status" : { "size" : 1,
-                 "lin" : 17,
-                 "ativo"    : { "col": 61, },
-                 "restrito" : { "col": 73 },
-                 "inativo"  : { "col" : 88 } }
+    "status" : { "size" : 1, "lin" : 17, "ativo" : 61, "restrito" : 73 , "inativo" : 88 }
 }
 
 linha_mensagem = 30
@@ -40,45 +33,39 @@ def preencher_tela(correntista: Correntista):
 def limpar_campos_tela(flag_visualizar: bool=False):
     for campo, valor in campos_correntista.items():
         if campo == "status":
-            for status_tipo, status_info in valor.items():
-                if status_tipo == "size":
-                    size = status_info
-                elif status_tipo == "lin":
-                    lin = status_info
-                else:
-                    user_functions.limpar_linha(lin, status_info["col"], size, not flag_visualizar)
-                    user_functions.limpar_linha(lin, status_info["col"], size, not flag_visualizar)
-                    user_functions.limpar_linha(lin, status_info["col"], size, not flag_visualizar)
+            limpar_linha(valor["lin"], valor["ativo"], valor["size"], not flag_visualizar)
+            limpar_linha(valor["lin"], valor["restrito"], valor["size"], not flag_visualizar)
+            limpar_linha(valor["lin"], valor["inativo"], valor["size"], not flag_visualizar)
         else:
-            user_functions.limpar_linha(valor["lin"], valor["col"], valor["size"], not flag_visualizar)
+            limpar_linha(valor["lin"], valor["col"], valor["size"], not flag_visualizar)
 
 def mensagem_padrao(informacao: str="", exibir_mensagem_padrao: bool=True):
-    user_functions.limpar_linha()
+    limpar_linha()
     if exibir_mensagem_padrao:
-        user_functions.exibirMensagem(linha_mensagem, 3, f"{informacao}. A qualquer momento digite FIM para sair")
+        exibirMensagem(linha_mensagem, 3, f"{informacao}. A qualquer momento digite FIM para sair")
     else:
-        user_functions.exibirMensagem(linha_mensagem, 3, informacao)
+        exibirMensagem(linha_mensagem, 3, informacao)
 
 def limpar_tela_relatorio():
     info = layout_rel_correntistas[3]
     for linha in range(6, 29):
         posicionarCursor(linha, 1)
-        print(info)
+        print(info["value"])
 
 def digitar_cpf():
     info = campos_correntista["num_cpf"]
     while True:
         try:
-            user_functions.limpar_linha()
-            user_functions.exibirMensagem(linha_mensagem, 3, "Digite o Número do CPF ou 999999999999 pra sair")
+            limpar_linha()
+            exibirMensagem(linha_mensagem, 3, "Digite o Número do CPF ou 999999999999 pra sair")
             posicionarCursor(info["lin"], info["col"])
             num_cpf = int(input())
             break
         except ValueError:
-            user_functions.exibirMensagem(linha_mensagem, 3, "Número do CPF inválido. Digite apenas os números")
-            user_functions.esperar_tecla()
-            user_functions.limpar_linha()
-    user_functions.limpar_linha()
+            exibirMensagem(linha_mensagem, 3, "Número do CPF inválido. Digite apenas os números")
+            esperar_tecla()
+            limpar_linha()
+    limpar_linha()
     return num_cpf
 
 def digitar_nome():
@@ -95,12 +82,12 @@ def digitar_nome():
             nome = correntista_atual.nome
         fl_ok, mensagem = Correntista.validar_nome(nome)
         if not fl_ok:
-            user_functions.limpar_linha()
-            user_functions.exibirMensagem(linha_mensagem, 3, mensagem)
-            user_functions.esperar_tecla()
+            limpar_linha()
+            exibirMensagem(linha_mensagem, 3, mensagem)
+            esperar_tecla()
             continue
         nome = nome.title()
-        user_functions.limpar_linha(info["lin"], info["col"], info["size"])
+        limpar_linha(info["lin"], info["col"], info["size"])
         posicionarCursor(info["lin"], info["col"])
         print(nome)
         break
@@ -121,10 +108,10 @@ def digitar_data_nasc():
             str_data = user_functions.formatar_data(correntista_atual.data_nasc)
         fl_ok, data_nasc, mensagem = user_functions.validar_data(str_data)
         if not fl_ok:
-            user_functions.limpar_linha()
-            user_functions.exibirMensagem(linha_mensagem, 3, mensagem)
-            user_functions.esperar_tecla()
-            user_functions.limpar_linha()
+            limpar_linha()
+            exibirMensagem(linha_mensagem, 3, mensagem)
+            esperar_tecla()
+            limpar_linha()
             continue
         posicionarCursor(info["lin"], info["col"])
         print(user_functions.formatar_data(data_nasc))
@@ -145,7 +132,7 @@ def digitar_endereco():
         fl_sair = True
     elif endereco == "" and correntista_atual:
         endereco = correntista_atual.endereco
-    user_functions.limpar_linha(info["lin"], info["col"], info["size"])
+    limpar_linha(info["lin"], info["col"], info["size"])
     posicionarCursor(info["lin"], info["col"])
     print(endereco.title())
     return fl_sair, endereco.title()
@@ -161,7 +148,7 @@ def digitar_numero():
         fl_sair = True
     elif numero == "" and correntista_atual:
         numero = correntista_atual.numero
-    user_functions.limpar_linha(info["lin"], info["col"], info["size"])
+    limpar_linha(info["lin"], info["col"], info["size"])
     posicionarCursor(info["lin"], info["col"])
     print(numero)
     return fl_sair, numero
@@ -177,7 +164,7 @@ def digitar_complemento():
         fl_sair = True
     elif complemento == "" and correntista_atual:
         complemento = correntista_atual.complemento
-    user_functions.limpar_linha(info["lin"], info["col"], info["size"])
+    limpar_linha(info["lin"], info["col"], info["size"])
     posicionarCursor(info["lin"], info["col"])
     print(complemento.title())
     return fl_sair, complemento.title()
@@ -193,7 +180,7 @@ def digitar_bairro():
         fl_sair = True
     elif bairro == "" and correntista_atual:
         bairro = correntista_atual.bairro
-    user_functions.limpar_linha(info["lin"], info["col"], info["size"])
+    limpar_linha(info["lin"], info["col"], info["size"])
     posicionarCursor(info["lin"], info["col"])
     print(bairro.title())
     return fl_sair, bairro.title()
@@ -209,7 +196,7 @@ def digitar_cidade():
         fl_sair = True
     elif cidade == "" and correntista_atual:
         cidade = correntista_atual.cidade
-    user_functions.limpar_linha(info["lin"], info["col"], info["size"])
+    limpar_linha(info["lin"], info["col"], info["size"])
     posicionarCursor(info["lin"], info["col"])
     print(cidade.title())
     return fl_sair, cidade.title()
@@ -229,9 +216,9 @@ def digitar_uf():
             uf = correntista_atual.uf
         fl_ok, uf, mensagem = user_functions.validar_estado(uf)
         if not fl_ok:
-            user_functions.exibirMensagem(linha_mensagem, 3, mensagem)
-            user_functions.esperar_tecla()
-            user_functions.limpar_linha()
+            exibirMensagem(linha_mensagem, 3, mensagem)
+            esperar_tecla()
+            limpar_linha()
             continue
         posicionarCursor(info["lin"], info["col"])
         print(uf)
@@ -248,20 +235,20 @@ def digitar_cep():
         str_cep = input()
         if str_cep.upper() == "FIM":
             fl_sair = True
+            cep = None
             break
         elif str_cep == "" and correntista_atual:
             str_cep = str(correntista_atual.cep)
         fl_ok, cep, mensagem = user_functions.validar_cep(str_cep)
         if not fl_ok:
-            user_functions.limpar_linha()
-            user_functions.exibirMensagem(linha_mensagem, 3, mensagem)
-            user_functions.esperar_tecla()
+            limpar_linha()
+            exibirMensagem(linha_mensagem, 3, mensagem)
+            esperar_tecla()
             continue
         str_cep = user_functions.formatar_cep(cep)
         posicionarCursor(info["lin"], info["col"])
         print(str_cep)
         break
-
     return fl_sair, cep
 
 def digitar_telefone():
@@ -275,7 +262,7 @@ def digitar_telefone():
         fl_sair = True
     elif telefone == "" and correntista_atual:
         telefone = correntista_atual.telefone
-    user_functions.limpar_linha(info["lin"], info["col"], info["size"])
+    limpar_linha(info["lin"], info["col"], info["size"])
     posicionarCursor(info["lin"], info["col"])
     print(telefone)
     return fl_sair, telefone
@@ -284,36 +271,36 @@ def digitar_status():
     fl_sair = False
     global correntista_atual
     info = campos_correntista["status"]
-    ativo = info["ativo"]
-    restrito = info["restrito"]
-    inativo = info["inativo"]
-    user_functions.limpar_linha()
+    limpar_linha()
     flag_status = ""
     status = None
     lin = info["lin"]
-    col = ativo["col"]
+    col = info["ativo"]
+    titulo = "Ativo"
     while not status:
-        mensagem_padrao("Marque X no status correspondente", False)
+        mensagem_padrao(f"Marque X para setar o correntista como {titulo}", False)
         posicionarCursor(lin, col)
         flag_status = input().upper()
         if flag_status == "X":
-            if col == ativo["col"]:
+            if col == info["ativo"]:
                 status = StatusCorrentista.ATIVO
-            elif col == restrito["col"]:
+            elif col == info["restrito"]:
                 status = StatusCorrentista.RESTRITO
             else:
                 status = StatusCorrentista.INATIVO
             break
-        elif col == ativo["col"]:
-            col = restrito["col"]
+        elif col == info["ativo"]:
+            col = info["restrito"]
+            titulo = "Restrito"
             continue
-        elif col == restrito["col"]:
-            col = inativo["col"]
+        elif col == info["restrito"]:
+            col = info["inativo"]
+            titulo = "Inativo"
             continue
         elif flag_status not in status_permitidos:
-            user_functions.exibirMensagem("Informe X para marcar o status ou deixe em branco!")
-            user_functions.esperar_tecla()
-            user_functions.limpar_linha()
+            exibirMensagem("Informe X para marcar o status ou deixe em branco!")
+            esperar_tecla()
+            limpar_linha()
         break
     
     if not status:
@@ -322,19 +309,18 @@ def digitar_status():
         else:
             status = StatusCorrentista.ATIVO
     
-    if correntista_atual and status != correntista_atual.status:
-        if status == StatusCorrentista.ATIVO:
-            user_functions.exibir_valor(info["lin"], ativo["col"], "X")
-            user_functions.exibir_valor(info["lin"], restrito["col"], " ")
-            user_functions.exibir_valor(info["lin"], inativo["col"], " ")
-        elif status == StatusCorrentista.RESTRITO:
-            user_functions.exibir_valor(info["lin"], ativo["col"], " ")
-            user_functions.exibir_valor(info["lin"], restrito["col"], "X")
-            user_functions.exibir_valor(info["lin"], inativo["col"], " ")
-        else:
-            user_functions.exibir_valor(info["lin"], ativo["col"], " ")
-            user_functions.exibir_valor(info["lin"], restrito["col"], " ")
-            user_functions.exibir_valor(info["lin"], inativo["col"], "X")
+    if status == StatusCorrentista.ATIVO:
+        user_functions.exibir_valor(info["lin"], info["ativo"], "•")
+        user_functions.exibir_valor(info["lin"], info["restrito"], " ")
+        user_functions.exibir_valor(info["lin"], info["inativo"], " ")
+    elif status == StatusCorrentista.RESTRITO:
+        user_functions.exibir_valor(info["lin"], info["ativo"], " ")
+        user_functions.exibir_valor(info["lin"], info["restrito"], "•")
+        user_functions.exibir_valor(info["lin"], info["inativo"], " ")
+    else:
+        user_functions.exibir_valor(info["lin"], info["ativo"], " ")
+        user_functions.exibir_valor(info["lin"], info["restrito"], " ")
+        user_functions.exibir_valor(info["lin"], info["inativo"], "•")
 
     return fl_sair, status
     
@@ -379,25 +365,25 @@ def processar_digitacao(num_cpf: int):
         return
 
     while True:
-        user_functions.exibirMensagem(linha_mensagem, 3, "Confirma os dados (S/N): ")
-        confimar = user_functions.esperar_tecla().upper()
+        exibirMensagem(linha_mensagem, 3, "Confirma os dados (S/N): ")
+        confimar = esperar_tecla().upper()
         if confimar != "S" and confimar != "N":
-            user_functions.exibirMensagem(linha_mensagem, 3, "Digite apenas S ou N")
-            user_functions.esperar_tecla()
+            exibirMensagem(linha_mensagem, 3, "Digite apenas S ou N")
+            esperar_tecla()
             continue
         break
     if confimar == "S":
-        Correntista.salvar_correntista(Correntista(num_cpf, nome, endereco, numero, complemento, bairro,
+        Correntista.add_correntista(Correntista(num_cpf, nome, endereco, numero, complemento, bairro,
                                             cidade, uf, cep, data_nasc, telefone, status, date.today()))
         
 def iniciar():
     user_functions.limpar_tela()
-    user_functions.posicionarCursor(4, 2)
+    posicionarCursor(4, 2)
     print(titulos_telas["cadastro_correntista"])
     user_functions.desenhar_tela(layout_correntistas)
     limpar_campos_tela()
     posicionarCursor(linha_mensagem, 2)
-    opcao = user_functions.esperar_tecla().upper()
+    opcao = esperar_tecla().upper()
     return opcao
 
 def novo_cadastro():
@@ -407,9 +393,9 @@ def novo_cadastro():
             break
         correntista = Correntista.get_correntista_por_cpf(num_cpf)
         if correntista:
-            user_functions.exibirMensagem(linha_mensagem, 3, "CPF já cadastrado!")
-            user_functions.esperar_tecla()
-            user_functions.limpar_linha()
+            exibirMensagem(linha_mensagem, 3, "CPF já cadastrado!")
+            esperar_tecla()
+            limpar_linha()
             continue
         processar_digitacao(num_cpf)
         break
@@ -422,9 +408,9 @@ def alterar_cadastro():
             break
         correntista_atual = Correntista.get_correntista_por_cpf(num_cpf)
         if not correntista_atual:
-            user_functions.exibirMensagem(linha_mensagem, 3, "CPF não cadastrado!")
-            user_functions.esperar_tecla()
-            user_functions.limpar_linha()
+            exibirMensagem(linha_mensagem, 3, "CPF não cadastrado!")
+            esperar_tecla()
+            limpar_linha()
             continue
         limpar_campos_tela(True)
         Correntista.exibir_dados_em_tela(correntista_atual, campos_correntista)
@@ -439,9 +425,9 @@ def excluir_cadastro():
             break
         correntista_atual = Correntista.get_correntista_por_cpf(num_cpf)
         if not correntista_atual:
-            user_functions.exibirMensagem(linha_mensagem, 3, "CPF não cadastrado!")
-            user_functions.esperar_tecla()
-            user_functions.limpar_linha()
+            exibirMensagem(linha_mensagem, 3, "CPF não cadastrado!")
+            esperar_tecla()
+            limpar_linha()
             continue
         limpar_campos_tela(True)
         Correntista.exibir_dados_em_tela(correntista_atual, campos_correntista)
@@ -452,12 +438,12 @@ def excluir_cadastro():
             if confirmar == "S":
                 excluido = Correntista.excluir_correntista(num_cpf)
                 if excluido:
-                    user_functions.exibirMensagem(linha_mensagem, 3, "Correntista excluído com sucesso!")
-                    user_functions.esperar_tecla()
+                    exibirMensagem(linha_mensagem, 3, "Correntista excluído com sucesso!")
+                    esperar_tecla()
                     break
                 else:
-                    user_functions.exibirMensagem(linha_mensagem, 3, "Exclusão não efetuada! Problemas no processo!")
-                    user_functions.esperar_tecla()
+                    exibirMensagem(linha_mensagem, 3, "Exclusão não efetuada! Problemas no processo!")
+                    esperar_tecla()
                     break
         break
 
@@ -469,29 +455,28 @@ def consultar_cadastro():
             break
         correntista_atual = Correntista.get_correntista_por_cpf(num_cpf)
         if not correntista_atual:
-            user_functions.exibirMensagem(linha_mensagem, 3, "CPF não cadastrado!")
-            user_functions.esperar_tecla()
-            user_functions.limpar_linha()
+            exibirMensagem(linha_mensagem, 3, "CPF não cadastrado!")
+            esperar_tecla()
+            limpar_linha()
             continue
         limpar_campos_tela(True)
         Correntista.exibir_dados_em_tela(correntista_atual, campos_correntista)
-        user_functions.exibirMensagem(linha_mensagem, 3, "Pressione qualquer tecla para continuar...")
-        user_functions.esperar_tecla()
+        exibirMensagem(linha_mensagem, 3, "Pressione qualquer tecla para continuar...")
+        esperar_tecla()
         break
 
 def visualizar_relatorio():
     user_functions.limpar_tela()
-    user_functions.limpar_linha(2, 2, 75)
+    limpar_linha(2, 2, 75)
     posicionarCursor(2, 2)
     print(titulos_telas["relatorio_correntista"])
     user_functions.desenhar_tela(layout_rel_correntistas, 6, 28)
-    if not lista_correntistas:
-        user_functions.exibirMensagem(linha_mensagem, 3, "Nenhum correntista cadastrado!")
-        user_functions.esperar_tecla()
-        return
+    if not banco_dados.Lista_Correntistas:
+        exibirMensagem(linha_mensagem, 3, "Nenhum correntista cadastrado!")
+        esperar_tecla()
     else:
         linha = 5
-        for cpf, correntista in sorted(lista_correntistas.items(), key=lambda item: item[1].nome):
+        for cpf, correntista in sorted(banco_dados.Lista_Correntistas.items(), key=lambda item: item[1].nome):
             linha += 1
             cpf_formatado = user_functions.formatar_cpf(correntista.num_cpf)
             data_formatada = user_functions.formatar_data(correntista.data_nasc)
@@ -499,16 +484,18 @@ def visualizar_relatorio():
             print(cpf_formatado, correntista.nome.ljust(50, " "), correntista.telefone.ljust(13, " "), data_formatada, sep= " ║ ")
             if linha == 28:
                 posicionarCursor(linha_mensagem, 10)
-                opcao = user_functions.esperar_tecla().upper()
+                opcao = esperar_tecla().upper()
                 if opcao == "R":
                     break
                 else:
                     limpar_tela_relatorio()
-    user_functions.limpar_linha()
-    user_functions.exibirMensagem(linha_mensagem, 3, "Fim da listagem. Pressione qualquer tecla para retornar ")
-    user_functions.esperar_tecla()
+        limpar_linha()
+        exibirMensagem(linha_mensagem, 3, "Fim da listagem. Pressione qualquer tecla para retornar ")
+        esperar_tecla()
     user_functions.limpar_tela()
-    user_functions.posicionarCursor(4, 2)
+    posicionarCursor(2, 2)
+    print(titulos_telas["menu_principal"])
+    posicionarCursor(4, 2)
     print(titulos_telas["cadastro_correntista"])
     linha3 = layout_tela_principal[2]
     linha29 = layout_tela_principal[28]

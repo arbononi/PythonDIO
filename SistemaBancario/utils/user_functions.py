@@ -1,9 +1,8 @@
 import locale
 import sys
 import msvcrt
-from models.tiposenum import estados, OCULTAR_CURSOR, MOSTRAR_CURSOR
+from Models.TiposEnum import estados, OCULTAR_CURSOR, MOSTRAR_CURSOR
 from datetime import datetime, date 
-from models.tiposenum import PRETO_NO_BRANCO, RESET
 
 def configurar_locale():
     try:
@@ -163,8 +162,8 @@ def validar_data_hora(entrada: str, permitir_futuro=False):
         try:
             data = datetime.strptime(entrada, formato)
             if not permitir_futuro and data.date() > date.today():
-                return False, None, "❌ A data não pode ser no futuro."
+                return False, None, "A data não pode ser no futuro."
             return True, data, None
         except ValueError:
             continue  # Tenta o próximo formato
-    return False, None, "❌ Formato inválido. Tente novamente com um dos formatos aceitos."
+    return False, None, "Formato inválido. Tente novamente com um dos formatos aceitos."

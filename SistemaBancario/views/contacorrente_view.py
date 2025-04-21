@@ -1,10 +1,11 @@
 from datetime import date
-from views.telas_sistema import titulos_telas, layout_contacorrente, layout_tela_principal
-from utils import user_functions
-from utils.user_functions import posicionarCursor, limpar_linha, exibir_valor, exibirMensagem, esperar_tecla
-from models.tiposenum import TipoContaCorrente, StatusContaCorrente, TipoOperacao
-from models.conta_corrente import ContaCorrente
-from models.correntista import Correntista
+from Database import banco_dados
+from Views.Telas_Sistema import titulos_telas, layout_contacorrente, layout_rel_contas, layout_tela_principal
+from Utils import user_functions
+from Utils.user_functions import posicionarCursor, limpar_linha, exibir_valor, exibirMensagem, esperar_tecla
+from Models.TiposEnum import TipoContaCorrente, StatusContaCorrente, TipoOperacao
+from Models.ContaCorrente import ContaCorrente
+from Models.Correntista import Correntista
 
 campos_contacorrente = {
     "num_conta" : { "lin":  7, "col": 14, "size": 10 },
@@ -68,8 +69,14 @@ def digitar_cpf():
             limpar_linha()
             mensagem_padrao("Digite o CPF do cliente. 99999999999 (11 números 9) para sair")
             posicionarCursor(info["lin"], info["col"])
-            num_cpf = int(input())
-            correntista = Correntista.get_correntista_por_cpf(num_cpf)
+            str_num_cpf = input()
+            if str_num_cpf == "99999999999":
+                return 99999999999
+            if str_num_cpf == "" and conta_atual:
+                num_cpf = conta_atual.num_cpf
+            else:
+                num_cpf = int(str_num_cpf)
+            correntista = banco_dados.Lista_Correntistas.get(num_cpf)
             if not correntista:
                 exibirMensagem(linha_mensagem, coluna_mensagem, "CPF não cadastrado!")
                 esperar_tecla()
@@ -128,11 +135,17 @@ def digitar_limite_especial():
             limpar_linha()
             mensagem_padrao("Informe o valor do limite. 0 para continuar")
             posicionarCursor(info["lin"], info["col"])
-            valor_limite = float(input().replace(",","_").replace(".", ",").replace("_", "."))
+            str_valor_limite = input().replace(",", "_").replace(".", ",").replace("_", ".")
+            if str_valor_limite == "" and conta_atual:
+                valor_limite = conta_atual.limite_especial
+            else:
+                valor_limite = float(str_valor_limite)
             break
         except ValueError as error:
             exibirMensagem(linha_mensagem, coluna_mensagem, error)
             esperar_tecla()
+    if valor_limite == 0 and conta_atual:
+        valor_limite = conta_atual.limite_especial
     valor_formatado = user_functions.formatar_valor(valor_limite)
     posicionarCursor(info["lin"], info["col"])
     print(valor_formatado.rjust(12, " "))
@@ -174,10 +187,13 @@ def digitar_status():
             exibir_valor(lin, info["col"], " ")
             lin = info["inativa"]
             titulo = "Inativa"
-        else:
+        elif lin == info["inativa"]:
             exibir_valor(lin, info["col"], " ")
             lin = info["encerrada"]
             titulo = "Encerrada"
+        elif conta_atual:
+            status = conta_atual.status
+            break
         continue
 
     if not status and conta_atual:
@@ -274,9 +290,15 @@ def processar_digitacao(num_conta: int, status_cad: TipoOperacao):
         else:
             data_abertura = conta_atual.data_abertura
             operacao = "alterada"
-        ContaCorrente.salvar_conta(ContaCorrente(num_conta, num_cpf, data_abertura, valor_limite, tipo_conta, status, data_encerramento))
+        ContaCorrente.add_conta(ContaCorrente(num_conta, num_cpf, data_abertura, valor_limite, tipo_conta, status, data_encerramento))
         exibirMensagem(linha_mensagem, coluna_mensagem, f"Conta {operacao} com sucesso!")
         esperar_tecla()
+
+def limpar_tela_relatorio():
+    info = layout_rel_contas[3]
+    for linha in range(6, 29):
+        posicionarCursor(linha, info["col"])
+        print(info["value"])
 
 def iniciar():
     user_functions.limpar_tela()
@@ -298,13 +320,29 @@ def novo_cadastro():
     print(user_functions.formatar_data(date.today()))
     processar_digitacao(num_conta, TipoOperacao.INCLUSAO)
 
-def visualizar_cadastro():
-    limpar_campos_tela(True)
+def alterear_cadastro():
+    global conta_atual
     while True:
+        limpar_campos_tela(True)
         num_conta = digitar_num_conta()
         if num_conta == 0:
             break
-        conta_atual = ContaCorrente.get_conta_by_numero(num_conta)
+        conta_atual = banco_dados.Lista_ContaCorrente.get(num_conta)
+        if not conta_atual:
+            exibirMensagem(linha_mensagem, coluna_mensagem, "Conta não cadastrada!")
+            esperar_tecla()
+            limpar_linha()
+            continue
+        preencher_tela(conta_atual)
+        processar_digitacao(num_conta, TipoOperacao.ALTERACAO)
+
+def visualizar_cadastro():
+    while True:
+        limpar_campos_tela(True)
+        num_conta = digitar_num_conta()
+        if num_conta == 0:
+            break
+        conta_atual = banco_dados.Lista_ContaCorrente.get(num_conta)
         if not conta_atual:
             exibirMensagem(linha_mensagem, coluna_mensagem, "Conta não cadastrada!")
             esperar_tecla()
@@ -313,4 +351,47 @@ def visualizar_cadastro():
         ContaCorrente.exibir_dados_conta(conta_atual, campos_contacorrente)
         exibirMensagem(linha_mensagem, coluna_mensagem, "Pressione qualquer tecla...")
         esperar_tecla()
-        limpar_campos_tela()
+
+def visualizar_relatorio():
+    user_functions.limpar_tela()
+    user_functions.limpar_linha(2, 2, 75)
+    posicionarCursor(2, 2)
+    print(titulos_telas["relatorio_contacorrente"])
+    user_functions.desenhar_tela(layout_rel_contas, 6, 28)
+    if not banco_dados.Lista_ContaCorrente:
+        exibirMensagem(30, 3, "Não há contas cadastradas!")
+        esperar_tecla()
+    else:
+        linha = 6
+        for num_conta, conta in banco_dados.Lista_ContaCorrente.items():
+            cpf_formatado = user_functions.formatar_cpf(conta.num_cpf)
+            correntista = banco_dados.Lista_Correntistas.get(conta.num_cpf)
+            data_abertura = user_functions.formatar_data(conta.data_abertura)
+            if not correntista:
+                nome_cliente = "Não encontrado".ljust(36, " ")[:36]
+            else:
+                nome_cliente = correntista.nome.ljust(36, " ")[:36]
+            posicionarCursor(linha, 3)
+            print(str(num_conta).rjust(10, " "), conta.tipo_conta.name.ljust(14, " "), cpf_formatado,
+                   nome_cliente, data_abertura, sep = " ║ ", end="")
+            if linha == 28:
+                posicionarCursor(linha_mensagem, 10)
+                opcao = esperar_tecla().upper()
+                if opcao == "R":
+                    break
+                else:
+                    limpar_tela_relatorio()
+            linha += 1
+        limpar_linha()
+        exibirMensagem(30, 3, "Fim da listagem. Pressione qualquer tecla para retornar...")
+        esperar_tecla()
+        user_functions.limpar_tela()
+    posicionarCursor(2, 2)
+    print(titulos_telas["menu_principal"])
+    posicionarCursor(4, 2)
+    print(titulos_telas["cadastro_contacorrente"])
+    linha3 =  layout_tela_principal[2]
+    linha29 = layout_tela_principal[28]
+    user_functions.exibir_valor(linha3["lin"], linha3["col"], linha3["value"])
+    user_functions.exibir_valor(linha29["lin"], linha29["col"], linha29["value"])
+    user_functions.desenhar_tela(layout_contacorrente)

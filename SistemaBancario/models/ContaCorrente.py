@@ -1,11 +1,9 @@
 from datetime import date
-import models.correntista
-from models.tiposenum import TipoContaCorrente, StatusContaCorrente
-from models.correntista import Correntista
-from database.tables import lista_contas
-from utils.user_functions import posicionarCursor
-from utils import user_functions
-import models
+from Models.TiposEnum import TipoContaCorrente, StatusContaCorrente
+from Utils.user_functions import posicionarCursor
+from Utils import user_functions
+from Database import banco_dados
+from Models.SaldoContas import SaldoConta
 
 class ContaCorrente:
     def __init__(self, num_conta: int, num_cpf: int, data_abertura: date, limite_especial: float,
@@ -18,19 +16,36 @@ class ContaCorrente:
         self.status = status
         self.data_encerramento = data_encerramento
 
+    def to_dict(self):
+        return {
+            "num_conta": self.num_conta,
+            "num_cpf": self.num_cpf,
+            "data_abertura": self.data_abertura.isoformat(),
+            "limite_especial": self.limite_especial,
+            "tipo_conta": self.tipo_conta.name,
+            "status": self.status.name,
+            "data_encerramento": self.data_encerramento.isoformat() if self.data_encerramento else None
+        }
+    
+    def add_conta(self):
+        banco_dados.Lista_ContaCorrente[self.num_conta] = self
+        banco_dados.salvar_contas()
+        saldo_conta = banco_dados.Lista_SaldoContas.get(self.num_conta)
+        if not saldo_conta:
+            saldo = SaldoConta(self.num_conta, self.data_abertura, 0.0)
+            SaldoConta.add_saldo(saldo)
+            
     def get_conta_by_numero(num_conta: int):
-        return lista_contas.get(num_conta)
-    
-    def salvar_conta(self):
-        lista_contas[self.num_conta] = self
-    
+        return banco_dados.Lista_ContaCorrente.get(num_conta)
+        
     def excluir_conta(num_conta: int):
-        return lista_contas.pop(num_conta, None)
+        saldo = SaldoConta.excluir_saldo(num_conta)        
+        return banco_dados.Lista_ContaCorrente.pop(num_conta, None)
 
     def proximo_num_conta():
-        if not lista_contas:
+        if not banco_dados.Lista_ContaCorrente:
             return 1
-        return max(int(k) for k in lista_contas) + 1
+        return max(int(k) for k in banco_dados.Lista_ContaCorrente) + 1
 
     def exibir_dados_conta(self, config_tela):
         for campo, valor in vars(self).items():
@@ -38,14 +53,15 @@ class ContaCorrente:
             if not layout:
                 continue
             if isinstance(valor, date):
-                if campo == "data_encerramento" and self.status != StatusContaCorrente.ENCERRADA:
-                    continue
                 posicionarCursor(layout["lin"], layout["col"])
+                if campo == "data_encerramento" and self.status != StatusContaCorrente.ENCERRADA:
+                    print(" " * 10, end="")
+                    continue
                 print(user_functions.formatar_data(valor))
             elif campo == "num_cpf":
                 posicionarCursor(layout["lin"], layout["col"])
                 print(user_functions.formatar_cpf(valor))
-                correntista = models.correntista.Correntista.get_correntista_por_cpf(valor)
+                correntista = banco_dados.Lista_Correntistas.get(valor)
                 if correntista:
                     posicionarCursor(config_tela["nome_cliente"]["lin"], config_tela["nome_cliente"]["col"])
                     print(correntista.nome.ljust(40, " ")[:40])
