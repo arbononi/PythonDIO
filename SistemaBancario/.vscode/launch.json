@@ -9,7 +9,7 @@
             "name": "Depurador do Python: Arquivo Atual",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/FintechDIO.py",
+            "program": "${workspaceFolder}/fintechDIO.py",
             "console": "integratedTerminal"
         }
     ]

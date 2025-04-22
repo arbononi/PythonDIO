@@ -97,35 +97,23 @@ def digitar_cpf():
 def digitar_tipo_conta():
     info = campos_contacorrente["tipo_conta"]
     tipo_conta = None
-    lin = info["poupanca"]
-    marcado = ""
-    titulo = "Poupança"
+    
     while not tipo_conta:
         limpar_linha()
-        mensagem_padrao(f"Tecle X para selecionar Tipo {titulo}")
-        posicionarCursor(lin, info["col"])
-        marcado = esperar_tecla(False).upper()
-        if marcado == "X":
-            if lin == info["conta_corrente"]:
-                tipo_conta = TipoContaCorrente.CONTA_CORRENTE
-            else:
-                tipo_conta = TipoContaCorrente.POUPANCA
-            break
-        elif lin == info["poupanca"]:
-            exibir_valor(lin, info["col"], " ")
-            lin = info["conta_corrente"]
-            titulo = "Conta Corrente"
-        elif lin == info["conta_corrente"]:
-            exibir_valor(lin, info["col"], " ")
-            break
-    if not tipo_conta and conta_atual:
-        tipo_conta = conta_atual.tipo_conta
-    if tipo_conta == TipoContaCorrente.POUPANCA:
-        exibir_valor(info["poupanca"], info["col"], "•")
-        exibir_valor(info["conta_corrente"], info["col"], " ")
-    else:
-        exibir_valor(info["poupanca"], info["col"], " ")
-        exibir_valor(info["conta_corrente"], info["col"], "•")
+        exibirMensagem(linha_mensagem, coluna_mensagem, "Escolha o tipo da conta: [P]oupança [C]onta Corrente")
+        escolha = esperar_tecla(False).upper()
+        if escolha == "P":
+            exibir_valor(info["poupanca"], info["col"], "•")
+            exibir_valor(info["conta_corrente"], info["col"], " ")
+            tipo_conta = TipoContaCorrente.POUPANCA
+        elif escolha == "C":
+            exibir_valor(info["poupanca"], info["col"], " ")
+            exibir_valor(info["conta_corrente"], info["col"], "•")
+            tipo_conta = TipoContaCorrente.CONTA_CORRENTE
+        else:
+            exibirMensagem(linha_mensagem, coluna_mensagem, "Escolha um tipo conta: P para Poupança ou C pra Conta Corrente!")
+            esperar_tecla()
+            continue
     return tipo_conta
 
 def digitar_limite_especial():
@@ -153,88 +141,57 @@ def digitar_limite_especial():
 
 def digitar_status():
     info = campos_contacorrente["status"]
+    info_data_encerramento = campos_contacorrente["data_encerramento"]
     status = None
-    lin = info["pendente"]
-    marcado = ""
-    titulo = "Pendente"
     while not status:
         limpar_linha()
-        mensagem_padrao(f"Tecle X para marcar a situação da conta como {titulo}!")
-        posicionarCursor(lin, info["col"])
+        exibirMensagem(linha_mensagem, coluna_mensagem, "Escolha o status: [P]endente [A]tiva [B]loqueada [I]nativa [E]ncerrada: ")
         marcado = esperar_tecla(False).upper()
-        if marcado == "X":
-            if lin == info["encerrada"]:
-                status = StatusContaCorrente.ENCERRADA
-            elif lin == info["inativa"]:
-                status = StatusContaCorrente.INATIVA
-            elif lin == info["bloqueada"]:
-                status = StatusContaCorrente.BLOQUEADA
-            elif lin == info["ativa"]:
-                status = StatusContaCorrente.ATIVA
-            else:
-                exibir_valor(lin, info["col"], " ")
-                status = StatusContaCorrente.PENDENTE
+        if marcado == "P":
+            status = StatusContaCorrente.PENDENTE
+            exibir_valor(info["pendente"], info["col"], "•")
+            exibir_valor(info["ativa"], info["col"], " ")
+            exibir_valor(info["bloqueada"], info["col"], " ")
+            exibir_valor(info["inativa"], info["col"], " ")
+            exibir_valor(info["encerrada"], info["col"], " ")
+            exibir_valor(info_data_encerramento["lin"], info_data_encerramento["col"], " " * 10)
             break
-        elif lin == info["pendente"]:
-            exibir_valor(lin, info["col"], " ")
-            lin = info["ativa"]
-            titulo = "Ativa"
-        elif lin == info["ativa"]:
-            exibir_valor(lin, info["col"], " ")
-            lin = info["bloqueada"]
-            titulo = "Bloqueada"
-        elif lin == info["bloqueada"]:
-            exibir_valor(lin, info["col"], " ")
-            lin = info["inativa"]
-            titulo = "Inativa"
-        elif lin == info["inativa"]:
-            exibir_valor(lin, info["col"], " ")
-            lin = info["encerrada"]
-            titulo = "Encerrada"
-        elif conta_atual:
-            status = conta_atual.status
-            break
-        else:
+        elif marcado == "A":
             status = StatusContaCorrente.ATIVA
-        continue
-    
-    if not status and conta_atual:
-        status = conta_atual.status
-    info_data_encerramento = campos_contacorrente["data_encerramento"]
-    if status == StatusContaCorrente.PENDENTE:
-        exibir_valor(info["pendente"], info["col"], "•")
-        exibir_valor(info["ativa"], info["col"], " ")
-        exibir_valor(info["bloqueada"], info["col"], " ")
-        exibir_valor(info["inativa"], info["col"], " ")
-        exibir_valor(info["encerrada"], info["col"], " ")
-        exibir_valor(info_data_encerramento["lin"], info_data_encerramento["col"], " " * 10)
-    elif status == StatusContaCorrente.ATIVA:
-        exibir_valor(info["pendente"], info["col"], " ")
-        exibir_valor(info["ativa"], info["col"], "•")
-        exibir_valor(info["bloqueada"], info["col"], " ")
-        exibir_valor(info["inativa"], info["col"], " ")
-        exibir_valor(info["encerrada"], info["col"], " ")
-        exibir_valor(info_data_encerramento["lin"], info_data_encerramento["col"], " " * 10)
-    elif status == StatusContaCorrente.BLOQUEADA:
-        exibir_valor(info["pendente"], info["col"], " ")
-        exibir_valor(info["ativa"], info["col"], " ")
-        exibir_valor(info["bloqueada"], info["col"], "•")
-        exibir_valor(info["inativa"], info["col"], " ")
-        exibir_valor(info["encerrada"], info["col"], " ")
-        exibir_valor(info_data_encerramento["lin"], info_data_encerramento["col"], " " * 10)
-    elif status == StatusContaCorrente.INATIVA:
-        exibir_valor(info["pendente"], info["col"], " ")
-        exibir_valor(info["ativa"], info["col"], " ")
-        exibir_valor(info["bloqueada"], info["col"], " ")
-        exibir_valor(info["inativa"], info["col"], "•")
-        exibir_valor(info["encerrada"], info["col"], " ")
-        exibir_valor(info_data_encerramento["lin"], info_data_encerramento["col"], " " * 10)
-    else:
-        exibir_valor(info["pendente"], info["col"], " ")
-        exibir_valor(info["ativa"], info["col"], " ")
-        exibir_valor(info["bloqueada"], info["col"], " ")
-        exibir_valor(info["inativa"], info["col"], " ")
-        exibir_valor(info["encerrada"], info["col"], "•")
+            exibir_valor(info["pendente"], info["col"], " ")
+            exibir_valor(info["ativa"], info["col"], "•")
+            exibir_valor(info["bloqueada"], info["col"], " ")
+            exibir_valor(info["inativa"], info["col"], " ")
+            exibir_valor(info["encerrada"], info["col"], " ")
+            exibir_valor(info_data_encerramento["lin"], info_data_encerramento["col"], " " * 10)
+            break
+        elif marcado == "B":
+            status = StatusContaCorrente.BLOQUEADA
+            exibir_valor(info["pendente"], info["col"], " ")
+            exibir_valor(info["ativa"], info["col"], " ")
+            exibir_valor(info["bloqueada"], info["col"], "•")
+            exibir_valor(info["inativa"], info["col"], " ")
+            exibir_valor(info["encerrada"], info["col"], " ")
+            exibir_valor(info_data_encerramento["lin"], info_data_encerramento["col"], " " * 10)
+        elif marcado == "I":
+            status = StatusContaCorrente.INATIVA
+            exibir_valor(info["pendente"], info["col"], " ")
+            exibir_valor(info["ativa"], info["col"], " ")
+            exibir_valor(info["bloqueada"], info["col"], " ")
+            exibir_valor(info["inativa"], info["col"], "•")
+            exibir_valor(info["encerrada"], info["col"], " ")
+            exibir_valor(info_data_encerramento["lin"], info_data_encerramento["col"], " " * 10)
+        elif marcado == "E":
+            status = StatusContaCorrente.ENCERRADA
+            exibir_valor(info["pendente"], info["col"], " ")
+            exibir_valor(info["ativa"], info["col"], " ")
+            exibir_valor(info["bloqueada"], info["col"], " ")
+            exibir_valor(info["inativa"], info["col"], " ")
+            exibir_valor(info["encerrada"], info["col"], "•")
+        else:
+            exibirMensagem(linha_mensagem, 3, "Opção inválida! Tente novamente")
+            esperar_tecla()
+            continue
     return status
 
 def digitar_data_encerramento():
