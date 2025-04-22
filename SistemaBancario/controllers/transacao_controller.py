@@ -1,27 +1,23 @@
 from utils.user_functions import exibirMensagem, limpar_linha, esperar_tecla
-from views.contacorrente_view import iniciar, novo_cadastro, alterear_cadastro, visualizar_cadastro, visualizar_relatorio
+from views.transacao_view import iniciar, nova_transacao, visualizar_relatorio
 
 opcoes_disponiveis = [ "N", "A", "E", "C", "L", "R" ]
 
-class ContaCorrentesController:
+class TransacaoController:
     def __init__(self):
         pass
-    
+
     def iniciar(self):
         while True:
             opcao = iniciar()
             if opcao == "R":
                 break
             if opcao not in opcoes_disponiveis:
-                exibirMensagem(30, 3, f"Opção inválida! Escolha entre {opcoes_disponiveis}.")
+                exibirMensagem(30, 3, f"Opção inválida! Entre entre {opcoes_disponiveis}!!")
                 esperar_tecla()
                 limpar_linha()
                 continue
             if opcao == "N":
-                novo_cadastro()
-            elif opcao == "A":
-                alterear_cadastro()
-            elif opcao == "C":
-                visualizar_cadastro()
+                nova_transacao()
             elif opcao == "L":
                 visualizar_relatorio()

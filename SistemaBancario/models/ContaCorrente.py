@@ -1,9 +1,9 @@
 from datetime import date
-from Models.TiposEnum import TipoContaCorrente, StatusContaCorrente
-from Utils.user_functions import posicionarCursor
-from Utils import user_functions
-from Database import banco_dados
-from Models.SaldoContas import SaldoConta
+from models.tiposenum import TipoContaCorrente, StatusContaCorrente
+from utils.user_functions import posicionarCursor
+from utils import user_functions
+from database import banco_dados
+from models.saldocontas import SaldoConta
 
 class ContaCorrente:
     def __init__(self, num_conta: int, num_cpf: int, data_abertura: date, limite_especial: float,

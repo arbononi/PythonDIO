@@ -92,16 +92,16 @@ layout_rel_contas = [
 
 layout_transacoes = [
     { "lin":  5, "col" : 1, "value" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
-    { "lin":  7, "col" : 1, "value" : "║  Transação Nº: [          ]                      ┌──────────────────────────┐                    ║" },
-    { "lin":  8, "col" : 1, "value" : "║                                                  │ Data: [               ]  │                    ║" },
-    { "lin":  9, "col" : 1, "value" : "║  Conta Nº ...: [          ]                      ├──────────────────────────┤                    ║" },
+    { "lin":  7, "col" : 1, "value" : "║  Transação Nº: [          ]                          Data: [                ]                    ║" },
+    { "lin":  8, "col" : 1, "value" : "║                                                                                                  ║" },
+    { "lin":  9, "col" : 1, "value" : "║  Conta Nº ...: [          ]                      ┌──────────────────────────┐                    ║" },
     { "lin": 10, "col" : 1, "value" : "║  [                                         ]     │      Tipo Transação      │                    ║" },
     { "lin": 11, "col" : 1, "value" : "║                                                  ├──────────────────────────┤                    ║" },
     { "lin": 12, "col" : 1, "value" : "║  Saldo Atual : [              ]                  │ ( ) Depósito   ( ) Saque │                    ║" },
     { "lin": 13, "col" : 1, "value" : "║                                                  │                          │                    ║" },
     { "lin": 14, "col" : 1, "value" : "║  Saldo Final : [              ]                  │ Valor : [              ] │                    ║" },
     { "lin": 15, "col" : 1, "value" : "║                                                  └──────────────────────────┘                    ║" },
-    { "lin": 30, "col" : 1, "value" : "(N)OVA      (A)LTERAR      (E)XCLUIR      (C)ONSULTAR      (L)ISTAR      (R)ETORNAR".center(98, " ") }
+    { "lin": 30, "col" : 2, "value" : "(N)OVA      (A)LTERAR      (E)XCLUIR      (C)ONSULTAR      (L)ISTAR      (R)ETORNAR".center(98, " ") }
 ]
 
 layout_rel_transacoes = [

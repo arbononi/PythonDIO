@@ -1,0 +1,162 @@
+{
+    "1": {
+        "id": 1,
+        "data_movto": "2025-04-21T21:56:45.486207",
+        "idconta": 1,
+        "tipo_transacao": "DEPOSITO",
+        "saldo_anterior": 0.0,
+        "valor_transacao": 1500.0,
+        "saldo_atual": 1500.0,
+        "flag_conciliada": false
+    },
+    "2": {
+        "id": 2,
+        "data_movto": "2025-04-21T21:57:27.585426",
+        "idconta": 2,
+        "tipo_transacao": "DEPOSITO",
+        "saldo_anterior": 0.0,
+        "valor_transacao": 1500.0,
+        "saldo_atual": 1500.0,
+        "flag_conciliada": false
+    },
+    "3": {
+        "id": 3,
+        "data_movto": "2025-04-21T21:57:45.082744",
+        "idconta": 3,
+        "tipo_transacao": "DEPOSITO",
+        "saldo_anterior": 0.0,
+        "valor_transacao": 1500.0,
+        "saldo_atual": 1500.0,
+        "flag_conciliada": false
+    },
+    "4": {
+        "id": 4,
+        "data_movto": "2025-04-21T21:57:53.352116",
+        "idconta": 4,
+        "tipo_transacao": "DEPOSITO",
+        "saldo_anterior": 0.0,
+        "valor_transacao": 1500.0,
+        "saldo_atual": 1500.0,
+        "flag_conciliada": false
+    },
+    "5": {
+        "id": 5,
+        "data_movto": "2025-04-21T21:58:00.808454",
+        "idconta": 5,
+        "tipo_transacao": "DEPOSITO",
+        "saldo_anterior": 0.0,
+        "valor_transacao": 1500.0,
+        "saldo_atual": 1500.0,
+        "flag_conciliada": false
+    },
+    "6": {
+        "id": 6,
+        "data_movto": "2025-04-21T22:52:55.668787",
+        "idconta": 1,
+        "tipo_transacao": "SAQUE",
+        "saldo_anterior": 1500.0,
+        "valor_transacao": 500.0,
+        "saldo_atual": 1000.0,
+        "flag_conciliada": false
+    },
+    "7": {
+        "id": 7,
+        "data_movto": "2025-04-21T22:53:54.090020",
+        "idconta": 1,
+        "tipo_transacao": "DEPOSITO",
+        "saldo_anterior": 1000.0,
+        "valor_transacao": 150.0,
+        "saldo_atual": 1150.0,
+        "flag_conciliada": false
+    },
+    "8": {
+        "id": 8,
+        "data_movto": "2025-04-21T22:54:03.928726",
+        "idconta": 1,
+        "tipo_transacao": "SAQUE",
+        "saldo_anterior": 1150.0,
+        "valor_transacao": 500.0,
+        "saldo_atual": 650.0,
+        "flag_conciliada": false
+    },
+    "9": {
+        "id": 9,
+        "data_movto": "2025-04-21T22:54:26.219987",
+        "idconta": 1,
+        "tipo_transacao": "DEPOSITO",
+        "saldo_anterior": 650.0,
+        "valor_transacao": 1000.0,
+        "saldo_atual": 1650.0,
+        "flag_conciliada": false
+    },
+    "10": {
+        "id": 10,
+        "data_movto": "2025-04-21T22:54:34.976091",
+        "idconta": 1,
+        "tipo_transacao": "DEPOSITO",
+        "saldo_anterior": 1650.0,
+        "valor_transacao": 150.0,
+        "saldo_atual": 1800.0,
+        "flag_conciliada": false
+    },
+    "11": {
+        "id": 11,
+        "data_movto": "2025-04-21T22:54:48.643633",
+        "idconta": 1,
+        "tipo_transacao": "SAQUE",
+        "saldo_anterior": 1800.0,
+        "valor_transacao": 350.0,
+        "saldo_atual": 1450.0,
+        "flag_conciliada": false
+    },
+    "12": {
+        "id": 12,
+        "data_movto": "2025-04-21T22:55:11.678675",
+        "idconta": 1,
+        "tipo_transacao": "SAQUE",
+        "saldo_anterior": 1450.0,
+        "valor_transacao": 450.0,
+        "saldo_atual": 1000.0,
+        "flag_conciliada": false
+    },
+    "13": {
+        "id": 13,
+        "data_movto": "2025-04-21T22:55:38.497214",
+        "idconta": 1,
+        "tipo_transacao": "DEPOSITO",
+        "saldo_anterior": 1000.0,
+        "valor_transacao": 35.0,
+        "saldo_atual": 1035.0,
+        "flag_conciliada": false
+    },
+    "14": {
+        "id": 14,
+        "data_movto": "2025-04-21T22:55:48.929923",
+        "idconta": 1,
+        "tipo_transacao": "SAQUE",
+        "saldo_anterior": 1035.0,
+        "valor_transacao": 35.0,
+        "saldo_atual": 1000.0,
+        "flag_conciliada": false
+    },
+    "15": {
+        "id": 15,
+        "data_movto": "2025-04-21T23:07:37.670703",
+        "idconta": 2,
+        "tipo_transacao": "SAQUE",
+        "saldo_anterior": 1500.0,
+        "valor_transacao": 500.0,
+        "saldo_atual": 1000.0,
+        "flag_conciliada": false
+    },
+    "16": {
+        "id": 16,
+        "data_movto": "2025-04-21T23:08:24.489351",
+        "idconta": 6,
+        "tipo_transacao": "DEPOSITO",
+        "saldo_anterior": 0.0,
+        "valor_transacao": 1500.0,
+        "saldo_atual": 1500.0,
+        "flag_conciliada": false
+    }
+}

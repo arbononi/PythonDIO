@@ -1,11 +1,11 @@
 from datetime import date
-from Database import banco_dados
-from Views.Telas_Sistema import titulos_telas, layout_contacorrente, layout_rel_contas, layout_tela_principal
-from Utils import user_functions
-from Utils.user_functions import posicionarCursor, limpar_linha, exibir_valor, exibirMensagem, esperar_tecla
-from Models.TiposEnum import TipoContaCorrente, StatusContaCorrente, TipoOperacao
-from Models.ContaCorrente import ContaCorrente
-from Models.Correntista import Correntista
+from database import banco_dados
+from views.telas_sistema import titulos_telas, layout_contacorrente, layout_rel_contas, layout_tela_principal
+from utils import user_functions
+from utils.user_functions import posicionarCursor, limpar_linha, exibir_valor, exibirMensagem, esperar_tecla
+from models.tiposenum import TipoContaCorrente, StatusContaCorrente, TipoOperacao
+from models.contacorrente import ContaCorrente
+
 
 campos_contacorrente = {
     "num_conta" : { "lin":  7, "col": 14, "size": 10 },
@@ -194,8 +194,10 @@ def digitar_status():
         elif conta_atual:
             status = conta_atual.status
             break
+        else:
+            status = StatusContaCorrente.ATIVA
         continue
-
+    
     if not status and conta_atual:
         status = conta_atual.status
     info_data_encerramento = campos_contacorrente["data_encerramento"]

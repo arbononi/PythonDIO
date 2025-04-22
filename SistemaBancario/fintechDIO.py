@@ -1,11 +1,13 @@
 from os import system as limp
 from time import sleep
 from datetime import date
-from Database import banco_dados
-from Utils import user_functions
-from Views.Telas_Sistema import layout_tela_principal, titulos_telas
-from Controllers.Correntistas_Controller import ConrrentistasController
-from Controllers.ContaCorrente_Controller import ContaCorrentesController
+from database import banco_dados
+from utils import user_functions
+from views.telas_sistema import layout_tela_principal, titulos_telas
+from controllers.correntistas_controller import ConrrentistasController
+from controllers.contacorrente_controller import ContaCorrentesController
+from controllers.transacao_controller import TransacaoController
+
 
 menu_principal_opcoes = "[1 - CORRENTISTAS]  [2 - CONTAS]  [3 - TRANSAÇÕES]  [4 - EXTRATOS]  [5 - IMPORTAR]  [9 - SAIR]".center(98, " ")
 
@@ -40,7 +42,6 @@ user_functions.posicionarCursor(2, 2)
 print(titulos_telas["menu_principal"])
 user_functions.posicionarCursor(2, 85)
 print(data_atual_str)
-user_functions.configurar_locale()
 
 while opcao != 9:
     try:
@@ -65,6 +66,9 @@ while opcao != 9:
         elif opcao == 2:
             app = ContaCorrentesController()
             app.iniciar()
+        elif opcao == 3:
+             app = TransacaoController()
+             app.iniciar()
         elif opcao == 5:
              banco_dados.carregar_correntistas()
              banco_dados.carregar_contas()

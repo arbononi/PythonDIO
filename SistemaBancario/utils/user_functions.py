@@ -1,18 +1,7 @@
-import locale
 import sys
 import msvcrt
-from Models.TiposEnum import estados, OCULTAR_CURSOR, MOSTRAR_CURSOR
+from models.tiposenum import estados, OCULTAR_CURSOR, MOSTRAR_CURSOR
 from datetime import datetime, date 
-
-def configurar_locale():
-    try:
-        locale.setlocale(locale.LC_TIME, 'Portuguese_Brazil.1252')
-    except locale.Error:
-        try:
-            locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
-        except locale.Error:
-            exibirMensagem("Idioma Português Brasil não está disponível!")
-            esperar_tecla()
 
 def esperar_tecla(ocultar_cursor: bool=True):
     if ocultar_cursor:
@@ -110,13 +99,14 @@ def formatar_data(data: date, exibir_dia_semana=False, antes=False):
 def formatar_data_hora(data: datetime):
     return data.strftime("%d/%m/%Y %H:%M")
 
-def formatar_valor(number, isMoeda: bool=False) -> str:
+def formatar_valor(valor, isMoeda: bool=False) -> str:
     valor_formatado = ""
+    #return f"{valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
     try:
-        if not isinstance(number, float):
-            valor_formatado = locale.format_string("%.0f", number, grouping=True)
+        if not isinstance(valor, float):
+            valor_formatado = f"{valor:,.0f}".replace(",", "X").replace(".", ",").replace("X", ".")
         else:
-            valor_formatado = locale.format_string("%.2f", number, grouping=True, monetary=isMoeda)
+            valor_formatado = f"{valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
     except Exception as error:
         exibirMensagem(30, 3, error)
     

@@ -1,12 +1,12 @@
 import json
 import os
-from datetime import date
-from Models.Correntista import Correntista
-from Models.ContaCorrente import ContaCorrente
-from Models.SaldoContas import SaldoConta
-from Models.Transacao import Transacao
-
-from Models.TiposEnum import StatusCorrentista
+from datetime import datetime, date
+from models.correntistas import Correntista
+from models.contacorrente import ContaCorrente
+from models.saldocontas import SaldoConta
+from models.transacao import Transacao
+from models.tiposenum import StatusCorrentista
+from models.tiposenum import TipoTransacao
 
 CAMINHO_CORRENTISTAS = os.path.join(os.path.dirname(__file__), "dados", "correntistas.json")
 CAMINHO_CONTAS = os.path.join(os.path.dirname(__file__), "dados", "contas.json")
@@ -22,6 +22,9 @@ Lista_Transacoes = {}
 def carregar_correntistas():
     global Lista_Correntistas
     try:
+        if os.path.getsize(CAMINHO_CORRENTISTAS) == 0:
+            Lista_Correntistas = {}
+            return
         with open(CAMINHO_CORRENTISTAS, 'r', encoding='utf-8') as f:
             dados = json.load(f)
             Lista_Correntistas = {
@@ -54,6 +57,9 @@ def salvar_correntistas():
 def carregar_contas():
     global Lista_ContaCorrente
     try:
+        if os.path.getsize(CAMINHO_CONTAS) == 0:
+            Lista_ContaCorrente = {}
+            return
         with open(CAMINHO_CONTAS, 'r', encoding='utf-8') as f:
             dados = json.load(f)
             Lista_ContaCorrente = {
@@ -79,6 +85,9 @@ def salvar_contas():
 def carregar_saldo_contas():
     global Lista_SaldoContas
     try:
+        if os.path.getsize(CAMINHO_SALDOS) == 0:
+            Lista_SaldoContas = {}
+            return
         with open(CAMINHO_SALDOS, 'r', encoding='utf-8') as f:
             dados = json.load(f)
             Lista_SaldoContas = {
@@ -100,24 +109,30 @@ def salvar_saldo_contas():
 def carregar_transacoes():
     global Lista_Transacoes
     try:
+        if os.path.getsize(CAMINHO_TRANSACOES) == 0:
+            Lista_Transacoes = {}
+            return
         with open(CAMINHO_TRANSACOES, 'r', encoding='utf-8') as f:
             dados = json.load(f)
             Lista_Transacoes = {
-                int(num_transacao): Transacao(
-                    num_transacao=int(d["num_transacao"]),
-                    num_conta=int(d["num_conta"]),
-                    data_transacao=date.fromisoformat(d["data_transacao"]),
-                    valor=float(d["valor"]),
-                    tipo=d["tipo"]
+                int(id): Transacao(
+                    id=int(d["id"]),
+                    data_movto=datetime.fromisoformat(d["data_movto"]),
+                    idconta=int(d["idconta"]),
+                    tipo_transacao=TipoTransacao[d["tipo_transacao"]],
+                    saldo_anterior=float(d["saldo_anterior"]),
+                    valor_transacao=float(d["valor_transacao"]),
+                    saldo_atual=float(d["saldo_atual"]),
+                    flag_conciliada=d["flag_conciliada"]
                 )
-                for num_transacao, d in dados.items()
+                for id, d in dados.items()
             }
     except FileNotFoundError:
         Lista_Transacoes = {}
 
 def salvar_transacoes():
     with open(CAMINHO_TRANSACOES, 'w', encoding='utf-8') as f:
-        json.dump({num: t.to_dict() for num, t in Lista_Transacoes.items()}, f, indent=4, ensure_ascii=False)
+        json.dump({id: t.to_dict() for id, t in Lista_Transacoes.items()}, f, indent=4, ensure_ascii=False)
 
 # Chamada automática ao importar
 carregar_correntistas()

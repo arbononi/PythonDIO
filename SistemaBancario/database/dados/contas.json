@@ -48,9 +48,9 @@
         "num_conta": 6,
         "num_cpf": 12345678908,
         "data_abertura": "2025-04-20",
-        "limite_especial": 0.0,
+        "limite_especial": 0,
         "tipo_conta": "POUPANCA",
-        "status": "PENDENTE",
+        "status": "ATIVA",
         "data_encerramento": "0001-01-01"
     }
 }

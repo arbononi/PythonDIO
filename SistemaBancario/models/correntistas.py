@@ -1,9 +1,9 @@
 from datetime import date
 from enum import Enum
-from Models.TiposEnum import StatusCorrentista
-from Utils import user_functions
-from Utils.user_functions import posicionarCursor
-from Database import banco_dados
+from models.tiposenum import StatusCorrentista
+from utils import user_functions
+from utils.user_functions import posicionarCursor
+from database import banco_dados
 
 class Correntista:
     def __init__(self, num_cpf: int, nome: str, endereco: str, numero: str, complemento: str, bairro: str,

@@ -1,10 +1,10 @@
 from datetime import date
-from Database import banco_dados
-from Views.Telas_Sistema import titulos_telas, layout_correntistas, layout_rel_correntistas, layout_tela_principal
-from Utils import user_functions
-from Utils.user_functions import posicionarCursor, limpar_linha, exibirMensagem, esperar_tecla
-from Models.TiposEnum import StatusCorrentista
-from Models.Correntista import Correntista
+from database import banco_dados
+from views.telas_sistema import titulos_telas, layout_correntistas, layout_rel_correntistas, layout_tela_principal
+from utils import user_functions
+from utils.user_functions import posicionarCursor, limpar_linha, exibirMensagem, esperar_tecla
+from models.tiposenum import StatusCorrentista
+from models.correntistas import Correntista
 
 campos_correntista = {
     "num_cpf": { "lin": 7, "col" : 13, "size" : 14 },

@@ -1,7 +1,32 @@
 {
     "1": {
         "num_conta": 1,
-        "data_saldo": "2025-04-20",
-        "saldo_atual": 0.0
+        "data_saldo": "2025-04-21",
+        "saldo_atual": 1000.0
+    },
+    "2": {
+        "num_conta": 2,
+        "data_saldo": "2025-04-21",
+        "saldo_atual": 1000.0
+    },
+    "3": {
+        "num_conta": 3,
+        "data_saldo": "2025-04-21",
+        "saldo_atual": 1500.0
+    },
+    "4": {
+        "num_conta": 4,
+        "data_saldo": "2025-04-21",
+        "saldo_atual": 1500.0
+    },
+    "5": {
+        "num_conta": 5,
+        "data_saldo": "2025-04-21",
+        "saldo_atual": 1500.0
+    },
+    "6": {
+        "num_conta": 6,
+        "data_saldo": "2025-04-21",
+        "saldo_atual": 1500.0
     }
 }
