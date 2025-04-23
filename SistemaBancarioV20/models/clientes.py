@@ -18,24 +18,9 @@ class Cliente:
         self.status = status
         self.data_cadastro = data_cadastro
 
-    # def __str__(self):
-    #     pass
-
     def to_dict(self):
-        return {
-            "tipo_pessoa" : self.tipo_pessoa.value,
-            "cpf_cnpj" : self.cpf_cnpj,
-            "nome" : self.nome,
-            "endereco" : self.endereco,
-            "numero" : self.numero,
-            "complemento" : self.complemento,
-            "bairro" : self.bairro,
-            "cidade" : self.cidade,
-            "estado" : self.estado,
-            "cep" : self.cep,
-            "telefone": self.telefone,
-            "status" : self.status.name,
-            "data_cadastro" : self.data_cadastro.isoformat()
+        return { 
+            self.cpf_cnpj : { f"{", ".join([f"{chave}: {valor}" for chave, valor in self.__dict__.items()])}" }
         }
     
     def set_status(self, status: int):

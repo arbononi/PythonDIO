@@ -20,15 +20,8 @@ class Conta:
         return saldo_atual + valor_limite
 
     def to_dict(self):
-        return {
-            "numero" : self.numero,
-            "data_abertura" : self.data_abertura.isoformat(),
-            "cpf_cnpj" : self.cpf_cnpj,
-            "tipo" : self.tipo.name,
-            "valor_limite" : self.valor_limite,
-            "saldo_atual" : self._saldo_atual,
-            "status" : self.status.name,
-            "data_encerramento" : self.data_encerramento.isoformat() if self.data_encerramento else None
+        return { 
+            self.numero : { f"{", ".join([f"{chave}: {valor}" for chave, valor in self.__dict__.items()])}" }
         }
     
     def depositar(self, valor: float):

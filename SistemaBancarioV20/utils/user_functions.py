@@ -24,13 +24,13 @@ def limpar_linha(linha: int=30, coluna: int=2, tamanho: int=98, background=False
 def posicionarCursor(linha: int, coluna: int):
     sys.stdout.write(f"\033[{linha};{coluna}H")
 
-def exibir_mensagem(mensagem: str, linha=30, coluna=3):
+def exibir_mensagem(mensagem: str, linha=30, coluna=2):
     limpar_linha(linha)
     posicionarCursor(linha, coluna)
-    print(mensagem, end="")
+    print(" " + mensagem, end="")
     return esperar_tecla()
 
-def exibir_conteudo(conteudo: str, linha=30, coluna=3):
+def exibir_conteudo(conteudo: str, linha=30, coluna=2):
     posicionarCursor(linha, coluna)
     print(conteudo, end="")
 
@@ -52,7 +52,7 @@ def desenhar_tela(layout, line_loop=0, stop_loop=0):
                     processar = False
         else:
             posicionarCursor(linha["lin"], linha["col"])
-            print(linha["value"])
+            print(linha["value"], end="")
 
 def validar_documento(cpf_cnpj: str, tipo_pessoa: TipoPessoa):
     if tipo_pessoa == TipoPessoa.FISICA and len(cpf_cnpj) != 11:

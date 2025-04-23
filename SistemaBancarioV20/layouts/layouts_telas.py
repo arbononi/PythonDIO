@@ -1,15 +1,29 @@
 opcoes_disponiveis = {
     "menu_principal" : "[1 - CLIENTES]   [2 - CONTAS]   [3 - TRANSAÇÕES]   [4 - EXTRATOS]   [5 - CONSULTAS]   [9 - SAIR]".center(98, " "),
-    "cadastros" : "[I]NCLUIR      [A]LTERAR      [E]XCLUIR      [C]ONSULTAR      [L]ISTAR      [R]ETORNAR".center(98, " ")
+    "cadastros" : "[I]NCLUIR      [A]LTERAR      [E]XCLUIR      [C]ONSULTAR      [L]ISTAR      [R]ETORNAR".center(98, " "),
+    "rol_extratos" : "[P]RÓXIMA PÁGINA                                                                      [R]ETORNAR".center(98, " ")
 }
+
+operacoes_disponiveis = [ "I", "A", "E", "C", "L", "R" ]
 
 titulos_telas = {
     "titulo_principal" : "FINTECHDIO - SISTEMA FINANCEIRO - MENU PRINCIPAL - VERSÃO 2.0".center(75, " "),
-    "rodape_transacao": "ESCOLHA A OPERAÇÃO DESEJADA".center(98, " ")
+    "cadastro_clientes" : "CADASTRO DE CLIENTES".center(98, " "),
+    "cadastro_contas" : "CADASTRO DE CONTAS".center(98, " "),
+    "rodape_transacao": "ESCOLHA A OPERAÇÃO DESEJADA".center(98, " "),
+    "relatorio_clientes" : "RELAÇÃO DOS CLIENTES CADASTRADOS".center(75, " "),
+    "relatorio_contas" : "RELAÇÃO DAS CONTAS CADASTRADAS".center(75, " "),
+    "transacao_deposito" : "TRANSAÇÃO DE DEPÓSITO".center(98, " "),
+    "transacao_saque" : "TRANSAÇÃO DE SAQUE".center(98, " "),
+    "transacao_transferencia" : "TRANSAÇÃO DE TRANSFERENCIA".center(98, " "),
+    "transacao_pix" : "TRANSAÇÃO DE PIX".center(98, " "),
+    "transacao_doc" : "TRANSAÇÃO POR DOC".center(98, " "),
+    "pagamentos" : "PAGAMENTOS".center(98, " "),
+    "consulta_saldo" : "CONSULTA DE SALDO".center(98, " "),
+    "relatorio_extratos" : "RELATORIO EXTRATO BANCÁRIO".center(98, " ")
 }
 
-layout_padrao = """
-╔═══════════════════════════════════════════════════════════════════════════╦══════════════════════╗
+layout_padrao = """╔═══════════════════════════════════════════════════════════════════════════╦══════════════════════╗
 ║                                                                           ║ Data:                ║
 ╠═══════════════════════════════════════════════════════════════════════════╩══════════════════════╣
 ║                                                                                                  ║
@@ -39,8 +53,7 @@ layout_padrao = """
 ║                                                                                                  ║
 ╠══════════════════════════════════════════════════════════════════════════════════════════════════╣
 ║                                                                                                  ║
-╚══════════════════════════════════════════════════════════════════════════════════════════════════╝
-"""
+╚══════════════════════════════════════════════════════════════════════════════════════════════════╝"""
 
 layout_abertura = [
     { "lin":  3, "col" : 1, "value" : "╠═══════════════════════════════════════════════════════════════════════════╩══════════════════════╣" },
@@ -73,14 +86,15 @@ layout_abertura = [
 ]
 
 layout_cadastro_clientes = [
-    { "lin" :  5, "col" : 3, "value" : "Tipo Pessoa .....: ( ) FÍSICA  ( ) JURÍDICA                Número CPF/CNPJ: [                  ]" },
-    { "lin" :  7, "col" : 3, "value" : "Nome/Razão Social: [                                                                           ]" },
-    { "lin" :  9, "col" : 3, "value" : "Endereço ........: [                                                       ] Número: [         ]" },
-    { "lin" : 11, "col" : 3, "value" : "Complemento .....: [                                                                           ]" },
-    { "lin" : 13, "col" : 3, "value" : "Bairro ..........: [                                                                           ]" },
-    { "lin" : 15, "col" : 3, "value" : "Cidade ..........: [                                                                  ] UF: [  ]" },
-    { "lin" : 17, "col" : 3, "value" : "CEP .............: [          ]                                       Telefone : [             ]" },
-    { "lin" : 19, "col" : 3, "value" : "Situação Cadastro: ( ) INATIVO ( ) ATIVO ( ) RESTRITO ( ) BLOQUEADO  Cliente Desde: [          ]" }
+    { "lin":   5, "col" : 1, "value" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
+    { "lin" :  7, "col" : 3, "value" : "Tipo Pessoa .....: ( ) FÍSICA  ( ) JURÍDICA                Número CPF/CNPJ: [                  ]" },
+    { "lin" :  9, "col" : 3, "value" : "Nome/Razão Social: [                                                                           ]" },
+    { "lin" : 11, "col" : 3, "value" : "Endereço ........: [                                                       ] Número: [         ]" },
+    { "lin" : 13, "col" : 3, "value" : "Complemento .....: [                                                                           ]" },
+    { "lin" : 15, "col" : 3, "value" : "Bairro ..........: [                                                                           ]" },
+    { "lin" : 17, "col" : 3, "value" : "Cidade ..........: [                                                                  ] UF: [  ]" },
+    { "lin" : 19, "col" : 3, "value" : "CEP .............: [          ]                                       Telefone : [             ]" },
+    { "lin" : 21, "col" : 3, "value" : "Situação Cadastro: ( ) INATIVO ( ) ATIVO ( ) RESTRITO ( ) BLOQUEADO  Cliente Desde: [          ]" }
 ]
 
 layout_rel_clientes = [
@@ -91,14 +105,98 @@ layout_rel_clientes = [
     { "lin" : 29, "col" : 1, "value" : "╠═════╩════════════════════╩═══════════════════════════════════════════╩═══════════════╩═══════════╣" },
 ]
 
+layout_contas = [
+    { "lin":   5, "col" :  1, "value" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
+    { "lin" :  7, "col" :  3, "value" : "Número..: [          ]                                               Data Abertura: [          ]" },
+    { "lin" :  9, "col" :  3, "value" : "Tipo ...: ( ) Poupanca ( ) Conta Corrente ( ) Aplicação" },
+    { "lin" : 11, "col" :  3, "value" : "CPF/CNPJ: [                  ][                                                                ]" },
+    { "lin" : 13, "col" :  3, "value" : "Limite..: [              ]                       Status: ( ) Pendente  ( ) Ativa   ( ) Suspensa" },
+    { "lin" : 15, "col" : 60, "value" : "( ) Bloqueada ( ) Inativa ( ) Encerrada" },
+    { "lin" : 17, "col" : 68, "value" : "Data Encerramento: [          ]" }
+]
+
+layout_rel_contas = [
+    { "lin" :  3, "col" : 1, "value" : "╠════════════╦════════════════╦════════════════════╦═══════════╦════════════╬════════════╦═════════╣" },
+    { "lin" :  4, "col" : 1, "value" : "║  CONTA Nº  ║      TIPO      ║      CPF/CNPJ      ║  STATUS   ║ ABERTA  EM ║ FECHADA EM ║ ESP.    ║" },
+    { "lin" :  5, "col" : 1, "value" : "╠════════════╬════════════════╬════════════════════╬═══════════╬════════════╬════════════╬═════════╣" },
+    { "lin" :  6, "col" : 1, "value" : "║            ║                ║                    ║           ║            ║            ║         ║" },
+    { "lin" : 29, "col" : 1, "value" : "╠════════════╩════════════════╩════════════════════╩═══════════╩════════════╩════════════╩═════════╣" },
+
+]
+
 layout_menu_transacoes = [
     { "lin" :  8, "col" : 10, "value" : "┌────────────────────┐        ┌────────────────────┐        ┌────────────────────┐" },
-    { "lin" :  9, "col" : 10, "value" : "│ 1 - DEPÓSITO       │        │ 2 - SAQUE          │        │ 3 - TRANSFERENCIA  │" },
+    { "lin" :  9, "col" : 10, "value" : "│    1 - DEPÓSITO    │        │     2 - SAQUE      │        │ 3 - TRANSFERENCIA  │" },
     { "lin" : 10, "col" : 10, "value" : "└────────────────────┘        └────────────────────┘        └────────────────────┘" },
     { "lin" : 15, "col" : 10, "value" : "┌────────────────────┐        ┌────────────────────┐        ┌────────────────────┐" },
-    { "lin" : 16, "col" : 10, "value" : "│ 4 - PIX            │        │ 5 - DOC            │        │ 6 - PAGAMENTOS     │" },
+    { "lin" : 16, "col" : 10, "value" : "│      4 - PIX       │        │      5 - DOC       │        │   6 - PAGAMENTOS   │" },
     { "lin" : 17, "col" : 10, "value" : "└────────────────────┘        └────────────────────┘        └────────────────────┘" },
     { "lin" : 22, "col" : 10, "value" : "┌────────────────────┐        ┌────────────────────┐        ┌────────────────────┐" },
-    { "lin" : 23, "col" : 10, "value" : "│ 7 - SALDO EM TELA  │        │ 8 - SALDO IMPRESSO │        │ 9 - EXTRATOS       │" },
+    { "lin" : 23, "col" : 10, "value" : "│     7 - SALDO      │        │    8 - EXTRATOS    │        │    9 - RETORNAR    │" },
     { "lin" : 24, "col" : 10, "value" : "└────────────────────┘        └────────────────────┘        └────────────────────┘" }
+]
+
+layout_deposito_saque = [
+    { "lin" : 5, "col" : 1, "value" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
+    { "lin" : 7, "col" : 3, "value" : "Conta Nº: [          ]     Valor: [              ]     Autor: [                                ]" },
+    { "lin" : 9, "col" : 3, "value" : "Tipo ...: [              ] CPF/CNPJ: [                  ][                                     ]" },
+]
+
+layout_transferencia_doc = [
+    { "lin":  5, "col" : 1, "value" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
+    { "lin":  7, "col" : 3, "value" : "┌─ Conta Origem (Débito) ──────────────────────────────────────────────────────────────────────┐" },
+    { "lin":  8, "col" : 3, "value" : "│ Número: [          ] CPF/CNPJ: [                  ][                                       ] │" },
+    { "lin":  9, "col" : 3, "value" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" },
+    { "lin": 11, "col" : 3, "value" : "┌─ Conta Destino (Crédito) ────────────────────────────────────────────────────────────────────┐" },
+    { "lin": 12, "col" : 3, "value" : "│ Número: [          ] CPF/CNPJ: [                  ][                                       ] │" },
+    { "lin": 13, "col" : 3, "value" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" },
+    { "lin": 15, "col" : 3, "value" : "┌─ Valor da Transferência e Observações desejáveis ────────────────────────────────────────────┐" },
+    { "lin": 16, "col" : 3, "value" : "│ Valor : [              ] Obs: [                                                            ] │" },
+    { "lin": 17, "col" : 3, "value" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" },
+    { "lin": 19, "col" : 3, "value" : "┌─ Taxa de Serviço ────────────────────────────────────────────────────────────────────────────┐" },
+    { "lin": 20, "col" : 3, "value" : "│ Valor : [              ] * Debitado da conta origem do DOC                                   │" },
+    { "lin": 21, "col" : 3, "value" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" }
+]
+
+layout_pix = [
+    { "lin":  5, "col" : 1, "vale" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
+    { "lin":  7, "col" : 3, "vale" : "┌─ Conta Origem (Débito) ──────────────────────────────────────────────────────────────────────┐" },
+    { "lin":  8, "col" : 3, "vale" : "│ Número: [          ] CPF/CNPJ: [                  ][                                       ] │" },
+    { "lin":  9, "col" : 3, "vale" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" },
+    { "lin": 11, "col" : 3, "vale" : "┌─ Identificacação Chave PIX (Crédito) ────────────────────────────────────────────────────────┐" },
+    { "lin": 12, "col" : 3, "vale" : "│                                                                                              │" },
+    { "lin": 13, "col" : 3, "vale" : "│ Chave.: ( ) CNPJ       ( ) CPF       ( ) Telefone       ( ) eMail       ( ) Chave Automatica │" },
+    { "lin": 14, "col" : 3, "vale" : "│ [                                                                                          ] │" },
+    { "lin": 15, "col" : 3, "vale" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" },
+    { "lin": 17, "col" : 3, "vale" : "┌─ Valor da Transferência e Observações desejáveis ────────────────────────────────────────────┐" },
+    { "lin": 18, "col" : 3, "vale" : "│ Valor : [              ] Obs: [                                                            ] │" },
+    { "lin": 19, "col" : 3, "vale" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" }
+]
+
+layout_pagamentos = [
+    { "lin":  5, "col" : 1, "vale" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
+    { "lin":  7, "col" : 3, "vale" : "┌─ Conta Origem (Débito) ──────────────────────────────────────────────────────────────────────┐" },
+    { "lin":  8, "col" : 3, "vale" : "│ Número: [          ] CPF/CNPJ: [                  ][                                       ] │" },
+    { "lin":  9, "col" : 3, "vale" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" },
+    { "lin": 11, "col" : 3, "vale" : "┌─ Código de Barras ou Linha Digitável ────────────────────────────────────────────────────────┐" },
+    { "lin": 12, "col" : 3, "vale" : "│ [                                                                                          ] │" },
+    { "lin": 13, "col" : 3, "vale" : "├──────────────────────────────────────────────────────────────────────────────────────────────┤" },
+    { "lin": 14, "col" : 3, "vale" : "│ Vencimento: [           ]        Valor: [              ]        Data Pagamento: [          ] │" },
+    { "lin": 15, "col" : 3, "vale" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" },
+]
+
+layout_consulta_saldo = [
+    { "lin":  5, "col" : 1, "vale" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
+    { "lin":  7, "col" : 3, "vale" : "Número da Conta: [          ] CPF/CNPJ: [                  ][                                  ]" },
+    { "lin":  9, "col" : 3, "vale" : "Saldo Atual ...: [               ]    Limite: [              ]    Disponível.: [               ]" },
+]
+
+layout_rel_extratos = [
+    { "lin" :  5, "col" : 1, "value" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
+    { "lin" :  6, "col" : 1, "value" : "║ Conta N°: [          ][                                        ] De: [          ] a [          ] ║" },
+    { "lin" :  7, "col" : 1, "value" : "╠══════════════════╦═══════════════╦═════════════════╦════════════════╦═════════════════╦══════════╣" },
+    { "lin" :  8, "col" : 1, "value" : "║    DATA/HORA     ║ TIPO DE MOVTO ║ SALDO ANTERIOR  ║  VALOR  MOVTO  ║   SALDO FINAL   ║ OPERACAO ║" },
+    { "lin" :  9, "col" : 1, "value" : "╠══════════════════╬═══════════════╬═════════════════╬════════════════╬═════════════════╬══════════╣" },
+    { "lin" : 10, "col" : 1, "value" : "║                  ║               ║                 ║                ║                 ║          ║" },
+    { "lin" : 29, "col" : 1, "value" : "╠══════════════════╩═══════════════╩═════════════════╩════════════════╩═════════════════╩══════════╣" }
 ]
