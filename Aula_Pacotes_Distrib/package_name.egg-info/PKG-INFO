@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: package_name
+Version: 0.0.1
+Summary: My short description
+Home-page: 
+Author: my_name
+Author-email: my_email
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+# meupacote
+
+Description. Apenas um estudo sobre criaÃ§Ã£o e distribuiÃ§Ã£o de pacotes
+
+## Installation
+
+NÃ£o possui instalaÃ§Ã£o
+
+
+## Usage
+Sem uso
+
+## Author
+AndrÃ© RogÃ©rio
+
