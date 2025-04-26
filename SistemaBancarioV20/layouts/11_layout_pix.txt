@@ -10,7 +10,7 @@
 ║                                                                                                  ║
 ║ ┌─ Identificacação Chave PIX (Crédito) ────────────────────────────────────────────────────────┐ ║
 ║ │                                                                                              │ ║
-║ │ Chave.: ( ) CNPJ       ( ) CPF       ( ) Telefone       ( ) eMail       ( ) Chave Automatica │ ║
+║ │ Chave.: ( ) CNPJ       ( ) CPF       ( ) Celular        ( ) eMail       ( ) Chave Automatica │ ║
 ║ │ [                                                                                          ] │ ║
 ║ └──────────────────────────────────────────────────────────────────────────────────────────────┘ ║
 ║                                                                                                  ║

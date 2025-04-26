@@ -1,7 +1,7 @@
 opcoes_disponiveis = {
-    "menu_principal" : "[1 - CLIENTES]   [2 - CONTAS]   [3 - TRANSAÇÕES]   [4 - EXTRATOS]   [5 - CONSULTAS]   [9 - SAIR]".center(98, " "),
+    "menu_principal" : "[1 - CLIENTES]   [2 - CONTAS]   [3 - TRANSAÇÕES]   [4 - EXTRATOS]   [5 - SALDO]   [9 - SAIR]".center(98, " "),
     "cadastros" : "[I]NCLUIR      [A]LTERAR      [E]XCLUIR      [C]ONSULTAR      [L]ISTAR      [R]ETORNAR".center(98, " "),
-    "rol_extratos" : "[P]RÓXIMA PÁGINA                                                                      [R]ETORNAR".center(98, " ")
+    "consulta_extratos" : "[P]RÓXIMA PÁGINA                                                                      [R]ETORNAR".center(98, " ")
 }
 
 operacoes_disponiveis = [ "I", "A", "E", "C", "L", "R" ]
@@ -15,12 +15,12 @@ titulos_telas = {
     "relatorio_contas" : "RELAÇÃO DAS CONTAS CADASTRADAS".center(75, " "),
     "transacao_deposito" : "TRANSAÇÃO DE DEPÓSITO".center(98, " "),
     "transacao_saque" : "TRANSAÇÃO DE SAQUE".center(98, " "),
-    "transacao_transferencia" : "TRANSAÇÃO DE TRANSFERENCIA".center(98, " "),
+    "transacao_transferencia" : "TRANSAÇÃO DE TRANSFERÊNCIA".center(98, " "),
     "transacao_pix" : "TRANSAÇÃO DE PIX".center(98, " "),
     "transacao_doc" : "TRANSAÇÃO POR DOC".center(98, " "),
-    "pagamentos" : "PAGAMENTOS".center(98, " "),
+    "transacao_pagamentos" : "EFETUAR PAGAMENTOS".center(98, " "),
     "consulta_saldo" : "CONSULTA DE SALDO".center(98, " "),
-    "relatorio_extratos" : "RELATORIO EXTRATO BANCÁRIO".center(98, " ")
+    "consulta_extratos" : "CONSULTA DE EXTRATO BANCÁRIO".center(98, " ")
 }
 
 layout_padrao = """╔═══════════════════════════════════════════════════════════════════════════╦══════════════════════╗
@@ -94,7 +94,8 @@ layout_cadastro_clientes = [
     { "lin" : 15, "col" : 3, "value" : "Bairro ..........: [                                                                           ]" },
     { "lin" : 17, "col" : 3, "value" : "Cidade ..........: [                                                                  ] UF: [  ]" },
     { "lin" : 19, "col" : 3, "value" : "CEP .............: [          ]                                       Telefone : [             ]" },
-    { "lin" : 21, "col" : 3, "value" : "Situação Cadastro: ( ) INATIVO ( ) ATIVO ( ) RESTRITO ( ) BLOQUEADO  Cliente Desde: [          ]" }
+    { "lin" : 21, "col" : 3, "value" : "Situação Cadastro: ( ) [I]NATIVO        ( ) [A]TIVO        ( ) [R]ESTRITO        ( ) [B]LOQUEADO" },
+    { "lin" : 23, "col" : 3, "value" : "Cliente Desde ...: [          ]" }
 ]
 
 layout_rel_clientes = [
@@ -125,15 +126,16 @@ layout_rel_contas = [
 ]
 
 layout_menu_transacoes = [
-    { "lin" :  8, "col" : 10, "value" : "┌────────────────────┐        ┌────────────────────┐        ┌────────────────────┐" },
-    { "lin" :  9, "col" : 10, "value" : "│    1 - DEPÓSITO    │        │     2 - SAQUE      │        │ 3 - TRANSFERENCIA  │" },
-    { "lin" : 10, "col" : 10, "value" : "└────────────────────┘        └────────────────────┘        └────────────────────┘" },
-    { "lin" : 15, "col" : 10, "value" : "┌────────────────────┐        ┌────────────────────┐        ┌────────────────────┐" },
-    { "lin" : 16, "col" : 10, "value" : "│      4 - PIX       │        │      5 - DOC       │        │   6 - PAGAMENTOS   │" },
-    { "lin" : 17, "col" : 10, "value" : "└────────────────────┘        └────────────────────┘        └────────────────────┘" },
-    { "lin" : 22, "col" : 10, "value" : "┌────────────────────┐        ┌────────────────────┐        ┌────────────────────┐" },
-    { "lin" : 23, "col" : 10, "value" : "│     7 - SALDO      │        │    8 - EXTRATOS    │        │    9 - RETORNAR    │" },
-    { "lin" : 24, "col" : 10, "value" : "└────────────────────┘        └────────────────────┘        └────────────────────┘" }
+    { "lin" :  5, "col" :  1, "value" : "║                                                                                                  ║" },
+    { "lin" : 11, "col" :  4, "value" : "┌────────────────────┐  ┌────────────────────┐  ┌────────────────────┐  ┌────────────────────┐" },
+    { "lin" : 12, "col" :  4, "value" : "│    1 - DEPÓSITO    │  │     2 - SAQUE      │  │ 3 - TRANSFERENCIA  │  │      4 - PIX       │" },
+    { "lin" : 13, "col" :  4, "value" : "└────────────────────┘  └────────────────────┘  └────────────────────┘  └────────────────────┘" },
+    { "lin" : 15, "col" : 28, "value" : "┌────────────────────┐  ┌────────────────────┐" },
+    { "lin" : 16, "col" : 28, "value" : "│      5 - DOC       │  │   6 - PAGAMENTOS   │" },
+    { "lin" : 17, "col" : 28, "value" : "└────────────────────┘  └────────────────────┘" },
+    { "lin" : 19, "col" : 40, "value" : "┌────────────────────┐" },
+    { "lin" : 20, "col" : 40, "value" : "│    9 - RETORNAR    │" },
+    { "lin" : 21, "col" : 40, "value" : "└────────────────────┘" }
 ]
 
 layout_deposito_saque = [
@@ -159,39 +161,39 @@ layout_transferencia_doc = [
 ]
 
 layout_pix = [
-    { "lin":  5, "col" : 1, "vale" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
-    { "lin":  7, "col" : 3, "vale" : "┌─ Conta Origem (Débito) ──────────────────────────────────────────────────────────────────────┐" },
-    { "lin":  8, "col" : 3, "vale" : "│ Número: [          ] CPF/CNPJ: [                  ][                                       ] │" },
-    { "lin":  9, "col" : 3, "vale" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" },
-    { "lin": 11, "col" : 3, "vale" : "┌─ Identificacação Chave PIX (Crédito) ────────────────────────────────────────────────────────┐" },
-    { "lin": 12, "col" : 3, "vale" : "│                                                                                              │" },
-    { "lin": 13, "col" : 3, "vale" : "│ Chave.: ( ) CNPJ       ( ) CPF       ( ) Telefone       ( ) eMail       ( ) Chave Automatica │" },
-    { "lin": 14, "col" : 3, "vale" : "│ [                                                                                          ] │" },
-    { "lin": 15, "col" : 3, "vale" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" },
-    { "lin": 17, "col" : 3, "vale" : "┌─ Valor da Transferência e Observações desejáveis ────────────────────────────────────────────┐" },
-    { "lin": 18, "col" : 3, "vale" : "│ Valor : [              ] Obs: [                                                            ] │" },
-    { "lin": 19, "col" : 3, "vale" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" }
+    { "lin":  5, "col" : 1, "value" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
+    { "lin":  7, "col" : 3, "value" : "┌─ Conta Origem (Débito) ──────────────────────────────────────────────────────────────────────┐" },
+    { "lin":  8, "col" : 3, "value" : "│ Número: [          ] CPF/CNPJ: [                  ][                                       ] │" },
+    { "lin":  9, "col" : 3, "value" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" },
+    { "lin": 11, "col" : 3, "value" : "┌─ Identificacação Chave PIX (Crédito) ────────────────────────────────────────────────────────┐" },
+    { "lin": 12, "col" : 3, "value" : "│                                                                                              │" },
+    { "lin": 13, "col" : 3, "value" : "│ Chave.: ( ) CNPJ       ( ) CPF       ( ) Celular        ( ) eMail       ( ) Chave Automatica │" },
+    { "lin": 14, "col" : 3, "value" : "│ [                                                                                          ] │" },
+    { "lin": 15, "col" : 3, "value" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" },
+    { "lin": 17, "col" : 3, "value" : "┌─ Valor da Transferência e Observações desejáveis ────────────────────────────────────────────┐" },
+    { "lin": 18, "col" : 3, "value" : "│ Valor : [              ] Obs: [                                                            ] │" },
+    { "lin": 19, "col" : 3, "value" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" }
 ]
 
 layout_pagamentos = [
-    { "lin":  5, "col" : 1, "vale" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
-    { "lin":  7, "col" : 3, "vale" : "┌─ Conta Origem (Débito) ──────────────────────────────────────────────────────────────────────┐" },
-    { "lin":  8, "col" : 3, "vale" : "│ Número: [          ] CPF/CNPJ: [                  ][                                       ] │" },
-    { "lin":  9, "col" : 3, "vale" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" },
-    { "lin": 11, "col" : 3, "vale" : "┌─ Código de Barras ou Linha Digitável ────────────────────────────────────────────────────────┐" },
-    { "lin": 12, "col" : 3, "vale" : "│ [                                                                                          ] │" },
-    { "lin": 13, "col" : 3, "vale" : "├──────────────────────────────────────────────────────────────────────────────────────────────┤" },
-    { "lin": 14, "col" : 3, "vale" : "│ Vencimento: [           ]        Valor: [              ]        Data Pagamento: [          ] │" },
-    { "lin": 15, "col" : 3, "vale" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" },
+    { "lin":  5, "col" : 1, "value" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
+    { "lin":  7, "col" : 3, "value" : "┌─ Conta Origem (Débito) ──────────────────────────────────────────────────────────────────────┐" },
+    { "lin":  8, "col" : 3, "value" : "│ Número: [          ] CPF/CNPJ: [                  ][                                       ] │" },
+    { "lin":  9, "col" : 3, "value" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" },
+    { "lin": 11, "col" : 3, "value" : "┌─ Código de Barras ou Linha Digitável ────────────────────────────────────────────────────────┐" },
+    { "lin": 12, "col" : 3, "value" : "│ [                                                                                          ] │" },
+    { "lin": 13, "col" : 3, "value" : "├──────────────────────────────────────────────────────────────────────────────────────────────┤" },
+    { "lin": 14, "col" : 3, "value" : "│ Vencimento: [           ]        Valor: [              ]        Data Pagamento: [          ] │" },
+    { "lin": 15, "col" : 3, "value" : "└──────────────────────────────────────────────────────────────────────────────────────────────┘" },
 ]
 
 layout_consulta_saldo = [
-    { "lin":  5, "col" : 1, "vale" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
-    { "lin":  7, "col" : 3, "vale" : "Número da Conta: [          ] CPF/CNPJ: [                  ][                                  ]" },
-    { "lin":  9, "col" : 3, "vale" : "Saldo Atual ...: [               ]    Limite: [              ]    Disponível.: [               ]" },
+    { "lin":  5, "col" : 1, "value" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
+    { "lin":  7, "col" : 3, "value" : "Número da Conta: [          ] CPF/CNPJ: [                  ][                                  ]" },
+    { "lin":  9, "col" : 3, "value" : "Saldo Atual ...: [               ]    Limite: [              ]    Disponível.: [               ]" },
 ]
 
-layout_rel_extratos = [
+layout_consulta_extratos = [
     { "lin" :  5, "col" : 1, "value" : "╠══════════════════════════════════════════════════════════════════════════════════════════════════╣" },
     { "lin" :  6, "col" : 1, "value" : "║ Conta N°: [          ][                                        ] De: [          ] a [          ] ║" },
     { "lin" :  7, "col" : 1, "value" : "╠══════════════════╦═══════════════╦═════════════════╦════════════════╦═════════════════╦══════════╣" },

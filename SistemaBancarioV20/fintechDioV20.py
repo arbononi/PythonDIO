@@ -7,8 +7,8 @@ from utils import user_functions
 from controllers.clientes_controller import ClienteController
 from controllers.contas_controller import ContaController
 from controllers.transacoes_controller import TransacaoController
+from controllers.saldos_controller import SaldoController
 from controllers.extratos_controller import ExtratoController
-
 
 def exibir_abertura():
     user_functions.desenhar_tela(layout_abertura)
@@ -46,7 +46,9 @@ while opcao != 9:
         elif opcao == 4:
             app = ExtratoController()
             app.iniciar()
-
+        elif opcao == 5:
+            app = SaldoController()
+            app.iniciar()
         exibir_abertura()
     except ValueError:
         user_functions.exibir_mensagem("Opção inválida! Digite apenas números!")

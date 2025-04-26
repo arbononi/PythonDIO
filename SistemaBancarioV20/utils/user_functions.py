@@ -1,7 +1,8 @@
 import sys
 import msvcrt
-from models.tiposenum import estados, MOSTRAR_CURSOR, OCULTAR_CURSOR, TipoPessoa
+from enum import Enum
 from datetime import datetime, date
+from models.tiposenum import estados, MOSTRAR_CURSOR, OCULTAR_CURSOR, TipoPessoa
 
 def esperar_tecla(ocultar_cursor: bool=True):
     if ocultar_cursor:
@@ -34,6 +35,17 @@ def exibir_conteudo(conteudo: str, linha=30, coluna=2):
     posicionarCursor(linha, coluna)
     print(conteudo, end="")
 
+def exibir_titulo(titulo: str, linha=4, coluna=2):
+    posicionarCursor(linha, coluna)
+    print(titulo, end="")
+
+def exibir_indicador(lin: int, col: int, indicador: bool=True):
+    posicionarCursor(lin - 1, col)
+    if indicador:
+        print("↓", end="")
+    else:
+        print(" ", end="")
+
 def limpar_tela(start: int=4, stop: int=29, column: int=2, size: int=98):
     for linha in range(start, stop):
         posicionarCursor(linha, column)
@@ -41,6 +53,8 @@ def limpar_tela(start: int=4, stop: int=29, column: int=2, size: int=98):
 
 def desenhar_tela(layout, line_loop=0, stop_loop=0):
     for linha in layout:
+        if line_loop == 0 and stop_loop > 0 and stop_loop == linha["lin"]:
+            break
         if line_loop == linha["lin"] and stop_loop > 0:
             processar = True
             while processar:
@@ -91,7 +105,7 @@ def formatar_documento(cpf_cnpj: str, tipo_pessoa: TipoPessoa):
 def formatar_cep(cep: int):
     try:
         cep_formatado = f"{cep:008d}"
-        return f"{cep_formatado[:2]}.{cep_formatado[2:5]}-{cep_formatado[5:]}"
+        return True, f"{cep_formatado[:2]}.{cep_formatado[2:5]}-{cep_formatado[5:]}"
     except ValueError as error:
         return False, f"Erro ao formatar CEP: {error}"
     
@@ -163,3 +177,17 @@ def validar_data_hora(entrada: str, permitir_futuro=False):
         except ValueError:
             continue  # Tenta o próximo formato
     return False, None, "Formato inválido. Tente novamente com um dos formatos aceitos."
+
+
+def serialize(obj):
+    if isinstance(obj, Enum):
+        return obj.name
+    if isinstance(obj, date):
+        return obj.isoformat()
+    if isinstance(obj, (list, tuple)):
+        return [serialize(item) for item in obj]
+    if isinstance(obj, dict):
+        return {k: serialize(v) for k, v in obj.items()}
+    if hasattr(obj, '__dict__'):
+        return {k: serialize(v) for k, v in obj.__dict__.items()}
+    return obj  # tipo primitivo

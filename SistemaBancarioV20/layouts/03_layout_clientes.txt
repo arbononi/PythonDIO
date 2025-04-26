@@ -18,9 +18,9 @@
 ║                                                                                                  ║
 ║ CEP .............: [          ]                                       Telefone : [             ] ║
 ║                                                                                                  ║
-║ Situação Cadastro: ( ) INATIVO ( ) ATIVO ( ) RESTRITO ( ) BLOQUEADO  Cliente Desde: [          ] ║
+║ Situação Cadastro: ( ) [I]NATIVO        ( ) [A]TIVO        ( ) [R]ESTRITO        ( ) [B]LOQUEADO ║
 ║                                                                                                  ║
-║                                                                                                  ║
+║ Cliente Desde ...: [          ]                                                                  ║
 ║                                                                                                  ║
 ║                                                                                                  ║
 ║                                                                                                  ║
