@@ -12,7 +12,6 @@ class ContasView:
         limpar_tela()
         desenhar_tela(layout_cadastro_contas)
         exibir_conteudo(titulo_telas["cadastro_contas"], lin=4, col=2)
-        
         while True:
             limpar_linha()
             exibir_conteudo(opcoes_disponiveis["cadastro_contas"], lin=30, col=2)

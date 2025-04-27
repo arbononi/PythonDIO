@@ -8,6 +8,7 @@ from layouts.layouts import titulo_telas, opcoes_disponiveis, layout_menu_princi
 from utils import userfunctions
 from controllers.clientes_controller import ClientesController
 from controllers.contas_controller import ContasController
+from controllers.transacoes_controller import TransacoesController
 
 locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
@@ -54,6 +55,7 @@ def main():
 
         clientescontroller = ClientesController(banco)
         contascontroller = ContasController(banco)
+        transacoescontroller = TransacoesController(banco)
 
         limp("cls")
         data_atual_str = userfunctions.formatar_data(userfunctions.get_data_atual(), exibir_dia_semana=True, antes=True)
@@ -79,7 +81,8 @@ def main():
                     contascontroller.iniciar()
                     fl_redesenhar_tela = True
                 elif opcao == 3:
-                    userfunctions.exibir_mensagem("Opção em desenvolvimento!", wait_key=True)
+                    transacoescontroller.iniciar()
+                    fl_redesenhar_tela = True
                 elif opcao == 4:
                     userfunctions.exibir_mensagem("Opção em desenvolvimento!", wait_key=True)
                 if fl_redesenhar_tela:

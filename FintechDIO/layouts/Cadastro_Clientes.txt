@@ -14,11 +14,11 @@
 ║                                                                                                  ║
 ║ Bairro ..: [                                                                                   ] ║
 ║                                                                                                  ║
-║ Cidade .: [                                                                          ] UF.: [  ] ║
+║ Cidade ..: [                                                                         ] UF.: [  ] ║
 ║                                                                                                  ║
-║ CEP.....: [           ]        Telefone ..: [             ]        Data Nacimento.: [          ] ║
+║ CEP......: [           ]       Telefone .: [             ]         Data Nacimento.: [          ] ║
 ║                                                                                                  ║
-║ Situação: ( ) [A]TIVO ( ) [R]ESTRITO ( ) [B]LOQUEADO ( ) [I]NATIVO   Cliente Desde: [          ] ║
+║ Situação.: ( ) [A]TIVO ( ) [R]ESTRITO ( ) [B]LOQUEADO ( ) [I]NATIVO  Cliente Desde: [          ] ║
 ║                                                                                                  ║
 ║                                                                                                  ║
 ║                                                                                                  ║
