@@ -1,0 +1,194 @@
+2025-04-26 22:16:08 [INFO] Conexão com banco iniciada.
+2025-04-26 22:16:08 [INFO] Conexão com banco de dados encerrada!
+2025-04-26 22:16:08 [INFO] Banco de dados criado com sucesso!
+2025-04-26 22:16:08 [INFO] Conexão com banco iniciada.
+2025-04-26 22:16:10 [INFO] Executou query: 
+CREATE TABLE IF NOT EXISTS clientes(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    tipo_pessoa INTEGER NOT NULL,
+    cpf_cnpj TEXT NOT NULL,
+    nome TEXT NOT NULL,
+    endereco TEXT NOT NULL,
+    numero TEXT NOT NULL,
+    complemento TEXT NOT NULL,
+    bairro TEXT NOT NULL,
+    cidade TEXT NOT NULL,
+    uf TEXT NOT NULL,
+    cep INTEGER NOT NULL,
+    telefone INTEGER NOT NULL,
+    data_nascimento INTEGER NOT NULL,
+    status INTEGER NOT NULL,
+    data_cadastro INTEGER NOT NULL)
+2025-04-26 22:16:11 [INFO] Executou query: 
+CREATE TABLE IF NOT EXISTS contas(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    data_abertura INTEGER NOT NULL,
+    idcliente INTEGER NOT NULL,
+    tipo INTEGER NOT NULL,
+    status INTEGER NOT NULL,
+    limite_especial DECIMAL NOT NULL,
+    saldo_atual DECIMAL NOT NULL,
+    data_encerramento INTEGER NOT NULL
+    )
+2025-04-26 22:16:12 [INFO] Executou query: 
+CREATE TABLE IF NOT EXISTS transacoes(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    data_movto INTEGER NOT NULL,
+    idconta INTEGER NOT NULL,
+    tipo_operacao INTEGER NOT NULL,
+    tipo_transacao INTEGER NOT NULL,
+    saldo_anterior DECIMAL NOT NULL,
+    valor_movto DECIMAL NOT NULL,
+    saldo_atual DECIMAL NOT NULL,
+    nome_autor TEXT NOT NULL,
+    mensagem TEXT NOT NULL
+    )
+2025-04-26 22:16:22 [INFO] Executou query: 
+CREATE TABLE IF NOT EXISTS versao(
+    versao INTEGER NOT NULL PRIMARY KEY,
+    release INTEGER NOT NULL,
+    build INTEGER NOT NULL,
+    compile INTEGER NOT NULL
+    )
+2025-04-26 22:16:31 [INFO] Conexão com banco de dados encerrada!
+2025-04-26 22:58:10 [INFO] Conexão com banco iniciada.
+2025-04-26 22:58:10 [INFO] Conexão com banco de dados encerrada!
+2025-04-26 22:58:10 [INFO] Banco de dados criado com sucesso!
+2025-04-26 22:58:10 [INFO] Conexão com banco iniciada.
+2025-04-26 22:58:11 [INFO] Executou query: 
+CREATE TABLE IF NOT EXISTS clientes(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    tipo_pessoa INTEGER NOT NULL,
+    cpf_cnpj TEXT NOT NULL,
+    nome TEXT NOT NULL,
+    endereco TEXT NOT NULL,
+    numero TEXT NOT NULL,
+    complemento TEXT NOT NULL,
+    bairro TEXT NOT NULL,
+    cidade TEXT NOT NULL,
+    uf TEXT NOT NULL,
+    cep INTEGER NOT NULL,
+    telefone INTEGER NOT NULL,
+    data_nascimento TEXT,
+    status INTEGER NOT NULL,
+    data_cadastro TEXT NOT NULL)
+2025-04-26 22:58:12 [INFO] Executou query: 
+CREATE TABLE IF NOT EXISTS contas(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    data_abertura TEXT NOT NULL,
+    idcliente INTEGER NOT NULL,
+    tipo INTEGER NOT NULL,
+    status INTEGER NOT NULL,
+    limite_especial DECIMAL NOT NULL,
+    saldo_atual DECIMAL NOT NULL,
+    data_encerramento TEXT
+    )
+2025-04-26 22:58:12 [INFO] Executou query: 
+CREATE TABLE IF NOT EXISTS transacoes(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    data_movto TEXT NOT NULL,
+    idconta INTEGER NOT NULL,
+    tipo_operacao INTEGER NOT NULL,
+    tipo_transacao INTEGER NOT NULL,
+    saldo_anterior DECIMAL NOT NULL,
+    valor_movto DECIMAL NOT NULL,
+    saldo_atual DECIMAL NOT NULL,
+    nome_autor TEXT NOT NULL,
+    mensagem TEXT NOT NULL
+    )
+2025-04-26 22:58:16 [INFO] Executou query: 
+CREATE TABLE IF NOT EXISTS versao(
+    versao INTEGER NOT NULL PRIMARY KEY,
+    release INTEGER NOT NULL,
+    build INTEGER NOT NULL,
+    compile INTEGER NOT NULL
+    )
+2025-04-26 22:58:16 [INFO] Conexão com banco de dados encerrada!
+2025-04-26 23:17:21 [INFO] Conexão com banco iniciada.
+2025-04-26 23:34:07 [INFO] Conexão com banco iniciada.
+2025-04-26 23:36:15 [INFO] Conexão com banco iniciada.
+2025-04-26 23:36:26 [INFO] Conexão com banco de dados encerrada!
+2025-04-26 23:37:18 [INFO] Conexão com banco iniciada.
+2025-04-26 23:37:25 [ERROR] Erro ao processar comando (DatabaseError) - Query: Select * from versao where versao = ? : parameters are of unsupported type
+2025-04-26 23:37:59 [ERROR] Comando SQL inválido (OperationalError) - Query: Insert into versao(versao, release, build, compile) value(?, ?, ?, ?) : near "value": syntax error
+2025-04-26 23:38:09 [INFO] Conexão com banco de dados encerrada!
+2025-04-26 23:38:46 [INFO] Conexão com banco iniciada.
+2025-04-26 23:38:50 [ERROR] Erro ao processar comando (DatabaseError) - Query: Select * from versao where versao = ? : parameters are of unsupported type
+2025-04-26 23:39:56 [INFO] Conexão com banco iniciada.
+2025-04-26 23:39:56 [ERROR] Erro ao processar comando (DatabaseError) - Query: Select * from versao where versao = ? : parameters are of unsupported type
+2025-04-26 23:40:06 [INFO] Executou query: Insert into versao(versao, release, build, compile) values(:versao, :release, :build, :compile) | Params: (1, 2025, 4, 0)
+2025-04-26 23:40:21 [INFO] Conexão com banco de dados encerrada!
+2025-04-26 23:40:42 [INFO] Conexão com banco iniciada.
+2025-04-26 23:41:41 [INFO] Conexão com banco iniciada.
+2025-04-26 23:43:06 [INFO] Conexão com banco iniciada.
+2025-04-26 23:43:18 [INFO] Executou query: Select * from versao where versao = :versao | Params: (1,)
+2025-04-26 23:44:07 [INFO] Conexão com banco de dados encerrada!
+2025-04-26 23:53:24 [INFO] Conexão com banco iniciada.
+2025-04-26 23:53:24 [INFO] Conexão com banco de dados encerrada!
+2025-04-26 23:53:24 [INFO] Banco de dados criado com sucesso!
+2025-04-26 23:53:24 [INFO] Conexão com banco iniciada.
+2025-04-26 23:53:27 [INFO] Executou query: 
+CREATE TABLE IF NOT EXISTS clientes(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    tipo_pessoa INTEGER NOT NULL,
+    cpf_cnpj TEXT NOT NULL,
+    nome TEXT NOT NULL,
+    endereco TEXT NOT NULL,
+    numero TEXT NOT NULL,
+    complemento TEXT NOT NULL,
+    bairro TEXT NOT NULL,
+    cidade TEXT NOT NULL,
+    uf TEXT NOT NULL,
+    cep INTEGER NOT NULL,
+    telefone INTEGER NOT NULL,
+    data_nascimento TEXT,
+    status INTEGER NOT NULL,
+    data_cadastro TEXT NOT NULL)
+2025-04-26 23:53:27 [INFO] Executou query: 
+CREATE TABLE IF NOT EXISTS contas(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    data_abertura TEXT NOT NULL,
+    idcliente INTEGER NOT NULL,
+    tipo INTEGER NOT NULL,
+    status INTEGER NOT NULL,
+    limite_especial DECIMAL NOT NULL,
+    saldo_atual DECIMAL NOT NULL,
+    data_encerramento TEXT
+    )
+2025-04-26 23:53:27 [INFO] Executou query: 
+CREATE TABLE IF NOT EXISTS transacoes(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    data_movto TEXT NOT NULL,
+    idconta INTEGER NOT NULL,
+    tipo_operacao INTEGER NOT NULL,
+    tipo_transacao INTEGER NOT NULL,
+    saldo_anterior DECIMAL NOT NULL,
+    valor_movto DECIMAL NOT NULL,
+    saldo_atual DECIMAL NOT NULL,
+    nome_autor TEXT NOT NULL,
+    mensagem TEXT NOT NULL
+    )
+2025-04-26 23:53:27 [INFO] Executou query: 
+CREATE TABLE IF NOT EXISTS versoes(
+    versao INTEGER NOT NULL PRIMARY KEY,
+    release INTEGER NOT NULL,
+    build INTEGER NOT NULL,
+    compile INTEGER NOT NULL
+    )
+2025-04-26 23:53:27 [ERROR] Comando SQL inválido (OperationalError) - Query: Select * from versao where versao = :versao : no such table: versao
+2025-04-26 23:53:27 [INFO] Executou query: Insert into versoes(versao, release, build, compile) values(:versao, :release, :build, :compile) | Params: (1, 2025, 4, 0)
+2025-04-26 23:53:27 [INFO] Conexão com banco de dados encerrada!
+2025-04-27 00:10:39 [INFO] Conexão com banco iniciada.
+2025-04-27 00:10:42 [ERROR] Comando SQL inválido (OperationalError) - Query: Select * from versao where versao = :versao : no such table: versao
+2025-04-27 00:10:52 [INFO] Executou query: Insert into versoes(versao, release, build, compile) values(:versao, :release, :build, :compile) | Params: (1, 2025, 4, 0)
+2025-04-27 00:10:56 [INFO] Conexão com banco de dados encerrada!
+2025-04-27 00:41:42 [INFO] Conexão com banco iniciada.
+2025-04-27 00:41:44 [INFO] Conexão com banco de dados encerrada!
+2025-04-27 00:42:04 [INFO] Conexão com banco iniciada.
+2025-04-27 00:42:10 [ERROR] Comando SQL inválido (OperationalError) - Query: Select * from versao where versao = :versao : no such table: versao
+2025-04-27 00:42:44 [INFO] Conexão com banco iniciada.
+2025-04-27 00:43:27 [INFO] Conexão com banco iniciada.
+2025-04-27 00:43:34 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 00:44:42 [INFO] Conexão com banco iniciada.
+2025-04-27 00:44:46 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 00:45:08 [INFO] Conexão com banco de dados encerrada!
