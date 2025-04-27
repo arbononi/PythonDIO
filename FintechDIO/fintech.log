@@ -192,3 +192,62 @@ CREATE TABLE IF NOT EXISTS versoes(
 2025-04-27 00:44:42 [INFO] Conexão com banco iniciada.
 2025-04-27 00:44:46 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
 2025-04-27 00:45:08 [INFO] Conexão com banco de dados encerrada!
+2025-04-27 12:32:22 [INFO] Conexão com banco iniciada.
+2025-04-27 12:32:22 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:32:44 [INFO] Conexão com banco iniciada.
+2025-04-27 12:32:44 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:33:45 [INFO] Conexão com banco iniciada.
+2025-04-27 12:33:45 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:34:16 [INFO] Conexão com banco iniciada.
+2025-04-27 12:34:16 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:35:26 [INFO] Conexão com banco iniciada.
+2025-04-27 12:35:26 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:36:11 [INFO] Conexão com banco iniciada.
+2025-04-27 12:36:11 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:36:51 [INFO] Conexão com banco iniciada.
+2025-04-27 12:36:51 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:37:06 [INFO] Conexão com banco iniciada.
+2025-04-27 12:37:06 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:38:06 [INFO] Conexão com banco iniciada.
+2025-04-27 12:38:06 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:39:00 [INFO] Conexão com banco iniciada.
+2025-04-27 12:39:00 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:39:35 [INFO] Conexão com banco iniciada.
+2025-04-27 12:39:35 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:42:00 [INFO] Conexão com banco iniciada.
+2025-04-27 12:42:00 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:42:21 [INFO] Conexão com banco de dados encerrada!
+2025-04-27 12:44:17 [INFO] Conexão com banco iniciada.
+2025-04-27 12:44:17 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:44:30 [INFO] Conexão com banco de dados encerrada!
+2025-04-27 12:46:33 [INFO] Conexão com banco iniciada.
+2025-04-27 12:46:33 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:46:52 [INFO] Conexão com banco de dados encerrada!
+2025-04-27 12:48:05 [INFO] Conexão com banco iniciada.
+2025-04-27 12:48:05 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:48:22 [INFO] Conexão com banco de dados encerrada!
+2025-04-27 12:49:15 [INFO] Conexão com banco iniciada.
+2025-04-27 12:49:15 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 12:49:25 [INFO] Conexão com banco de dados encerrada!
+2025-04-27 13:40:19 [INFO] Conexão com banco iniciada.
+2025-04-27 13:40:19 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 13:42:33 [INFO] Conexão com banco iniciada.
+2025-04-27 13:42:33 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 13:43:18 [INFO] Conexão com banco iniciada.
+2025-04-27 13:43:18 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 13:43:21 [INFO] Conexão com banco de dados encerrada!
+2025-04-27 13:44:30 [INFO] Conexão com banco iniciada.
+2025-04-27 13:44:30 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 13:44:57 [INFO] Conexão com banco de dados encerrada!
+2025-04-27 13:51:11 [INFO] Conexão com banco iniciada.
+2025-04-27 13:51:11 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 13:51:29 [INFO] Conexão com banco de dados encerrada!
+2025-04-27 14:02:16 [INFO] Conexão com banco iniciada.
+2025-04-27 14:02:16 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 14:02:35 [INFO] Conexão com banco de dados encerrada!
+2025-04-27 14:19:10 [INFO] Conexão com banco iniciada.
+2025-04-27 14:19:10 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 14:19:40 [INFO] Conexão com banco de dados encerrada!
+2025-04-27 14:20:02 [INFO] Conexão com banco iniciada.
+2025-04-27 14:20:02 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-27 14:20:26 [INFO] Conexão com banco de dados encerrada!

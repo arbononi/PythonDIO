@@ -1,10 +1,24 @@
+import locale
+from os import system as limp
+from time import sleep
 from database.banco import Banco
 from database.migracao import create_tables
 from models.versao import Versao
+from layouts.layouts import titulo_telas, opcoes_disponiveis, layout_menu_principal, operacoes_disponiveis
+from utils import userfunctions
+from controllers.clientes_controller import ClientesController
+from controllers.contas_controller import ContasController
 
-# from controllers.cliente_controller import ClienteController
+locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
 def main():
+
+    def redesenhar_tela(star_lin=3, stop_lin=30):
+        for config in layout_menu_principal:
+            if config["lin"] >= star_lin and config["lin"] <= stop_lin:
+                userfunctions.posicionar_cursor(config["lin"], config["col"])
+                print(config["value"])
+    
     fl_ok = True
     fl_create_tables = False
     if not Banco.check_exists_database():
@@ -37,13 +51,55 @@ def main():
         else:
             versao = Versao(banco, versao=Versao._versao, release=Versao._release, build=Versao._build, compile=Versao._compile)
             versao.insert()
-            
+
+        clientescontroller = ClientesController(banco)
+        contascontroller = ContasController(banco)
+
+        limp("cls")
+        data_atual_str = userfunctions.formatar_data(userfunctions.get_data_atual(), exibir_dia_semana=True, antes=True)
+        userfunctions.posicionar_cursor(1, 1)
+        userfunctions.desenhar_tela(layout_menu_principal)
+        userfunctions.exibir_conteudo(titulo_telas["menu_principal"], lin=2, col=2)
+        userfunctions.exibir_conteudo(data_atual_str, lin=2, col=85)
+
+        while True:
+            try:
+                userfunctions.exibir_conteudo(opcoes_disponiveis["menu_principal"], lin=30, col=2)
+                opcao = int(userfunctions.esperar_tecla())
+                fl_redesenhar_tela = False
+                if opcao == 9:
+                    break
+                if opcao not in operacoes_disponiveis["menu_principal"]:
+                    userfunctions.exibir_mensagem("Opção inválida! Tente novamente.", wait_key=True)
+                    continue
+                if opcao == 1:
+                   clientescontroller.iniciar()
+                   fl_redesenhar_tela = True
+                elif opcao == 2:
+                    contascontroller.iniciar()
+                    fl_redesenhar_tela = True
+                elif opcao == 3:
+                    userfunctions.exibir_mensagem("Opção em desenvolvimento!", wait_key=True)
+                elif opcao == 4:
+                    userfunctions.exibir_mensagem("Opção em desenvolvimento!", wait_key=True)
+                if fl_redesenhar_tela:
+                    redesenhar_tela()
+            except ValueError:
+                userfunctions.exibir_mensagem("Opção inválida! Tente novamente.", wait_key=True)
+                continue
+        userfunctions.exibir_mensagem("Obrigado por usar nossa Fintech! Finalizando ")
+        col = 48
+        for i in range(5, 0, -1):
+            userfunctions.exibir_conteudo(".", lin=30, col=col)
+            col += 1
+            sleep(1)
     except Exception as e:
         print(f"Erro: {e}")
 
     finally:
         if banco.conn:
             banco.fechar()
+        limp("cls")
 
 if __name__ == "__main__":
     main()

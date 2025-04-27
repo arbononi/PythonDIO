@@ -26,15 +26,15 @@ def limpar_linha(lin=30, col=2, size=98, background=False):
     posicionar_cursor(lin, col)
 
 def exibir_mensagem(mensagem: str, lin=30, col=3, skip_line: str="", wait_key: bool=False):
-    limpar_linha(lin, col)
+    limpar_linha(lin, col, size=97)
     posicionar_cursor(lin, col)
     print(mensagem, end=skip_line)
     if wait_key:
         esperar_tecla()
 
-def exibir_valor(valor: str, lin: int, col: int):
+def exibir_conteudo(conteudo: str, lin: int, col: int):
     posicionar_cursor(lin, col)
-    print(valor, end="")
+    print(conteudo, end="")
 
 def limpar_tela(start: int=4, stop: int=29, col: int=2, size: int=98):
     for lin in range(start, stop):
@@ -55,6 +55,9 @@ def desenhar_tela(layout, line_loop=0, stop_loop=0):
         else:
             posicionar_cursor(config["lin"], config["col"])
             print(config["value"])
+
+def get_data_atual():
+    return datetime.now().date()
 
 def validar_cpf(num_cpf: str):
     if num_cpf == "" or num_cpf == "00000000000":

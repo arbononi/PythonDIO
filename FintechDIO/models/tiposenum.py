@@ -5,7 +5,7 @@ class TipoOperacao(Enum):
     DEBITO = 2
 
 class TipoTransacao(Enum):
-    DEPOSITO = 0
+    DEPOSITO = 1
     SAQUE = 2
     PIX = 3
     PAGAMENTO = 4
