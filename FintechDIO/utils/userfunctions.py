@@ -1,7 +1,7 @@
 import sys
 import msvcrt
 from datetime import datetime, date
-from models.tiposenum import estados
+from models.tiposenum import estados, TipoPessoa
 
 OCULTAR_CURSOR = '\033[?25l'
 MOSTRAR_CURSOR = '\033[?25h'
@@ -32,7 +32,7 @@ def exibir_mensagem(mensagem: str, lin=30, col=3, skip_line: str="", wait_key: b
     if wait_key:
         esperar_tecla()
 
-def exibir_conteudo(conteudo: str, lin: int, col: int):
+def exibir_conteudo(conteudo: str, lin: int=30, col: int=3):
     posicionar_cursor(lin, col)
     print(conteudo, end="")
 
@@ -59,11 +59,15 @@ def desenhar_tela(layout, line_loop=0, stop_loop=0):
 def get_data_atual():
     return datetime.now().date()
 
-def validar_cpf(num_cpf: str):
-    if num_cpf == "" or num_cpf == "00000000000":
-        return False, "Número do CPF não pode ficar em branco ou ser somente zeros"
-    if len(num_cpf) != 11:
-        return False, "Número de dígitos de CPF inválidos: precisa ter 11 dígitos."
+def validar_cpf_cnpj(num_cpf_cnpj: str, tipo_pessoa: TipoPessoa=None):
+    size = len(num_cpf_cnpj)
+    if tipo_pessoa != None:
+        if tipo_pessoa == TipoPessoa.FISICA and size != 11:
+            return False, "Número de dígitos inválido para CPF"
+        elif size != 14:
+            return False, "Número de dígitos inválido para CNPJ"
+    elif size < 11 or size > 14:
+        return False, "Número de dígitos de CPF/CNPJ inválidos: 11 dígitos para CPF e 14 para CNPJ."
     return True, None
 
 def validar_estado(uf: str):

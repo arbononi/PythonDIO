@@ -281,3 +281,28 @@ CREATE TABLE IF NOT EXISTS versoes(
 2025-04-27 17:04:29 [INFO] Conexão com banco iniciada.
 2025-04-27 17:04:29 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
 2025-04-27 17:04:43 [INFO] Conexão com banco de dados encerrada!
+2025-04-28 17:24:31 [INFO] Conexão com banco iniciada.
+2025-04-28 17:24:31 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-28 17:24:56 [INFO] Conexão com banco de dados encerrada!
+2025-04-28 17:25:07 [INFO] Conexão com banco iniciada.
+2025-04-28 17:25:07 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-28 17:25:16 [INFO] Conexão com banco de dados encerrada!
+2025-04-28 17:26:18 [INFO] Conexão com banco iniciada.
+2025-04-28 17:26:18 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-28 17:26:19 [INFO] Conexão com banco de dados encerrada!
+2025-04-28 17:27:01 [INFO] Conexão com banco iniciada.
+2025-04-28 17:27:01 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-28 17:27:02 [INFO] Conexão com banco de dados encerrada!
+2025-04-28 17:27:11 [INFO] Conexão com banco iniciada.
+2025-04-28 17:27:11 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-28 17:27:21 [INFO] Conexão com banco de dados encerrada!
+2025-04-28 17:28:12 [INFO] Conexão com banco iniciada.
+2025-04-28 17:28:12 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-28 17:29:25 [INFO] Conexão com banco iniciada.
+2025-04-28 17:29:25 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-28 17:30:51 [INFO] Conexão com banco iniciada.
+2025-04-28 17:30:51 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-28 17:31:12 [INFO] Conexão com banco de dados encerrada!
+2025-04-28 17:32:32 [INFO] Conexão com banco iniciada.
+2025-04-28 17:32:32 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
+2025-04-28 17:33:03 [INFO] Conexão com banco de dados encerrada!

@@ -9,6 +9,7 @@ from utils import userfunctions
 from controllers.clientes_controller import ClientesController
 from controllers.contas_controller import ContasController
 from controllers.transacoes_controller import TransacoesController
+from controllers.consultas_controller import ConsultasController
 
 locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
@@ -56,6 +57,7 @@ def main():
         clientescontroller = ClientesController(banco)
         contascontroller = ContasController(banco)
         transacoescontroller = TransacoesController(banco)
+        consultacontroller = ConsultasController(banco)
 
         limp("cls")
         data_atual_str = userfunctions.formatar_data(userfunctions.get_data_atual(), exibir_dia_semana=True, antes=True)
@@ -83,8 +85,10 @@ def main():
                 elif opcao == 3:
                     transacoescontroller.iniciar()
                     fl_redesenhar_tela = True
-                elif opcao == 4:
-                    userfunctions.exibir_mensagem("Opção em desenvolvimento!", wait_key=True)
+                else:
+                    consultacontroller.iniciar()
+                    fl_redesenhar_tela = True
+
                 if fl_redesenhar_tela:
                     redesenhar_tela()
             except ValueError:
@@ -92,7 +96,7 @@ def main():
                 continue
         userfunctions.exibir_mensagem("Obrigado por usar nossa Fintech! Finalizando ")
         col = 48
-        for i in range(5, 0, -1):
+        for i in range(3, 0, -1):
             userfunctions.exibir_conteudo(".", lin=30, col=col)
             col += 1
             sleep(1)

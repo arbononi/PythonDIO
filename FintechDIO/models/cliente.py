@@ -3,6 +3,7 @@ from database.banco import Banco
 from models.tabela import Tabela
 from models.tiposenum import TipoPessoa, StatusCliente, estados
 from utils.userfunctions import date_to_iso
+
 class Cliente(Tabela):
 
     def __init__(self, banco, **kwargs):

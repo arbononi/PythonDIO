@@ -128,3 +128,7 @@ layout_consulta_cliente = [
     { "lin":  8, "col": 1, "value" : "║                    ║                                    ║               ║            ║           ║" },
     { "lin": 29, "col": 1, "value" : "╠════════════════════╩════════════════════════════════════╩═══════════════╩════════════╩═══════════╣" },
 ]
+
+layout_opcoes_consultas = {
+    "consulta_cliente" : { "lin": 4, "nome": 4, "cpf_cnpj": 14, "cidade": 27, "data_nascimento": 38 }
+}
