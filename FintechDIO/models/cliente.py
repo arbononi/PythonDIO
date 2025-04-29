@@ -63,7 +63,23 @@ CREATE TABLE IF NOT EXISTS clientes(
         else:
             banco.mensagens.append(mensagem)
         return None
-        
+
+    @classmethod
+    def get_all(cls, banco: Banco, condicao: str = None, params=()):
+        query = "Select * from clientes"
+        if condicao:
+            query += " where " + condicao
+        if params: 
+            cursor, mensagem = banco.executar(query=query, params=params)
+        else:
+            cursor, mensagem = banco.executar(query=query)
+        if cursor:
+            rows = cursor.fetchall()
+            return [cls(banco, **dict(zip([col[0] for col in cursor.description], row))) for row in rows]
+        else:
+            banco.mensagens.append(mensagem)
+        return None
+    
     def insert(cls):
         id_gerado = 0
         query = """Insert into clientes(tipo_pessoa, cpf_cnpj, nome, endereco, numero, complemento,

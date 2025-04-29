@@ -91,7 +91,20 @@ class ClientesView:
             break
         if fl_cancelar:
             return
-        
+        if self._tipo_consulta == 1:
+            query = " nome LIKE :argumento"
+        elif self._tipo_consulta == 2:
+            query = " cpf_cnpj = :argumento"
+        elif self._tipo_consulta == 3:
+            query = " cidade LIKE :argumento"
+        else:
+            query = " data_nascimento = :argumento"
+        params = (f"%{argumento}%",)
+        clientes, mensagem = Cliente.get_all(self.banco, query, params)
+        if not clientes:
+            exibir_mensagem("Nenhum cliente encontrado com os parâmetros informados!", wait_key=True)
+            return
+                
     def iniciar(self):
         limpar_tela()
         desenhar_tela(layout_cadastro_clientes)
@@ -123,4 +136,4 @@ class ClientesView:
                 continue
         
         limpar_tela()
-        limpar_linha()
+        limpar_linha()g
