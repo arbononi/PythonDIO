@@ -306,3 +306,1633 @@ CREATE TABLE IF NOT EXISTS versoes(
 2025-04-28 17:32:32 [INFO] Conexão com banco iniciada.
 2025-04-28 17:32:32 [INFO] Executou query: Select * from versoes where versao = :versao | Params: (1,)
 2025-04-28 17:33:03 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 20:24:45 [INFO] Conexão com banco iniciada.
+2025-04-30 20:24:45 [INFO] Comando executado com sucesso!
+2025-04-30 20:25:32 [INFO] Conexão com banco iniciada.
+2025-04-30 20:25:32 [INFO] Comando executado com sucesso!
+2025-04-30 20:25:56 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 20:27:06 [INFO] Conexão com banco iniciada.
+2025-04-30 20:27:06 [INFO] Comando executado com sucesso!
+2025-04-30 20:28:37 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 20:35:50 [INFO] Conexão com banco iniciada.
+2025-04-30 20:35:50 [INFO] Comando executado com sucesso!
+2025-04-30 20:35:56 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 20:36:34 [INFO] Conexão com banco iniciada.
+2025-04-30 20:36:34 [INFO] Comando executado com sucesso!
+2025-04-30 20:36:42 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 20:37:42 [INFO] Conexão com banco iniciada.
+2025-04-30 20:37:42 [INFO] Comando executado com sucesso!
+2025-04-30 20:37:47 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 20:37:55 [INFO] Conexão com banco iniciada.
+2025-04-30 20:37:55 [INFO] Comando executado com sucesso!
+2025-04-30 20:38:57 [INFO] Conexão com banco iniciada.
+2025-04-30 20:38:57 [INFO] Comando executado com sucesso!
+2025-04-30 20:40:36 [INFO] Conexão com banco iniciada.
+2025-04-30 20:40:36 [INFO] Comando executado com sucesso!
+2025-04-30 20:40:53 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 20:41:07 [INFO] Conexão com banco iniciada.
+2025-04-30 20:41:07 [INFO] Comando executado com sucesso!
+2025-04-30 20:41:23 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 20:41:37 [INFO] Conexão com banco iniciada.
+2025-04-30 20:41:37 [INFO] Comando executado com sucesso!
+2025-04-30 20:41:52 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 20:42:06 [INFO] Conexão com banco iniciada.
+2025-04-30 20:42:06 [INFO] Comando executado com sucesso!
+2025-04-30 20:44:39 [INFO] Conexão com banco iniciada.
+2025-04-30 20:44:39 [INFO] Comando executado com sucesso!
+2025-04-30 20:46:31 [INFO] Conexão com banco iniciada.
+2025-04-30 20:46:31 [INFO] Comando executado com sucesso!
+2025-04-30 20:49:15 [INFO] Conexão com banco iniciada.
+2025-04-30 20:49:15 [INFO] Comando executado com sucesso!
+2025-04-30 20:49:53 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 20:50:50 [INFO] Conexão com banco iniciada.
+2025-04-30 20:50:50 [INFO] Comando executado com sucesso!
+2025-04-30 20:51:15 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 20:51:24 [INFO] Conexão com banco iniciada.
+2025-04-30 20:51:24 [INFO] Comando executado com sucesso!
+2025-04-30 20:53:35 [INFO] Conexão com banco iniciada.
+2025-04-30 20:53:35 [INFO] Comando executado com sucesso!
+2025-04-30 20:57:42 [INFO] Conexão com banco iniciada.
+2025-04-30 20:57:42 [INFO] Comando executado com sucesso!
+2025-04-30 20:57:46 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 20:58:54 [INFO] Conexão com banco iniciada.
+2025-04-30 20:58:54 [INFO] Comando executado com sucesso!
+2025-04-30 20:59:33 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 21:00:03 [INFO] Conexão com banco iniciada.
+2025-04-30 21:00:03 [INFO] Comando executado com sucesso!
+2025-04-30 21:01:32 [INFO] Conexão com banco iniciada.
+2025-04-30 21:01:32 [INFO] Comando executado com sucesso!
+2025-04-30 21:02:58 [INFO] Conexão com banco iniciada.
+2025-04-30 21:02:58 [INFO] Comando executado com sucesso!
+2025-04-30 21:03:06 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 21:04:53 [INFO] Conexão com banco iniciada.
+2025-04-30 21:04:53 [INFO] Comando executado com sucesso!
+2025-04-30 21:05:03 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 21:05:14 [INFO] Conexão com banco iniciada.
+2025-04-30 21:05:14 [INFO] Comando executado com sucesso!
+2025-04-30 21:05:59 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 21:06:32 [INFO] Conexão com banco iniciada.
+2025-04-30 21:06:32 [INFO] Comando executado com sucesso!
+2025-04-30 21:07:38 [INFO] Conexão com banco iniciada.
+2025-04-30 21:07:38 [INFO] Comando executado com sucesso!
+2025-04-30 21:08:35 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 21:09:48 [INFO] Conexão com banco iniciada.
+2025-04-30 21:09:48 [INFO] Comando executado com sucesso!
+2025-04-30 21:16:28 [INFO] Conexão com banco iniciada.
+2025-04-30 21:16:28 [INFO] Comando executado com sucesso!
+2025-04-30 21:17:32 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 21:19:31 [INFO] Conexão com banco iniciada.
+2025-04-30 21:19:31 [INFO] Comando executado com sucesso!
+2025-04-30 21:20:58 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 21:22:12 [INFO] Conexão com banco iniciada.
+2025-04-30 21:22:12 [INFO] Comando executado com sucesso!
+2025-04-30 21:22:52 [ERROR] Erro ao processar comando (DatabaseError) - Query: 
+            INSERT INTO clientes(tipo_pessoa, cpf_cnpj, nome, endereco, numero, complemento,
+                  bairro, cidade, uf, cep, telefone, data_nascimento, status, data_cadastro)
+                          values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - Parametros: Cliente(id=0, tipo_pessoa=<TipoPessoa.FISICA: 1>, cpf_cnpj='14952312836', nome='André Rogério Bononi', endereco='Rua Carlos Gomes', numero='1974', complemento='', bairro='Centro', cidade='Sertãozinho', uf='SP', cep=14160530, telefone='16-99193-3081', status=<StatusCliente.ATIVO: 1>, data_nascimento=datetime.date(1969, 12, 3), data_cadastro=datetime.date(2025, 4, 30)): parameters are of unsupported type
+2025-04-30 21:23:21 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 21:24:04 [INFO] Conexão com banco iniciada.
+2025-04-30 21:24:04 [INFO] Comando executado com sucesso!
+2025-04-30 21:25:08 [ERROR] Erro ao processar comando (DatabaseError) - Query: 
+            INSERT INTO clientes(tipo_pessoa, cpf_cnpj, nome, endereco, numero, complemento,
+                  bairro, cidade, uf, cep, telefone, data_nascimento, status, data_cadastro)
+                          values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - Parametros: Cliente(id=0, tipo_pessoa=<TipoPessoa.FISICA: 1>, cpf_cnpj='14952312836', nome='André Rogério Bononi', endereco='Rua Carlos Gomes', numero='1974', complemento='', bairro='Centro', cidade='Sertãozinho', uf='SP', cep=14160530, telefone='16-99193-3081', status=<StatusCliente.ATIVO: 1>, data_nascimento=datetime.date(1969, 12, 3), data_cadastro=datetime.date(2025, 4, 30)): parameters are of unsupported type
+2025-04-30 21:25:31 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 21:51:57 [INFO] Conexão com banco iniciada.
+2025-04-30 21:51:57 [INFO] Comando executado com sucesso!
+2025-04-30 21:52:39 [ERROR] Erro ao processar comando (DatabaseError) - Query: 
+            INSERT INTO clientes(tipo_pessoa, cpf_cnpj, nome, endereco, numero, complemento,
+                  bairro, cidade, uf, cep, telefone, data_nascimento, status, data_cadastro)
+                          values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - Parametros: <bound method Cliente.as_tuple of Cliente(id=0, tipo_pessoa=<TipoPessoa.FISICA: 1>, cpf_cnpj='14952312836', nome='André Rogério Bononi', endereco='Rua Carlos Gomes', numero='1974', complemento='', bairro='Centro', cidade='Sertãozinho', uf='SP', cep=14160530, telefone='16-99193-3081', status=<StatusCliente.ATIVO: 1>, data_nascimento=datetime.date(1969, 12, 3), data_cadastro=datetime.date(2025, 4, 30))>: parameters are of unsupported type
+2025-04-30 21:56:08 [INFO] Conexão com banco iniciada.
+2025-04-30 21:56:08 [INFO] Comando executado com sucesso!
+2025-04-30 21:57:38 [INFO] Comando executado com sucesso!
+2025-04-30 22:00:27 [INFO] Conexão com banco de dados encerrada!
+2025-04-30 23:28:34,283 [ERROR] no such column: id — SQL: SELECT * FROM versoes WHERE id=? | (1,)
+2025-04-30 23:28:34,287 [ERROR] UNIQUE constraint failed: versoes.versao — SQL: INSERT INTO versoes (versao,release,build,compile) VALUES (?,?,?,?) | (1, 2025, 5, 0)
+2025-04-30 23:31:55,809 [ERROR] no such column: id — SQL: SELECT * FROM versoes WHERE id=? | (1,)
+2025-05-01 00:15:41,315 [ERROR] near "nome": syntax error — SQL: SELECT * FROM clientesorder by nome | ()
+2025-05-01 15:15:28,738 [ERROR] Incorrect number of bindings supplied. The current statement uses 4, and there are 5 supplied. — SQL: UPDATE versoes SET release=?,build=?,compile=? WHERE versao=? | (1, 2025, 5, 0, 1)
+2025-05-01 19:32:56,311 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-01 19:33:00,299 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (8,)
+2025-05-01 19:33:23,887 [INFO] Comando executado com sucesso: UPDATE clientes SET tipo_pessoa=?,cpf_cnpj=?,nome=?,endereco=?,numero=?,complemento=?,bairro=?,cidade=?,uf=?,cep=?,telefone=?,status=?,data_nascimento=?,data_cadastro=? WHERE id=?, (1, '12345678907', 'Gilberto De Oliveira Martins', 'Rua Ginez Vivanco Solano', '127', '', 'Conj. Hab. Walter Antonio De Padua Becker - Cohab 6', 'Sertãozinho', 'SP', 14177338, '', 1, '1974-04-13', '2025-05-01', 0)
+2025-05-02 09:21:28,018 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 09:21:51,475 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-02 09:23:22,089 [INFO] Comando executado com sucesso: INSERT INTO clientes (tipo_pessoa,cpf_cnpj,nome,endereco,numero,complemento,bairro,cidade,uf,cep,telefone,status,data_nascimento,data_cadastro) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?), (2, '12345678901234', 'Empresa Teste De Inclusão Pessoa Juridica', 'Av. Da Saudade', '1210', 'Sala 320, 3O. Andar, Ed. Plaza Campos Eliseos', 'Campos Eliseos', 'Ribeirão Preto', 'SP', 14080000, '16-3797-9500', 1, '1995-01-01', '2025-05-02')
+2025-05-02 09:23:25,191 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-02 09:23:25,194 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-02 09:31:13,328 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 09:34:03,021 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 09:35:32,743 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 09:35:37,613 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (8,)
+2025-05-02 09:35:51,595 [INFO] Comando executado com sucesso: UPDATE clientes SET tipo_pessoa=?,cpf_cnpj=?,nome=?,endereco=?,numero=?,complemento=?,bairro=?,cidade=?,uf=?,cep=?,telefone=?,status=?,data_nascimento=?,data_cadastro=? WHERE id=?, (1, '12345678907', 'Gilberto De Oliveira Martins', 'Rua Ginez Vivanco Solano', '127', '', 'Conj. Hab. Walter Antonio De Padua Becker - Cohab 6', 'Sertãozinho', 'SP', 14177338, '', 1, '1974-04-13', '2025-05-02', 8)
+2025-05-02 09:35:55,000 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-02 09:35:55,000 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-02 09:36:18,250 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (5,)
+2025-05-02 09:36:48,097 [INFO] Comando executado com sucesso: UPDATE clientes SET tipo_pessoa=?,cpf_cnpj=?,nome=?,endereco=?,numero=?,complemento=?,bairro=?,cidade=?,uf=?,cep=?,telefone=?,status=?,data_nascimento=?,data_cadastro=? WHERE id=?, (1, '12345678903', 'Iraide Christina Da Silva Bononi', 'Rua Ginez Vivanco Solano', '567', '', 'Conj. Hab. Walter Antonio De Padua Becker', 'Sertãozinho', 'SP', 14177338, '', 1, '1951-04-20', '2025-05-02', 5)
+2025-05-02 09:36:51,183 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-02 09:36:51,183 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-02 09:37:02,232 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (6,)
+2025-05-02 09:37:17,001 [INFO] Comando executado com sucesso: UPDATE clientes SET tipo_pessoa=?,cpf_cnpj=?,nome=?,endereco=?,numero=?,complemento=?,bairro=?,cidade=?,uf=?,cep=?,telefone=?,status=?,data_nascimento=?,data_cadastro=? WHERE id=?, (1, '12345678904', 'Maria De Oliveira Martins', 'Rua Giuseppe Baccega', '67', '', 'Cohab 3', 'Sertãozinho', 'SP', 14177232, '', 1, '1944-06-04', '2025-05-02', 6)
+2025-05-02 09:37:19,899 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-02 09:37:19,900 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-02 09:37:30,099 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (7,)
+2025-05-02 09:37:45,120 [INFO] Comando executado com sucesso: UPDATE clientes SET tipo_pessoa=?,cpf_cnpj=?,nome=?,endereco=?,numero=?,complemento=?,bairro=?,cidade=?,uf=?,cep=?,telefone=?,status=?,data_nascimento=?,data_cadastro=? WHERE id=?, (1, '12345678905', 'Sergio Ednei Bononi', 'Rua Gineza Vivanco Solano', '567', '', 'Conj. Hab. Walter Antonio De Padua Becker - Cohab 6', 'Sertãozinho', 'SP', 14177338, '', 1, '1977-03-03', '2025-05-02', 7)
+2025-05-02 09:37:47,278 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-02 09:37:47,279 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-02 09:40:11,162 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 09:40:16,609 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-02 10:48:53,585 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 10:49:00,454 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (10,)
+2025-05-02 10:49:08,776 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-02 10:49:08,776 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-02 10:49:42,618 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 10:49:48,052 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (10,)
+2025-05-02 10:49:50,584 [INFO] Comando executado com sucesso: DELETE FROM clientes WHERE id=?, (10,)
+2025-05-02 10:49:55,503 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-02 10:49:55,504 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-02 12:26:36,824 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 12:26:41,254 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-02 12:26:41,255 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-02 12:26:45,820 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-02 12:27:29,607 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 12:27:55,910 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 13:12:41,773 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 15:18:03,955 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 15:20:56,938 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 15:41:15,366 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 21:54:23,835 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 21:59:58,904 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:01:30,088 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:03:12,670 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:04:01,250 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:05:04,221 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:05:36,838 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:06:43,874 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:11:32,869 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:14:02,272 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:15:05,619 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:15:14,786 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-02 22:16:11,829 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:16:20,830 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-02 22:16:37,822 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:16:54,793 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-02 22:20:55,303 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:21:20,235 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-02 22:23:54,405 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:24:00,391 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-02 22:26:14,665 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:26:20,721 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-02 22:29:15,479 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:29:42,962 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:29:53,454 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-02 22:30:40,674 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:30:50,861 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-02 22:35:03,300 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:35:09,911 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-02 22:35:50,556 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:35:56,158 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-02 22:36:51,119 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:37:05,775 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-02 22:48:42,151 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:48:48,755 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-02 22:55:28,785 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:55:34,488 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-02 22:59:12,319 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 22:59:20,846 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-02 22:59:26,758 [INFO] Comando executado com sucesso: INSERT INTO contas (data_abertura,idcliente,tipo,status,limite_especial,saldo_atual,data_encerramento) VALUES (?,?,?,?,?,?,?), ('2025-05-02', 1, 1, 1, 350.0, 0, None)
+2025-05-02 22:59:57,795 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['15623559883']
+2025-05-02 23:00:02,510 [INFO] Comando executado com sucesso: INSERT INTO contas (data_abertura,idcliente,tipo,status,limite_especial,saldo_atual,data_encerramento) VALUES (?,?,?,?,?,?,?), ('2025-05-02', 2, 1, 2, 350.0, 0, None)
+2025-05-02 23:00:17,501 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['12345678901']
+2025-05-02 23:00:21,968 [INFO] Comando executado com sucesso: INSERT INTO contas (data_abertura,idcliente,tipo,status,limite_especial,saldo_atual,data_encerramento) VALUES (?,?,?,?,?,?,?), ('2025-05-02', 3, 1, 2, 350.0, 0, None)
+2025-05-02 23:00:34,567 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['12345678902']
+2025-05-02 23:03:38,109 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:03:47,369 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['12345678902']
+2025-05-02 23:03:52,450 [INFO] Comando executado com sucesso: INSERT INTO contas (data_abertura,idcliente,tipo,status,limite_especial,saldo_atual,data_encerramento) VALUES (?,?,?,?,?,?,?), ('2025-05-02', 4, 1, 2, 0.0, 0, None)
+2025-05-02 23:04:05,883 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['12345678903']
+2025-05-02 23:04:12,769 [INFO] Comando executado com sucesso: INSERT INTO contas (data_abertura,idcliente,tipo,status,limite_especial,saldo_atual,data_encerramento) VALUES (?,?,?,?,?,?,?), ('2025-05-02', 5, 2, 2, 0.0, 0, None)
+2025-05-02 23:25:13,034 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:25:15,946 [ERROR] near "as": syntax error — SQL: Select c.id, cli.nome, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli as cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ? | [21, 0]
+2025-05-02 23:26:42,451 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:26:44,582 [ERROR] near "as": syntax error — SQL: Select c.id, cli.nome, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli as cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ? | [21, 0]
+2025-05-02 23:29:11,113 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:29:15,290 [ERROR] near "as": syntax error — SQL: Select c.id, cli.nome, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli as cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ? | [21, 0]
+2025-05-02 23:29:37,971 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:29:40,869 [ERROR] near "as": syntax error — SQL: Select c.id, cli.nome, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli as cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ? | [21, 0]
+2025-05-02 23:30:15,100 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:30:21,004 [ERROR] near "as": syntax error — SQL: Select c.id, cli.nome, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli as cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ? | [21, 0]
+2025-05-02 23:31:13,846 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:31:18,587 [ERROR] near "as": syntax error — SQL: Select c.id, cli.nome, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli as cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ? | [21, 0]
+2025-05-02 23:32:13,786 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:32:15,834 [INFO] Comando executado com sucesso: Select c.id, cli.nome, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-02 23:36:22,322 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:36:24,811 [INFO] Comando executado com sucesso: Select c.id, cli.nome, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-02 23:36:44,765 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:36:46,917 [INFO] Comando executado com sucesso: Select c.id, cli.nome, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-02 23:41:38,365 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:41:40,364 [INFO] Comando executado com sucesso: Select c.id, cli.nome, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-02 23:45:41,514 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:45:44,021 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-02 23:47:27,329 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:47:29,202 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-02 23:47:45,030 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:47:46,741 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-02 23:48:13,584 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:48:16,736 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-02 23:49:33,433 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:49:35,506 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-02 23:51:29,350 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-02 23:51:41,771 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.idcliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-03 15:43:34,507 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 15:43:40,088 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:18:28,038 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:18:46,048 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['12345678904']
+2025-05-03 16:18:52,139 [INFO] Comando executado com sucesso: INSERT INTO contas (data_abertura,id_cliente,tipo,status,limite_especial,saldo_atual,data_encerramento) VALUES (?,?,?,?,?,?,?), ('2025-05-03', 6, 2, 2, 0.0, 0, None)
+2025-05-03 16:18:55,178 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.id_cliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-03 16:19:19,236 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:20:28,041 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:20:39,774 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:22:42,900 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:22:49,769 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:23:29,708 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:23:34,326 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:23:55,936 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:24:00,192 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:24:34,754 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:24:41,741 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:25:59,145 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:26:09,248 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:38:52,423 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:38:57,868 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 16:39:15,938 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:39:24,423 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:43:33,878 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:43:38,945 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:43:38,945 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 16:44:06,145 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:44:34,240 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:44:46,859 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 16:48:26,877 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:48:31,063 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:48:31,064 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 16:49:37,052 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:49:40,783 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:49:40,783 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 16:50:33,108 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:50:37,556 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:50:37,557 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 16:51:03,607 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:51:03,607 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 16:52:48,694 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:52:52,986 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:52:52,987 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 16:53:17,718 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:53:24,014 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:53:24,015 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 16:53:47,425 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:53:47,429 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 16:54:22,387 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:54:22,388 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 16:57:12,214 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:57:16,013 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:57:16,014 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 16:57:37,313 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:57:40,712 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:57:40,712 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 16:59:39,315 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 16:59:46,124 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 16:59:46,125 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:00:07,431 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:00:07,431 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:01:21,314 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:01:24,966 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:01:24,967 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:02:08,809 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:02:13,244 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:02:13,245 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:02:48,144 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:02:51,303 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:02:51,304 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:03:02,408 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-03 17:03:02,408 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-03 17:03:07,041 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (3,)
+2025-05-03 17:03:07,041 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (3,)
+2025-05-03 17:03:11,289 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (4,)
+2025-05-03 17:03:11,289 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (4,)
+2025-05-03 17:03:37,147 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:03:41,637 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:03:41,637 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:04:16,089 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:04:16,090 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:06:04,317 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:06:11,660 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:06:11,661 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:07:01,124 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:07:04,482 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:07:04,482 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:07:22,770 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:07:26,772 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:07:26,772 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:08:37,272 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:08:42,451 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:08:42,452 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:09:12,685 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:09:15,903 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:09:15,903 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:10:01,813 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:10:05,828 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:10:05,828 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:11:32,921 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:11:38,029 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:11:38,029 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:13:52,425 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:14:00,364 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:14:00,365 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:15:08,984 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:15:12,643 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:15:12,643 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:15:51,500 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:15:58,784 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:15:58,785 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:16:02,792 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-03 17:16:02,792 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-03 17:16:07,169 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (7,)
+2025-05-03 17:16:56,187 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:16:58,918 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:16:58,918 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:17:04,758 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (7,)
+2025-05-03 17:24:23,241 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:24:28,772 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:24:28,773 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:25:12,975 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:25:16,665 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:25:16,666 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:26:20,944 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:26:24,953 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:26:24,953 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:26:26,968 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-03 17:26:34,789 [INFO] Comando executado com sucesso: UPDATE contas SET data_abertura=?,id_cliente=?,tipo=?,status=?,limite_especial=?,saldo_atual=?,data_encerramento=? WHERE id=?, ('2025-05-02', 1, 1, 2, 350, 0, None, 1)
+2025-05-03 17:26:42,115 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:26:42,115 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:26:47,615 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.id_cliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-03 17:26:56,699 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:26:56,699 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:26:57,507 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-03 17:26:59,923 [INFO] Comando executado com sucesso: UPDATE contas SET data_abertura=?,id_cliente=?,tipo=?,status=?,limite_especial=?,saldo_atual=?,data_encerramento=? WHERE id=?, ('2025-05-02', 1, 1, 2, 350, 0, None, 1)
+2025-05-03 17:27:07,236 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:27:07,236 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:27:09,844 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.id_cliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-03 17:27:39,648 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.id_cliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-03 17:27:47,113 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-03 17:27:47,114 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-03 17:28:10,332 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-03 17:28:10,333 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-03 17:28:34,661 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['12345678908']
+2025-05-03 17:28:44,398 [INFO] Comando executado com sucesso: INSERT INTO contas (data_abertura,id_cliente,tipo,status,limite_especial,saldo_atual,data_encerramento) VALUES (?,?,?,?,?,?,?), ('2025-05-03', 9, 3, 3, 350, 0, None)
+2025-05-03 17:28:50,006 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (7,)
+2025-05-03 17:28:50,007 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (9,)
+2025-05-03 17:28:52,791 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['12345678908']
+2025-05-03 17:29:47,683 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:29:55,046 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (7,)
+2025-05-03 17:29:55,046 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (9,)
+2025-05-03 17:29:56,309 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['12345678908']
+2025-05-03 17:30:31,863 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:30:37,154 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (7,)
+2025-05-03 17:30:37,154 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (9,)
+2025-05-03 17:30:38,914 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['12345678908']
+2025-05-03 17:30:45,554 [INFO] Comando executado com sucesso: UPDATE contas SET data_abertura=?,id_cliente=?,tipo=?,status=?,limite_especial=?,saldo_atual=?,data_encerramento=? WHERE id=?, ('2025-05-03', 9, 3, 6, 350, 0, '2025-05-03', 7)
+2025-05-03 17:30:49,892 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.id_cliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-03 17:35:36,952 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:35:42,705 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 17:35:42,706 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-03 17:35:46,170 [INFO] Comando executado com sucesso: DELETE FROM contas WHERE id=?, (1,)
+2025-05-03 17:35:48,714 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.id_cliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-03 17:36:02,667 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (7,)
+2025-05-03 17:36:02,668 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (9,)
+2025-05-03 17:36:28,935 [INFO] Comando executado com sucesso: DELETE FROM contas WHERE id=?, (7,)
+2025-05-03 17:37:51,155 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 17:37:54,287 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.id_cliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-03 17:39:45,908 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 18:41:17,228 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 18:42:09,266 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 18:42:35,584 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 18:43:01,553 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 18:43:42,784 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 18:43:57,795 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 18:45:48,098 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 20:07:48,517 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 20:08:25,895 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 20:25:50,356 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 20:26:17,722 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 20:33:19,129 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 20:33:47,525 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 20:35:02,850 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 20:41:45,715 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 20:57:55,320 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 20:59:39,649 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 21:05:19,912 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 21:13:21,154 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 21:23:57,235 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 21:25:33,810 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 21:28:01,827 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 21:33:46,653 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 21:35:41,067 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 22:08:59,363 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 23:18:52,851 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 23:19:44,545 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 23:20:55,620 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 23:21:02,160 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 23:21:12,744 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (0,)
+2025-05-03 23:21:16,665 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (0,)
+2025-05-03 23:21:42,709 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 23:22:31,051 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 23:22:35,569 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-03 23:22:44,739 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.id_cliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-03 23:23:11,004 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-03 23:23:11,005 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-03 23:24:23,620 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 23:24:28,765 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-03 23:24:28,765 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-03 23:26:29,940 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 23:26:34,634 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-03 23:26:34,634 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-03 23:28:07,344 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 23:28:11,507 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-03 23:28:11,507 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-03 23:31:12,362 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 23:31:17,031 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-03 23:31:17,032 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-03 23:31:36,187 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-03T23:31:36.105001', 0, 2, 1, 1, 0, '', '', 0, 1500.0, 1500.0, 'André', 'Depósito Combinado')
+2025-05-03 23:31:38,809 [ERROR] You did not supply a value for binding parameter :tipo_operacao. — SQL: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta | {':tipo_operacao': 1, ':valor_operacao': 1500.0, ':id_conta': 2}
+2025-05-03 23:34:01,936 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-03 23:34:14,129 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-03 23:34:14,130 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-03 23:34:27,193 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-03T23:34:27.082503', 0, 2, 1, 1, 0, '', '', 0, 1500.0, 1500.0, 'Andre', 'Para Pagamento De Contas')
+2025-05-03 23:34:28,718 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 1, 'valor_operacao': 1500.0, 'id_conta': 2}
+2025-05-03 23:34:39,382 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.id_cliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-03 23:34:49,164 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-03 23:34:49,165 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 10:49:15,523 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 10:49:21,127 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 10:49:21,128 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 10:51:17,930 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 10:51:23,116 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 10:51:23,117 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 10:53:12,032 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 10:54:24,076 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 10:54:31,631 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 10:54:31,632 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 10:55:03,160 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-04T10:54:52.571254', 2, 0, 2, 2, 0, '', '', 1500, 500.0, 2000.0, 'André', 'Pagamento Cpfl')
+2025-05-04 10:55:20,762 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 2, 'valor_operacao': 500.0, 'id_conta': 2}
+2025-05-04 11:11:57,818 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 11:12:03,787 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 11:12:03,788 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 11:47:56,920 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 11:48:03,880 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 11:48:03,881 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 11:49:26,282 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 11:49:33,602 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 11:49:33,602 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 11:51:55,507 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 11:52:01,393 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 11:52:01,393 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:00:32,978 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:00:39,606 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:00:39,606 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:04:57,076 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:05:00,865 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:05:00,866 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:06:32,445 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:06:40,308 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:06:40,308 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:09:01,014 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:09:04,522 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:09:04,523 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:10:02,875 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:10:13,985 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:10:13,986 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:10:54,615 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:10:58,886 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:10:58,887 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:12:37,810 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:12:42,384 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:12:42,385 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:13:38,958 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:13:42,311 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:13:42,311 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:14:22,874 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:14:26,507 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:14:26,508 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:16:32,670 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:16:41,065 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:16:41,065 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:18:26,995 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:18:33,780 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:18:33,780 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:19:03,518 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-04T12:19:03.448005', 2, 0, 2, 3, 4, 'arbononi1@gmail.com', '', 1000, 150.0, 1150.0, 'Elenice', 'Fechar A Conta')
+2025-05-04 12:19:06,716 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 2, 'valor_operacao': 150.0, 'id_conta': 2}
+2025-05-04 12:43:20,477 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:43:57,884 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:44:03,242 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:44:03,242 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:44:25,925 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:44:30,724 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:44:30,724 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:46:02,908 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:46:07,823 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:46:07,823 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:47:55,012 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:47:57,722 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:47:57,722 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:48:24,303 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-04T12:48:24.204663', 2, 0, 2, 4, 0, '', '12345678 12345678 12345678 12345678 1 12345678901234567890', 850, 100.0, 750.0, '', 'Pagamento Cpfl')
+2025-05-04 12:48:26,944 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 2, 'valor_operacao': 100.0, 'id_conta': 2}
+2025-05-04 12:55:55,630 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:56:06,132 [INFO] Comando executado com sucesso: select * from clientes WHERE cpf_cnpj = ?, ['14952312836']
+2025-05-04 12:56:13,633 [INFO] Comando executado com sucesso: INSERT INTO contas (data_abertura,id_cliente,tipo,status,limite_especial,saldo_atual,data_encerramento) VALUES (?,?,?,?,?,?,?), ('2025-05-04', 1, 1, 2, 350.0, 0, None)
+2025-05-04 12:56:18,286 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.id_cliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-04 12:56:52,871 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 12:57:01,161 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 12:57:01,162 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 12:57:04,025 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-04 12:57:04,026 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-04 12:57:14,810 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-04T12:57:14.730662', 2, 8, 2, 5, 0, '', '', 750, 200.0, 550.0, '', '')
+2025-05-04 12:57:16,176 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 2, 'valor_operacao': 200.0, 'id_conta': 2}
+2025-05-04 12:57:16,268 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 2, 'valor_operacao': 200.0, 'id_conta': 8}
+2025-05-04 13:00:06,909 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 13:00:11,900 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-04 13:00:11,901 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-04 13:00:13,252 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-04 13:00:15,796 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 13:00:15,797 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 13:00:26,937 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-04T13:00:26.829493', 8, 2, 2, 5, 0, '', '', 200, 200.0, 0.0, '', 'Devolvendo O Dinheiro')
+2025-05-04 13:00:28,081 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 2, 'valor_operacao': 200.0, 'id_conta': 8}
+2025-05-04 13:00:28,206 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 1, 'valor_operacao': 200.0, 'id_conta': 2}
+2025-05-04 13:00:55,273 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 13:00:55,273 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 13:00:56,145 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-04 13:00:56,146 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-04 13:01:00,769 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-04T13:01:00.689559', 2, 8, 2, 5, 0, '', '', 750, 200.0, 550.0, '', '')
+2025-05-04 13:01:02,085 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 2, 'valor_operacao': 200.0, 'id_conta': 2}
+2025-05-04 13:01:02,185 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 1, 'valor_operacao': 200.0, 'id_conta': 8}
+2025-05-04 13:18:36,674 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 13:18:46,774 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (3,)
+2025-05-04 13:18:46,775 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (3,)
+2025-05-04 13:19:03,990 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-04T13:19:03.912819', 0, 3, 1, 1, 0, '', '', 0, 1500.0, 1500.0, 'Elenice', 'Pagamento Contas')
+2025-05-04 13:19:05,174 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 2, 'valor_operacao': 1500.0, 'id_conta': 3}
+2025-05-04 13:22:52,550 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 13:22:58,969 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (3,)
+2025-05-04 13:22:58,969 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (3,)
+2025-05-04 13:23:12,958 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-04T13:23:12.858972', 0, 3, 1, 6, 0, '', '1234567890', 0, 1500.0, 1500.0, 'Lelice', 'Pagamentos')
+2025-05-04 13:27:28,273 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 13:27:32,700 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (3,)
+2025-05-04 13:27:32,701 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (3,)
+2025-05-04 13:27:55,723 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-04T13:27:55.646887', 0, 3, 1, 6, 0, '', '123456789', 0, 1500.0, 1500.0, 'Lelice', 'Pagamentos')
+2025-05-04 13:28:06,975 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 1, 'valor_operacao': 1500.0, 'id_conta': 3}
+2025-05-04 13:31:02,363 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 14:15:37,346 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 14:16:09,945 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 14:16:55,850 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 14:18:25,968 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 14:21:02,486 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 14:27:00,349 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 14:28:16,235 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 14:29:16,671 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 14:30:57,070 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 14:31:16,727 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 14:38:28,889 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 15:43:04,196 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 15:43:12,102 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-04 15:43:14,310 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 15:43:14,311 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 15:43:32,938 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 15:45:28,755 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 15:45:32,501 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 15:45:32,501 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 15:46:34,630 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 15:46:38,268 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 15:46:38,268 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 15:47:23,457 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 15:47:29,057 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 15:47:29,057 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 15:48:22,756 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 15:48:28,991 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 15:48:28,991 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 15:53:25,326 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 15:53:29,582 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 15:53:29,582 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 15:53:49,280 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (3,)
+2025-05-04 15:53:49,280 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (3,)
+2025-05-04 16:07:44,965 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:07:47,855 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-04 16:07:47,856 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-04 16:09:24,594 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:22:10,010 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:22:31,956 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:22:47,938 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:23:48,768 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:24:10,667 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:24:36,789 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-04 16:24:36,790 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-04 16:30:41,960 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:38:35,264 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:38:41,819 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (3,)
+2025-05-04 16:38:41,819 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (3,)
+2025-05-04 16:39:10,567 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-04 16:39:10,568 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-04 16:39:51,080 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:40:32,199 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:40:58,602 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:42:03,534 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:42:49,966 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:43:22,082 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:44:41,541 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:46:10,670 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:46:48,556 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:47:38,160 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:48:27,062 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 16:54:44,723 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 17:01:27,099 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 17:01:32,151 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (1,)
+2025-05-04 17:01:34,888 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 17:01:34,888 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 17:01:48,737 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 17:01:48,737 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 17:04:48,668 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 17:05:30,335 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 17:07:50,063 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 17:08:59,587 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 17:09:26,064 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 17:09:26,064 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 19:39:58,185 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 19:40:22,536 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 19:40:46,968 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 19:42:46,520 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 19:43:01,080 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 19:43:01,080 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 19:44:22,339 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 19:44:28,472 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 19:44:28,473 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 19:46:02,771 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 19:46:07,162 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 19:46:07,163 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 19:46:14,476 [ERROR] You did not supply a value for binding parameter :limite. — SQL: 
+           Select * from transacoes
+            where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+              and data_movto between :data_inicial and :data_final
+            order by data_movto
+            limit :limite offset :salto | {'id_conta': 2, 'data_inicial': '01/05/2025 00:00:00', 'data_final': '04/05/2025 23:59:59', 'limit': 21, 'salto': 0}
+2025-05-04 19:47:24,682 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 19:47:59,445 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 19:48:08,703 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 19:48:08,703 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 19:49:28,368 [ERROR] You did not supply a value for binding parameter :limite. — SQL: 
+           Select * from transacoes
+            where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+              and data_movto between :data_inicial and :data_final
+            order by data_movto
+            limit :limite offset :salto | {'id_conta': 2, 'data_inicial': '01/05/2025 00:00:00', 'data_final': '04/05/2025 23:59:59', 'limit': 21, 'salto': 0}
+2025-05-04 19:59:46,767 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 19:59:51,383 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 19:59:51,383 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 20:00:00,161 [ERROR] You did not supply a value for binding parameter :limite. — SQL: 
+           Select * from transacoes
+            where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+              and data_movto between :data_inicial and :data_final
+            order by data_movto
+            limit :limite offset :salto | {'id_conta': 2, 'data_inicial': '01/05/2025 00:00:00', 'data_final': '04/05/2025 23:59:59', 'limit': 21, 'salto': 0}
+2025-05-04 20:02:29,591 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 20:02:39,432 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 20:02:39,433 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 20:03:17,857 [ERROR] You did not supply a value for binding parameter :limite. — SQL: 
+           Select * from transacoes
+            where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+              and data_movto between :data_inicial and :data_final
+            order by data_movto
+            limit :limite offset :salto | {'id_conta': 2, 'data_inicial': '01/05/2025 00:00:00', 'data_final': '04/05/2025 23:59:59', 'limit': 21, 'salto': 0}
+2025-05-04 20:05:07,395 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 20:05:12,608 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 20:05:12,608 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 20:05:24,636 [ERROR] You did not supply a value for binding parameter :limite. — SQL: 
+           Select * from transacoes
+            where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+              and data_movto between :data_inicial and :data_final
+            order by data_movto
+            limit :limite offset :salto | {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-04 23:59:59', 'limit': 21, 'salto': 0}
+2025-05-04 20:05:44,827 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 20:05:44,828 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 20:14:24,198 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 20:14:27,432 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 20:14:27,433 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 20:14:35,226 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-04 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-04 20:15:52,574 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 20:16:38,002 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 20:16:42,758 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 20:16:42,759 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 20:16:47,904 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-04 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-04 20:16:47,904 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-04 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-04 20:17:38,971 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 20:17:42,933 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 20:17:42,933 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 20:18:23,283 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-04 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-04 20:19:57,323 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-04 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-04 20:21:34,071 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 20:21:37,804 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 20:21:37,805 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 20:21:50,159 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-04 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-04 20:23:30,876 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 20:23:34,296 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 20:23:34,297 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 20:23:42,823 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-04 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-04 20:24:08,735 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-04 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-04 20:30:43,458 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 20:30:46,973 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 20:30:46,973 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 20:30:51,783 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-04 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-04 20:30:51,783 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-04 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-04 20:32:52,424 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-04 20:32:58,306 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-04 20:32:58,307 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-04 20:33:05,500 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-04 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-04 20:33:05,501 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-04 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-05 18:03:10,847 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-05 18:03:15,967 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-05 18:03:15,968 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 13:14:55,306 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 13:15:00,867 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 13:15:00,867 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 13:16:49,651 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 13:17:59,382 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 13:21:09,319 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 13:21:39,600 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 13:21:47,986 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 18:05:59,263 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 18:06:07,178 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 18:06:07,178 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 18:06:16,085 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:06:16,085 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:06:22,060 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:06:22,061 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:06:27,996 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 18:06:27,996 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 18:06:36,263 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:06:36,270 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:09:03,481 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 18:09:09,314 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 18:09:09,314 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 18:09:17,572 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:09:17,572 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:14:57,685 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 18:15:02,378 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 18:15:02,378 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 18:15:09,276 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:15:09,276 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:15:13,083 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (3,)
+2025-05-06 18:15:13,083 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (3,)
+2025-05-06 18:15:20,237 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 3, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:15:20,237 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 3, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:15:26,500 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (4,)
+2025-05-06 18:15:26,501 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (4,)
+2025-05-06 18:15:34,479 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 4, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:15:34,479 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 4, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:15:40,214 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 18:15:40,215 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 18:15:45,072 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 8, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:15:45,073 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 8, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:19:45,911 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 18:19:51,496 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 18:19:51,497 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 18:19:58,163 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 8, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:19:58,163 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 8, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:26:10,595 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 18:26:13,948 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 18:26:13,948 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 18:26:19,454 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:26:19,454 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:49:49,071 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 18:49:53,195 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 18:49:53,195 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 18:50:06,254 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:50:06,254 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:51:41,833 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (3,)
+2025-05-06 18:51:41,833 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (3,)
+2025-05-06 18:51:49,932 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 3, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:51:49,932 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 3, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:53:00,067 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 18:53:00,068 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 18:53:04,798 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:53:04,798 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:56:07,502 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:56:07,503 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:56:08,806 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:56:08,807 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:56:09,414 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:56:09,415 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 18:57:14,301 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 18:57:19,712 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-06 18:57:19,713 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-06 18:59:32,176 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 18:59:35,195 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-06 18:59:35,196 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-06 19:00:27,116 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 19:00:30,960 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-06 19:00:30,961 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-06 19:01:03,974 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        WHERE nome LIKE ?
+        order by nome
+        limit ? offset ?
+        , ['%André%', 29, 0]
+2025-05-06 19:01:03,974 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes WHERE nome LIKE ?, ['%André%']
+2025-05-06 19:02:06,802 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 19:02:08,974 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-06 19:02:08,975 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-06 19:02:54,265 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 19:04:09,224 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 19:04:13,119 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 19:04:13,120 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 19:04:21,161 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 19:04:21,162 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 19:30:51,246 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 19:32:17,882 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 19:32:39,394 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 19:34:44,069 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 19:34:49,510 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-06 19:34:49,511 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-06 19:34:57,911 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        WHERE nome LIKE ?
+        order by nome
+        limit ? offset ?
+        , ['%André%', 29, 0]
+2025-05-06 19:34:57,912 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes WHERE nome LIKE ?, ['%André%']
+2025-05-06 19:35:07,920 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 19:35:07,921 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 19:35:11,618 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.id_cliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-06 19:35:27,771 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 19:35:27,772 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 19:35:36,372 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-06 19:35:36', 0, 2, 1, 1, 0, '', '', 0, 1500.0, 1500.0, '', '')
+2025-05-06 19:40:47,758 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 19:40:53,086 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 19:40:53,086 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 19:41:02,735 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 19:41:02,735 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 19:41:08,761 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-06 19:41:08', 0, 2, 1, 1, 0, '', '', 0, 1500.0, 1500.0, '', '')
+2025-05-06 19:41:10,052 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 1, 'valor_operacao': 1500.0, 'id_conta': 2}
+2025-05-06 19:43:26,171 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 19:43:31,779 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (3,)
+2025-05-06 19:43:31,780 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (3,)
+2025-05-06 19:43:37,434 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-06 19:43:37', 0, 3, 1, 1, 0, '', '', 0, 1500.0, 1500.0, '', '')
+2025-05-06 19:43:39,014 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 1, 'valor_operacao': 1500.0, 'id_conta': 3}
+2025-05-06 19:44:24,327 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 19:44:31,596 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (4,)
+2025-05-06 19:44:31,596 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (4,)
+2025-05-06 19:44:36,131 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-06 19:44:36', 0, 4, 1, 1, 0, '', '', 0, 1500.0, 1500.0, '', '')
+2025-05-06 19:44:42,869 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 1, 'valor_operacao': 1500.0, 'id_conta': 4}
+2025-05-06 19:45:43,218 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 19:45:50,262 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (4,)
+2025-05-06 19:45:50,263 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (4,)
+2025-05-06 19:46:03,720 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (5,)
+2025-05-06 19:46:03,720 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (5,)
+2025-05-06 19:46:11,408 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (5,)
+2025-05-06 19:46:11,409 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (5,)
+2025-05-06 19:46:54,104 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (5,)
+2025-05-06 19:46:54,105 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (5,)
+2025-05-06 19:47:38,394 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 19:47:44,310 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (5,)
+2025-05-06 19:47:44,310 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (5,)
+2025-05-06 19:47:50,532 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-06 19:47:50', 0, 5, 1, 1, 0, '', '', 0, 1500.0, 1500.0, '', '')
+2025-05-06 19:47:58,532 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 1, 'valor_operacao': 1500.0, 'id_conta': 5}
+2025-05-06 19:50:03,962 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 19:50:11,089 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (6,)
+2025-05-06 19:50:11,090 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (6,)
+2025-05-06 19:50:16,234 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-06 19:50:16', 0, 6, 1, 1, 0, '', '', 0, 1500.0, 1500.0, '', '')
+2025-05-06 19:50:17,773 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 1, 'valor_operacao': 1500.0, 'id_conta': 6}
+2025-05-06 19:50:49,534 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 19:50:49,535 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 19:50:55,612 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-06 19:50:55', 0, 8, 1, 1, 0, '', '', 0, 1500.0, 1500.0, '', '')
+2025-05-06 19:50:56,689 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 1, 'valor_operacao': 1500.0, 'id_conta': 8}
+2025-05-06 19:51:06,568 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 19:51:06,569 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 19:51:22,716 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 19:51:22,716 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 19:51:35,412 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 19:51:35,413 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 19:51:41,863 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 19:51:41,863 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-01 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 19:52:01,032 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 19:52:01,032 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 19:53:40,924 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 19:53:40,926 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '2025-05-06 00:00:00', 'limite': 21, 'salto': 0}
+2025-05-06 19:56:48,592 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 19:56:53,935 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 19:56:53,936 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 19:57:14,538 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 19:57:14,538 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 20:01:01,338 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 20:01:06,305 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 20:01:06,306 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 20:01:13,715 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:01:13,715 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:01:19,603 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (3,)
+2025-05-06 20:01:19,603 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (3,)
+2025-05-06 20:01:23,460 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 3, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:01:23,460 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 3, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:01:31,388 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (4,)
+2025-05-06 20:01:31,389 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (4,)
+2025-05-06 20:01:34,750 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 4, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:01:34,750 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 4, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:01:39,198 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (5,)
+2025-05-06 20:01:39,198 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (5,)
+2025-05-06 20:01:43,423 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 5, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:01:43,423 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 5, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:01:52,111 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (6,)
+2025-05-06 20:01:52,111 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (6,)
+2025-05-06 20:01:56,120 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 6, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:01:56,120 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 6, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:02:04,873 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (7,)
+2025-05-06 20:02:06,481 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 20:02:06,482 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 20:02:13,474 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 8, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:02:13,474 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 8, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:02:54,578 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 20:03:06,201 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 20:03:06,202 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 20:03:14,136 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-06 20:03:14', 8, 0, 2, 2, 0, '', '', 1500, 150.0, 1350.0, '', '')
+2025-05-06 20:04:44,622 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 20:04:49,951 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 20:04:49,951 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 20:04:54,105 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-06 20:04:54', 8, 0, 2, 2, 0, '', '', 1500, 150.0, 1350.0, '', '')
+2025-05-06 20:04:55,440 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 2, 'valor_operacao': 150.0, 'id_conta': 8}
+2025-05-06 20:05:03,817 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 20:05:03,817 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 20:05:08,210 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 8, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:05:08,211 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 8, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:05:20,931 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 20:05:20,931 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 20:05:59,617 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 20:05:59,617 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 20:06:48,584 [INFO] Comando executado com sucesso: INSERT INTO transacoes (data_movto,id_conta_origem,id_conta_destino,tipo_operacao,tipo_transacao,tipo_chave_pix,chave_pix,linha_digitavel,saldo_anterior,valor_movto,saldo_final,nome_autor,mensagem) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?), ('2025-05-06 20:06:48', 8, 0, 2, 3, 1, '15623559883', '', 1350, 150.0, 1200.0, 'André', 'Simples Transferência')
+2025-05-06 20:06:49,909 [INFO] Comando executado com sucesso: 
+           Update contas Set saldo_atual = case when :tipo_operacao = 1 then saldo_atual + :valor_operacao
+                      else saldo_atual - :valor_operacao end 
+            where id = :id_conta, {'tipo_operacao': 2, 'valor_operacao': 150.0, 'id_conta': 8}
+2025-05-06 20:07:10,674 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 20:07:10,674 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 20:07:16,435 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 20:07:16,435 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 20:08:31,547 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 20:08:35,470 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-06 20:08:35,471 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []
+2025-05-06 20:08:40,263 [INFO] Comando executado com sucesso: Select c.id, cli.nome as nome_cliente, cli.telefone, c.data_abertura, c.status
+        from contas c
+        left join clientes cli on cli.id = c.id_cliente
+        order by cli.nome
+        LIMIT ? OFFSET ?, [21, 0]
+2025-05-06 20:08:48,695 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 20:08:48,696 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 20:08:53,344 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 20:08:53,344 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 20:08:56,176 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 8, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:08:56,177 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 8, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:11:08,224 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 20:11:16,627 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 20:11:16,628 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 20:12:56,159 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 20:13:02,594 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 20:13:02,594 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 20:13:03,898 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 8, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:13:03,899 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 8, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:25:31,446 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 20:25:51,839 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 20:26:02,994 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 20:26:02,995 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 20:26:10,339 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 20:26:10,339 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 20:26:10,932 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 8, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:26:10,932 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 8, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:26:16,300 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (8,)
+2025-05-06 20:26:16,300 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-06 20:26:28,053 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 20:26:28,054 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 20:26:29,558 [INFO] Comando executado com sucesso: 
+            Select * from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+                order by data_movto
+                limit :limite offset :salto, {'id_conta': 2, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:26:29,559 [INFO] Comando executado com sucesso: Select count(*) from transacoes
+                where (id_conta_origem = :id_conta or id_conta_destino = :id_conta) 
+                and data_movto between :data_inicial and :data_final
+            , {'id_conta': 2, 'data_inicial': '2025-05-06 00:00:00', 'data_final': '9999-12-31 23:59:59', 'limite': 21, 'salto': 0}
+2025-05-06 20:26:59,688 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 20:27:40,991 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 20:27:40,992 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-06 20:49:21,727 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-06 20:49:26,199 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-06 20:49:26,199 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-07 13:16:58,188 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-07 13:18:47,698 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-07 13:18:56,944 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-07 13:18:56,944 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-07 13:20:47,793 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-07 13:20:54,188 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-07 13:20:54,188 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-07 13:22:20,668 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-07 13:22:31,957 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-07 13:22:31,958 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-07 13:23:41,102 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-07 13:23:47,646 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-07 13:23:47,646 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-07 13:23:59,918 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-07 13:23:59,919 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-07 13:24:22,193 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (3,)
+2025-05-07 13:24:22,194 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (3,)
+2025-05-07 13:24:46,547 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (4,)
+2025-05-07 13:24:46,548 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (4,)
+2025-05-07 13:24:49,243 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (5,)
+2025-05-07 13:24:49,244 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (5,)
+2025-05-07 13:34:08,481 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-07 13:34:18,541 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-07 13:34:18,542 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-07 13:36:40,749 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-07 13:36:46,965 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-07 13:36:46,965 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-07 13:37:53,889 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-07 13:37:58,292 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-07 13:37:58,292 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-07 17:55:00,911 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-07 17:55:05,835 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-07 17:55:05,836 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-07 17:56:54,006 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-07 17:56:59,071 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-07 17:56:59,072 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-07 17:58:11,376 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-07 17:58:15,495 [INFO] Comando executado com sucesso: SELECT * FROM contas WHERE id=?, (2,)
+2025-05-07 17:58:15,496 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (2,)
+2025-05-08 11:03:35,602 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-08 11:05:58,965 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-08 21:28:15,534 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-08 21:30:52,175 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-09 12:45:05,258 [INFO] Comando executado com sucesso: SELECT * FROM versoes WHERE versao=?, (1,)
+2025-05-09 12:45:19,634 [INFO] Comando executado com sucesso: SELECT * FROM clientes WHERE id=?, (1,)
+2025-05-09 12:46:50,664 [INFO] Comando executado com sucesso: UPDATE clientes SET tipo_pessoa=?,cpf_cnpj=?,nome=?,endereco=?,numero=?,complemento=?,bairro=?,cidade=?,uf=?,cep=?,telefone=?,status=?,data_nascimento=?,data_cadastro=? WHERE id=?, (1, '14952312836', 'André Rogério Bononi', 'Rua Carlos Gomes', '1974', '', 'Centro', 'Sertãozinho', 'SP', 14160530, '16-99193-3081', 1, '1969-12-03', '2025-05-09', 1)
+2025-05-09 12:46:55,725 [INFO] Comando executado com sucesso: 
+        select * from clientes
+        
+        order by nome
+        limit ? offset ?
+        , [29, 0]
+2025-05-09 12:46:55,726 [INFO] Comando executado com sucesso: SELECT COUNT(*) FROM clientes , []

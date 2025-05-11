@@ -16,7 +16,7 @@
 ║                                                                                                  ║
 ║ Cidade ..: [                                                                         ] UF.: [  ] ║
 ║                                                                                                  ║
-║ CEP......: [           ]       Telefone .: [             ]         Data Nacimento.: [          ] ║
+║ CEP......: [          ]        Telefone .: [             ]        Data Nascimento.: [          ] ║
 ║                                                                                                  ║
 ║ Situação.: ( ) [A]TIVO ( ) [R]ESTRITO ( ) [B]LOQUEADO ( ) [I]NATIVO  Cliente Desde: [          ] ║
 ║                                                                                                  ║

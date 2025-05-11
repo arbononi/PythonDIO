@@ -2,13 +2,13 @@ import locale
 from os import system as limp
 from time import sleep
 from database.banco import Banco
-from database.migracao import create_tables
 from models.versao import Versao
 from layouts.layouts import titulo_telas, opcoes_disponiveis, layout_menu_principal, operacoes_disponiveis
 from utils import userfunctions
+from controllers.versao_controller import VersaoController
 from controllers.clientes_controller import ClientesController
 from controllers.contas_controller import ContasController
-from controllers.transacoes_controller import TransacoesController
+from controllers.transacoes_controller import TransacaoController
 from controllers.consultas_controller import ConsultasController
 
 locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
@@ -20,12 +20,12 @@ def main():
             if config["lin"] >= star_lin and config["lin"] <= stop_lin:
                 userfunctions.posicionar_cursor(config["lin"], config["col"])
                 print(config["value"])
+        titulo_menu = titulo_telas["menu_principal"].strip() + " - " + Versao.get_init_version().to_str()
+        userfunctions.exibir_conteudo(titulo_menu.center(75, " "), lin=2, col=2)
     
     fl_ok = True
-    fl_create_tables = False
     if not Banco.check_exists_database():
         fl_ok, mensagem = Banco.create_database()
-        fl_create_tables = True
 
     if not fl_ok:
         print(mensagem)
@@ -36,34 +36,24 @@ def main():
     banco.conectar()
 
     try:
-        if fl_create_tables:
-            create_tables(banco)
+        versaocontroller = VersaoController()
+        clientescontroller = ClientesController()
+        contascontroller = ContasController()
+        transacoescontroller = TransacaoController()
+        consultacontroller = ConsultasController()
         
-        versao = Versao.get_by_id(banco, Versao._versao)
-        if versao:
-            if versao.versao != Versao._versao or versao.release != Versao._release or versao.build != Versao._build:
-                # TODO Criar verificação de diferenças entre as versões
-                return
-            elif versao.compile != Versao._compile:
-                versao.compile = Versao._compile
-                versao.banco.mensagens = []
-                versao.update()
-                if len(versao.banco.mensagens) > 0:
-                    print(versao.banco.mensagens[0])
-        else:
-            versao = Versao(banco, versao=Versao._versao, release=Versao._release, build=Versao._build, compile=Versao._compile)
-            versao.insert()
-
-        clientescontroller = ClientesController(banco)
-        contascontroller = ContasController(banco)
-        transacoescontroller = TransacoesController(banco)
-        consultacontroller = ConsultasController(banco)
-
+        fl_ok, mensagem, versao_atual = versaocontroller.checar_versao_atual()
+        if not fl_ok:
+            print(mensagem)
+            userfunctions.esperar_tecla()
+            return
+        
         limp("cls")
         data_atual_str = userfunctions.formatar_data(userfunctions.get_data_atual(), exibir_dia_semana=True, antes=True)
         userfunctions.posicionar_cursor(1, 1)
         userfunctions.desenhar_tela(layout_menu_principal)
-        userfunctions.exibir_conteudo(titulo_telas["menu_principal"], lin=2, col=2)
+        titulo_menu = titulo_telas["menu_principal"].strip() + " - " + versao_atual.to_str()
+        userfunctions.exibir_conteudo(titulo_menu.center(75, " "), lin=2, col=2)
         userfunctions.exibir_conteudo(data_atual_str, lin=2, col=85)
 
         while True:
@@ -88,15 +78,17 @@ def main():
                 else:
                     consultacontroller.iniciar()
                     fl_redesenhar_tela = True
-
                 if fl_redesenhar_tela:
                     redesenhar_tela()
             except ValueError:
                 userfunctions.exibir_mensagem("Opção inválida! Tente novamente.", wait_key=True)
                 continue
+            except Exception as e:
+                userfunctions.exibir_mensagem(f"Erro processar opção: {e}.", wait_key=True)
+                continue
         userfunctions.exibir_mensagem("Obrigado por usar nossa Fintech! Finalizando ")
         col = 48
-        for i in range(3, 0, -1):
+        for i in range(2, 0, -1):
             userfunctions.exibir_conteudo(".", lin=30, col=col)
             col += 1
             sleep(1)

@@ -1,5 +1,6 @@
 import sys
 import msvcrt
+import shutil
 from datetime import datetime, date
 from models.tiposenum import estados, TipoPessoa
 
@@ -12,6 +13,8 @@ def esperar_tecla(ocultar_cursor: bool=True):
     tecla = msvcrt.getch().decode("utf-8").upper()
     if ocultar_cursor:
         print(MOSTRAR_CURSOR, end="")
+    if tecla == "\r":
+        tecla = ""
     return tecla
 
 def posicionar_cursor(lin, col):
@@ -32,9 +35,12 @@ def exibir_mensagem(mensagem: str, lin=30, col=3, skip_line: str="", wait_key: b
     if wait_key:
         esperar_tecla()
 
-def exibir_conteudo(conteudo: str, lin: int=30, col: int=3):
+def exibir_conteudo(conteudo: str, lin: int=30, col: int=3, desativada=False):
     posicionar_cursor(lin, col)
-    print(conteudo, end="")
+    if desativada:
+        print(f"\033[38;5;250;48;5;240m{conteudo}\033[0m")
+    else:
+        print(conteudo, end="")
 
 def limpar_tela(start: int=4, stop: int=29, col: int=2, size: int=98):
     for lin in range(start, stop):
@@ -47,14 +53,14 @@ def desenhar_tela(layout, line_loop=0, stop_loop=0):
             process = True
             while process:
                 posicionar_cursor(line_loop, config["col"])
-                print(config["value"])
+                print(config["value"], end="")
                 if line_loop < stop_loop:
                     line_loop += 1
                 else:
                     process = False
         else:
             posicionar_cursor(config["lin"], config["col"])
-            print(config["value"])
+            print(config["value"], end="")
 
 def get_data_atual():
     return datetime.now().date()
@@ -62,18 +68,21 @@ def get_data_atual():
 def validar_cpf_cnpj(num_cpf_cnpj: str, tipo_pessoa: TipoPessoa=None):
     size = len(num_cpf_cnpj)
     if tipo_pessoa != None:
-        if tipo_pessoa == TipoPessoa.FISICA and size != 11:
-            return False, "Número de dígitos inválido para CPF"
-        elif size != 14:
-            return False, "Número de dígitos inválido para CNPJ"
-    elif size < 11 or size > 14:
-        return False, "Número de dígitos de CPF/CNPJ inválidos: 11 dígitos para CPF e 14 para CNPJ."
+        match tipo_pessoa:
+            case TipoPessoa.FISICA:
+                if size != 11:
+                    return False, "Número de dígitos inválido para CPF"
+            case TipoPessoa.JURIDICA:
+                if size != 14:
+                    return False, "Número de dígitos inválido para CNPJ"
+            case None:
+                return False, "Tipo de pessoa não informada para validação CPF/CNPJ"
     return True, None
 
 def validar_estado(uf: str):
     if uf.upper() not in estados:
-        return False, None, "UF inválida!"
-    return True, uf.upper(), None
+        return False, "UF inválida!"
+    return True, None
 
 def validar_cep(cep: str):
     if (len(cep) < 8):
@@ -84,12 +93,15 @@ def validar_cep(cep: str):
     except ValueError:
         return False, None, "CEP não é um número válido!"
     
-def formatar_cpf(num_cpf: str):
+def formatar_cpf_cnpj(num_cpf_cnpj: str):
     try:
-        cpf_formatado = f"{int(num_cpf):011d}"
-        return True, f"{cpf_formatado[:3]}.{cpf_formatado[3:6]}.{cpf_formatado[6:9]}-{cpf_formatado[9:]}"
+        if len(num_cpf_cnpj) == 11:
+           cpf_formatado = f"{int(num_cpf_cnpj):011d}"
+           return True, f"{cpf_formatado[:3]}.{cpf_formatado[3:6]}.{cpf_formatado[6:9]}-{cpf_formatado[9:]}"
+        elif len(num_cpf_cnpj) == 14:
+            return True, f"{num_cpf_cnpj[0:2]}.{num_cpf_cnpj[2:5]}.{num_cpf_cnpj[5:8]}/{num_cpf_cnpj[8:12]}-{num_cpf_cnpj[12:14]}"
     except ValueError as e:
-        return False, f"CPF não é um número válido!: {num_cpf}"
+        return False, f"CPF/CNPJ não é um número válido!: {num_cpf_cnpj}"
          
 def formatar_cep(cep: int):
     #14160530
@@ -121,6 +133,7 @@ def formatar_valor(valor, isMoeda: bool=False) -> str:
         return valor_formatado
     except Exception as error:
         exibir_mensagem(30, 3, error, wait_key=True)
+        return valor_formatado
 
 def validar_data(entrada: str, permitir_futuro=False):
     formatos_aceitos = [
@@ -167,7 +180,6 @@ def validar_data_hora(entrada: str, permitir_futuro=False):
         except ValueError:
             continue  # Tenta o próximo formato
     return False, None, "Formato inválido. Tente novamente com um dos formatos aceitos."
-
 
 def datetime_to_iso(data: datetime):
     return data.strftime("%Y-%m-%d %H:%M:%S")

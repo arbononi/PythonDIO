@@ -11,14 +11,14 @@
 ║ Especial : [              ]                                          Data Abertura: [          ] ║
 ║                                                                                                  ║
 ║ Situação : ( ) ANALISE   ( ) ATIVA   ( ) SUSPENSA   ( ) BLOQUEADA   ( ) INATIVA   ( ) ENCERRADA  ║
+║                                                                                                  ║
 ║                                                                      Encerrada em: [          ]  ║
 ║                                                                                                  ║
 ║                                                                                                  ║
 ║                                                                                                  ║
 ║                                                                                                  ║
 ║                                                                                                  ║
-║                                                                                                  ║
-║                                                                                                  ║
+║                                                                          ]                       ║
 ║                                                                                                  ║
 ║                                                                                                  ║
 ║                                                                                                  ║

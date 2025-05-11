@@ -1,97 +1,74 @@
-import sqlite3
-import logging
-import os
+import sqlite3, os, logging
 
 CAMINHO_BANCO = os.path.join(os.path.dirname(__file__), "dados", "fintechDIO.db")
 
-logging.basicConfig(
-    filename="fintech.log",
-    level=logging.INFO,
-    format='%(asctime)s [%(levelname)s] %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S'
-)
+logging.basicConfig(filename="fintech.log", level=logging.INFO,
+                    format='%(asctime)s [%(levelname)s] %(message)s')
+
 class Banco:
-    _instance = None # atributo de classe para guardar instancia única
+    _instance = None
 
     def __init__(self):
-        if Banco._instance is not None:
-            raise Exception("Esta classe é um Singleton! Use get_instance() para acessar!")
-        self.caminho_banco = CAMINHO_BANCO
+        if Banco._instance:
+            raise Exception("Use Banco.get_instance()")
         self.conn = None
         Banco._instance = self
 
     @classmethod
     def get_instance(cls):
-        if cls._instance is None:
+        if not cls._instance:
             cls._instance = Banco()
         return cls._instance
-    
-    def create_database():
-        try:
-            banco = Banco()
-            fl_ok, mensagem = banco.conectar()
-            if not fl_ok:
-                return fl_ok, mensagem
-            banco.fechar()
-            return fl_ok, logging.info("Banco de dados criado com sucesso!")
-        except sqlite3.Error as e:
-            logging.error(f"Erro ao criar banco de dados: {e}")
-            return logging.error
-        
-    def conectar(self):
-        try:
-            if self.conn is None:
-                self.conn = sqlite3.connect(CAMINHO_BANCO)
-                self.cursor = self.conn.cursor()
-                self.mensagens = []
-                logging.info("Conexão com banco iniciada.")
-            return True, None
-        except sqlite3.Error as e:
-            logging.error(f"Erro ao conectar ao banco de dados: {e}")
-            return False, logging.error
 
-    def executar(self, query, params=()):
+    @classmethod
+    def check_exists_database(cls) -> bool:
+        return os.path.exists(CAMINHO_BANCO)
+    
+    @classmethod
+    def create_database(cls):
+        """
+        Cria o arquivo do banco (se não existir), conecta, 
+        e chama create_table() de cada repositório.
+        """
+        # Assegura diretório
+        pasta = os.path.dirname(CAMINHO_BANCO)
+        os.makedirs(pasta, exist_ok=True)
+
+        # Instancia e conecta
+        banco = cls.get_instance()
+        ok, msg = banco.conectar()
+        if not ok:
+            return ok, msg
+
+        # Cria tabelas via repositórios
+        from database.clientes_repository import ClienteRepository
+        repo_cliente = ClienteRepository()
+        cursor, msg_tab = repo_cliente.create_table()
+        if cursor is None:
+            return False, msg_tab
+
+        logging.info("Banco de dados e tabelas criados com sucesso.")
+        banco.fechar()
+        return True, None
+    
+    def conectar(self):
         if not self.conn:
-            return False, logging.error("Tentativa de executar operação sem conexão com o banco")
+            self.conn = sqlite3.connect(CAMINHO_BANCO)
+            self.conn.row_factory = sqlite3.Row
+        return True, None
+
+    def executar(self, sql, params=()):
         try:
-            if self.cursor is None:
-                self.cursor = self.conn.cursor()
-                
-            if params:
-                self.cursor.execute(query, params)
-            else:
-                self.cursor.execute(query)
+            cur = self.conn.execute(sql, params)
             self.conn.commit()
-            if params:
-                logging.info(f"Executou query: {query} | Params: {params}")
-            else:
-                logging.info(f"Executou query: {query}")
-            return self.cursor, None
-        except sqlite3.IntegrityError as e:
-            logging.error(f"Erro de integridade (IntegrityError) - Query: {query} : {e}")
-            return None, logging.error
-        except sqlite3.OperationalError as e:
-            logging.error(f"Comando SQL inválido (OperationalError) - Query: {query} : {e}")
-            return None, logging.error
-        except sqlite3.DatabaseError as e:
-            logging.error(f"Erro ao processar comando (DatabaseError) - Query: {query} : {e}")
-            return None, logging.error
+            logging.info(f"Comando executado com sucesso: {sql}, {params}")
+            return cur, None
         except Exception as e:
-            logging.exception(f"Exceção gerada (Exception) - Query: {query} : {e}")
-            return None, logging.exception
+            logging.error(f"{e} — SQL: {sql} | {params}")
+            return None, str(e)
 
     def fechar(self):
         if self.conn:
             self.conn.close()
             self.conn = None
-        return True, logging.info("Conexão com banco de dados encerrada!")
-
-    def check_exists_database():
-        return os.path.exists(CAMINHO_BANCO)
-    
-    
-    
-    
-
-
-
+        return True, None
